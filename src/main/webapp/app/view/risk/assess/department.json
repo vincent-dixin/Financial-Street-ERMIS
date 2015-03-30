@@ -1,0 +1,16 @@
+[{
+	 id:'1',
+	 ZRName:'1',
+	 XGName:'2',
+	 CYName:'3'
+ },{
+	 id:'2',
+	 ZRName:'3',
+	 XGName:'3',
+	 CYName:'4'
+ },{
+	 id:'3',
+	 ZRName:'5',
+	 XGName:'6',
+	 CYName:'12'
+ }]

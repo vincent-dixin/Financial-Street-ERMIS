@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns:sec="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+				http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.0.xsd">
+
+	<sec:http realm="fhd"  >
+		<sec:intercept-url pattern="/login.do*" filters="none" />
+		<sec:intercept-url pattern="/sessiontimeout.do*" filters="none" />
+		<sec:intercept-url pattern="/tmp/attached/GoogleChromeframeStandaloneEnterprise.msi*" filters="none" />
+		<sec:intercept-url pattern="/activitiDeploy.do*" filters="none" />
+		
+		<sec:intercept-url pattern="/jrj/safetyindex.do*" filters="none" />
+		<sec:intercept-url pattern="/jrj/safetynum.do*" filters="none" />
+		<sec:intercept-url pattern="/jrj/safetynum2.do*" filters="none" />
+		
+		<sec:intercept-url pattern="/jrj/createzichijiudianchart.f*" filters="none" />
+		<sec:intercept-url pattern="/jrj/zcjd.do*" filters="none" />
+		
+		
+		<sec:intercept-url pattern="/jrj/jrjindex.do*" filters="none" />
+		<sec:intercept-url pattern="/jrj/kpilist.do*" filters="none" />
+		<sec:intercept-url pattern="/jrj/angulargauge.do*" filters="none" />
+        <sec:intercept-url pattern="/jrj/riskanalysis.do*" filters="none" />
+		<sec:intercept-url pattern="/jrj/createangulargaugechart.f*" filters="none" />
+		<sec:intercept-url pattern="/jrj/singlecolumnchart.f*" filters="none" /><!-- 单柱单折 月度 季度 半年-->
+		<sec:intercept-url pattern="/jrj/singlecolumnchart2.f*" filters="none" />
+		
+		<sec:intercept-url pattern="/jrj/alarmlinechart.f*" filters="none" /><!-- 告警图 月度 季度 半年-->
+		<sec:intercept-url pattern="/jrj/bubblechart.f*" filters="none" /><!-- 气泡图 年度-->
+		<sec:intercept-url pattern="/jrj/doublecolumnchart.f*" filters="none" /><!-- 双柱双折-->
+		<sec:intercept-url pattern="/jrj/findallkpistatus.f*" filters="none" />
+		<sec:intercept-url pattern="/jrj/findredstatus.f*" filters="none" />
+		
+		<!-- 新需求 -->
+		<sec:intercept-url pattern="/jrj/onediffregion.do*" filters="none" /><!-- 单个图形切换,可以翻页,告警区间不同 -->
+		<sec:intercept-url pattern="/jrj/fangdichan.do*" filters="none" /><!-- 14.客户满意度,房地产jsp -->
+		<sec:intercept-url pattern="/jrj/hengtaizhengquanyingyeshouru.f*" filters="none" /><!-- 22.（恒泰证券营业收入-竞争组别平均值）/竞争组别平均值 , （恒泰证券净资产收益率-竞争组别平均值）/竞争组别平均值 -->
+		<sec:intercept-url pattern="/jrj/quanguoyingyuanpaiming.f*" filters="none" /><!-- 23.首都电影院西单影院 -->
+		<sec:intercept-url pattern="/jrj/kehumanyidu.f*" filters="none" /><!-- 14.客户满意度,房地产 -->
+		
+		
+		<sec:intercept-url pattern="/**/*.swf*" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		<sec:intercept-url pattern="/**/*.jpg*" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		<sec:intercept-url pattern="/**/*.css*" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		<sec:intercept-url pattern="/**/*.png*" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		<sec:intercept-url pattern="/**/*.gif*" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		<sec:intercept-url pattern="/**/*.js*" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		<sec:intercept-url pattern="/**/*.gzjs*" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		
+		<sec:intercept-url pattern="/**/*.jsp*" access="ROLE_USER" />
+		
+		<sec:intercept-url pattern="/**" access="ROLE_USER" />
+		
+<!--<sec:http-basic/>-->
+		<sec:form-login login-page="/login.do"
+			authentication-failure-url="/login.do?login_error=1" always-use-default-target="true" default-target-url="/index.do" />
+		<sec:logout logout-success-url="/index.do" />
+		<sec:session-management invalid-session-url="/sessiontimeout.do" ></sec:session-management>
+		<!-- <concurrent-session-control max-sessions="2" exception-if-maximum-exceeded="true" 
+		
+			/> -->
+		<sec:remember-me />
+	</sec:http>
+
+
+
+	<!-- <global-method-security secured-annotations="enabled" jsr250-annotations="enabled" 
+		/> -->
+	<beans:bean id="loggerListener"
+		class="org.springframework.security.access.event.LoggerListener" />
+
+	<sec:authentication-manager alias="authenticationManager">
+		<sec:authentication-provider user-service-ref="userDetailsBO">
+			<sec:password-encoder hash="md5" />
+		</sec:authentication-provider>
+	</sec:authentication-manager>
+	
+</beans:beans>

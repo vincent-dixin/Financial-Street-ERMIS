@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tpls>
+	<tpl>
+	    <tpldata>
+	        <![CDATA[
+				&nbsp;
+<p style="text-align:center;" align="center">
+	<b><span style="line-height:150%;font-family:宋体;font-size:15pt;">评价小组报告</span></b> 
+</p>
+<p style="text-indent:24pt;">
+	<span style="line-height:150%;font-family:宋体;font-size:12pt;">根据<i><span style="color:red;">[</span><span style="color:red;">要求的来源<span>]</span></span></i>的要求，我们对本公司（下称<span>“</span>公司<span>”</span>）内部控制的有效性进行了自我评价。</span> 
+</p>
+<p style="text-indent:24.1pt;">
+	<b><span style="line-height:150%;font-family:宋体;font-size:12pt;">一、评价目标</span></b> 
+</p>
+<p style="text-indent:24pt;margin-left:21pt;">
+	<span style="line-height:150%;font-family:宋体;font-size:12pt;">${评价目标}</span>
+</p>
+<p style="text-indent:24pt;margin-left:18pt;">
+	<span style="line-height:150%;font-family:宋体;font-size:12pt;">由于内部控制存在固有局限性，故仅能对达到上述目标提供合理保证。</span>
+</p>
+<p style="text-indent:24.1pt;">
+	<b><span style="line-height:150%;font-family:宋体;font-size:12pt;">二、评价小组情况</span></b>
+</p>
+<p style="text-align:left;text-indent:24pt;margin-left:18pt;" align="left">
+	<span style="line-height:150%;font-family:宋体;font-size:12pt;">公司授权${内控主责部门}负责内部控制评价的具体组织实施工作，对纳入评价范围的高风险领域和单位进行评价。</span> 
+</p>
+<p style="text-indent:24pt;margin-left:18pt;">
+	<span style="line-height:150%;font-family:宋体;font-size:12pt;">为了保证内部控制评价工作顺利实施，${公司名称}成立内部控制评价工作组。小组构成如下：</span> 
+</p>
+<p style="text-indent:24pt;margin-left:18pt;">
+	<span style="line-height:150%;font-family:宋体;font-size:12pt;">组长:${组长}</span>
+</p>
+<p style="text-indent:24pt;margin-left:18pt;">
+	<span style="line-height:150%;font-family:宋体;font-size:12pt;">组员:${组员}</span>
+</p>
+<p style="text-indent:24.1pt;">
+	<b><span style="line-height:150%;font-family:宋体;font-size:12pt;">三、评价依据</span></b>
+</p>
+<p style="text-indent:24pt;margin-left:18pt;">
+	<span style="line-height:150%;font-family:宋体;font-size:12pt;">${评价依据}</span>
+</p>
+<p style="text-indent:24.1pt;">
+	<b><span style="line-height:150%;font-family:宋体;font-size:12pt;">四、评价期间</span></b> 
+</p>
+<p style="text-indent:24pt;margin-left:18pt;">
+	<span style="line-height:150%;font-family:宋体;font-size:12pt;">样本期间:${样本期间}</span> 
+</p>
+<p style="text-indent:24pt;margin-left:18pt;">
+	<span style="line-height:150%;font-family:宋体;font-size:12pt;">计划期间:${计划期间}</span>
+</p>
+<p style="text-indent:24.1pt;">
+	<b><span style="line-height:150%;font-family:宋体;font-size:12pt;">五、评价范围</span></b>
+</p>
+<p style="text-indent:24pt;margin-left:18pt;">
+	<span style="line-height:150%;font-family:宋体;font-size:12pt;">内部控制评价的范围涵盖了公司及其所属单位的各种业务和事项，重点关注下列领域:</span> 
+</p>
+<p style="text-indent:24pt;margin-left:18pt;">
+	<span style="line-height:150%;font-family:宋体;font-size:12pt;">${评价范围列表}</span>
+</p>
+<p style="text-indent:24pt;margin-left:18pt;">
+	<span style="line-height:150%;font-family:宋体;font-size:12pt;">纳入评价范围的部门包括：</span> 
+</p>
+<p style="text-indent:24pt;margin-left:18pt;">
+	<span style="line-height:150%;font-family:宋体;font-size:12pt;">${流程的责任部门}</span> 
+</p>
+<p style="text-indent:24.1pt;">
+	<b><span style="line-height:150%;font-family:宋体;font-size:12pt;">六、内部控制评价的程序和方法</span></b>
+</p>
+<p style="text-indent:24pt;margin-left:18pt;">
+	<span style="line-height:150%;font-family:宋体;font-size:12pt;">内部控制评价工作严格遵循基本规范、评价指引及公司内部控制评价办法规定的程序执行。</span> 
+</p>
+<p style="text-indent:24pt;">
+	<span style="line-height:150%;font-family:宋体;font-size:12pt;">评价程序如下：</span> 
+</p>
+<p style="text-indent:21pt;margin-left:21pt;">
+	<i><span style="font-family:宋体;color:red;font-size:12pt;">[</span></i><i><span style="font-family:宋体;color:red;font-size:12pt;">内部控制评价工作严格按照基本规范、评价指引制定《<span>2012</span>年内部控制评价工作方案》及《内部控制评价工作指引》、组织分工、实施现场测试、汇总评价结果、汇报及认定缺陷、制定整改方案、编制评价报告。 </span></i>
+</p>
+<p style="text-indent:21pt;margin-left:21pt;">
+	<i><span style="font-family:宋体;color:red;font-size:12pt;">内部控制评价工作以工作小组的形式开展，根据评价工作方案及工作指引，通过访谈、调查问卷、检查、询问及讨论、穿行测试、抽样及分析、实地查验等适当方法，广泛收集公司内部控制设计和运行是否有效的证据，如实填写评价工作底稿，分析、识别内部控制缺陷。<span>]</span></span></i> 
+</p>
+<p style="text-indent:18pt;margin-left:24pt;">
+	<span style="line-height:150%;font-family:宋体;font-size:12pt;">评价过程中，我们采用了${评价测试方法名称}等适当方法，广泛收集公司内部控制设计和运行是否有效的证据，如实填写评价工作底稿，分析、识别内部控制缺陷。</span> 
+</p>
+<p style="text-indent:24pt;">
+	<span style="line-height:150%;font-family:宋体;font-size:12pt;"><span>&nbsp;&nbsp; </span><i><span style="color:red;">[</span></i></span><i><span style="line-height:150%;font-family:宋体;color:red;font-size:12pt;">说明评价方法的适当性及证据的充分性<span>]</span></span></i> 
+</p>
+<p style="text-indent:24.1pt;">
+	<b><span style="line-height:150%;font-family:宋体;font-size:12pt;">七、内部控制缺陷及其认定</span></b><span style="line-height:150%;font-family:宋体;font-size:12pt;"></span> 
+</p>
+<p style="text-indent:20.9pt;margin-left:24.1pt;">
+	<span style="line-height:150%;font-family:宋体;font-size:12pt;">根据基本规范、评价指引对重大缺陷、重要缺陷和一般缺陷的认定要求，结合日常监督和专项监督情况，我们发现评价期间内存在<span style="line-height:150%;font-family:宋体;color:black;font-size:12pt;">${缺陷总数}</span>个缺陷，其中重大缺陷<span style="color:black;">${重大缺陷数量}</span>个，重要缺陷<span style="color:black;">${重要缺陷数量}</span>个。</span> 
+</p>
+<p style="text-indent:24pt;margin-left:18pt;">
+	<span style="line-height:150%;font-family:宋体;font-size:12pt;">${缺陷认定结果表}</span> 
+</p>
+<p style="text-indent:24pt;margin-left:18pt;">
+	<span style="line-height:150%;font-family:宋体;font-size:12pt;"></span>
+</p>
+			]]>
+	    </tpldata>
+	</tpl>
+</tpls>

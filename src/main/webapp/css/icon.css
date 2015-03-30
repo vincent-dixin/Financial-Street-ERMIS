@@ -1,0 +1,1787 @@
+.icon-accept  { background-image: url('../images/icons/accept.png') !important;}  
+.icon-accept-min  { background: url('../images/icons/accept_min.png') repeat-y !important;}  
+.icon-add  { background-image: url('../images/icons/add.gif ') !important;}  
+.icon-add  { background-image: url('../images/icons/add.png') !important;}  
+.icon-analysis  { background-image: url('../images/icons/analysis.gif ') !important;}  
+.icon-anchor  { background-image: url('../images/icons/anchor.png') !important;}  
+.icon-application  { background-image: url('../images/icons/application.png') !important;}  
+.icon-application-add  { background-image: url('../images/icons/application_add.png') !important;}  
+.icon-application-cascade  { background-image: url('../images/icons/application_cascade.png') !important;}  
+.icon-application-delete  { background-image: url('../images/icons/application_delete.png') !important;}  
+.icon-application-double  { background-image: url('../images/icons/application_double.png') !important;}  
+.icon-application-edit  { background-image: url('../images/icons/application_edit.png') !important;}  
+.icon-application-error  { background-image: url('../images/icons/application_error.png') !important;}  
+.icon-application-form  { background-image: url('../images/icons/application_form.png') !important;}  
+.icon-application-form-add  { background-image: url('../images/icons/application_form_add.png') !important;}  
+.icon-application-form-delete  { background-image: url('../images/icons/application_form_delete.png') !important;}  
+.icon-application-form-edit  { background-image: url('../images/icons/application_form_edit.png') !important;}  
+.icon-application-form-magnify  { background-image: url('../images/icons/application_form_magnify.png') !important;}  
+.icon-application-get  { background-image: url('../images/icons/application_get.png') !important;}  
+.icon-application-go  { background-image: url('../images/icons/application_go.png') !important;}  
+.icon-application-group  { background-image: url('../images/icons/application_group.png') !important;}  
+.icon-application-home  { background-image: url('../images/icons/application_home.png') !important;}  
+.icon-application-key  { background-image: url('../images/icons/application_key.png') !important;}  
+.icon-application-lightning  { background-image: url('../images/icons/application_lightning.png') !important;}  
+.icon-application-link  { background-image: url('../images/icons/application_link.png') !important;}  
+.icon-application-osx  { background-image: url('../images/icons/application_osx.png') !important;}  
+.icon-application-osx-terminal  { background-image: url('../images/icons/application_osx_terminal.png') !important;}  
+.icon-application-put  { background-image: url('../images/icons/application_put.png') !important;}  
+.icon-application-side-boxes  { background-image: url('../images/icons/application_side_boxes.png') !important;}  
+.icon-application-side-contract  { background-image: url('../images/icons/application_side_contract.png') !important;}  
+.icon-application-side-expand  { background-image: url('../images/icons/application_side_expand.png') !important;}  
+.icon-application-side-list  { background-image: url('../images/icons/application_side_list.png') !important;}  
+.icon-application-side-tree  { background-image: url('../images/icons/application_side_tree.png') !important;}  
+.icon-application-split  { background-image: url('../images/icons/application_split.png') !important;}  
+.icon-application-tile-horizontal  { background-image: url('../images/icons/application_tile_horizontal.png') !important;}  
+.icon-application-tile-vertical  { background-image: url('../images/icons/application_tile_vertical.png') !important;}  
+.icon-application-view-columns  { background-image: url('../images/icons/application_view_columns.png') !important;}  
+.icon-application-view-detail  { background-image: url('../images/icons/application_view_detail.png') !important;}  
+.icon-application-view-gallery  { background-image: url('../images/icons/application_view_gallery.png') !important;}  
+.icon-application-view-icons  { background-image: url('../images/icons/application_view_icons.png') !important;}  
+.icon-application-view-list  { background-image: url('../images/icons/application_view_list.png') !important;}  
+.icon-application-view-tile  { background-image: url('../images/icons/application_view_tile.png') !important;}  
+.icon-application-xp  { background-image: url('../images/icons/application_xp.png') !important;}  
+.icon-application-xp-terminal  { background-image: url('../images/icons/application_xp_terminal.png') !important;}  
+.icon-arrow-branch  { background-image: url('../images/icons/arrow_branch.png') !important;}  
+.icon-arrow-divide  { background-image: url('../images/icons/arrow_divide.png') !important;}  
+.icon-arrow-down  { background-image: url('../images/icons/arrow_down.png') !important;}  
+.icon-arrow-in  { background-image: url('../images/icons/arrow_in.png') !important;}  
+.icon-arrow-inout  { background-image: url('../images/icons/arrow_inout.png') !important;}  
+.icon-arrow-join  { background-image: url('../images/icons/arrow_join.png') !important;}  
+.icon-arrow-left  { background-image: url('../images/icons/arrow_left.png') !important;}  
+.icon-arrow-merge  { background-image: url('../images/icons/arrow_merge.png') !important;}  
+.icon-arrow-out  { background-image: url('../images/icons/arrow_out.png') !important;}  
+.icon-arrow-redo  { background-image: url('../images/icons/arrow_redo.png') !important;}  
+.icon-arrow-refresh  { background-image: url('../images/icons/arrow_refresh.png') !important;}  
+.icon-arrow-refresh-blue  { background-image: url('../images/icons/arrow_refresh_blue.png') !important;}  
+.icon-arrow-refresh-small  { background-image: url('../images/icons/arrow_refresh_small.png') !important;}  
+.icon-arrow-right  { background-image: url('../images/icons/arrow_right.png') !important;}  
+.icon-arrow-rotate-anticlockwise  { background-image: url('../images/icons/arrow_rotate_anticlockwise.png') !important;}  
+.icon-arrow-rotate-clockwise  { background-image: url('../images/icons/arrow_rotate_clockwise.png') !important;}  
+.icon-arrow-switch  { background-image: url('../images/icons/arrow_switch.png') !important;}  
+.icon-arrow-turn-left  { background-image: url('../images/icons/arrow_turn_left.png') !important;}  
+.icon-arrow-turn-right  { background-image: url('../images/icons/arrow_turn_right.png') !important;}  
+.icon-arrow-undo  { background-image: url('../images/icons/arrow_undo.png') !important;}  
+.icon-arrow-up  { background-image: url('../images/icons/arrow_up.png') !important;}  
+.icon-asterisk-orange  { background-image: url('../images/icons/asterisk_orange.png') !important;}  
+.icon-asterisk-yellow  { background-image: url('../images/icons/asterisk_yellow.png') !important;}  
+.icon-attach  { background-image: url('../images/icons/attach.png') !important;}  
+.icon-award-star-add  { background-image: url('../images/icons/award_star_add.png') !important;}  
+.icon-award-star-bronze-1  { background-image: url('../images/icons/award_star_bronze_1.png') !important;}  
+.icon-award-star-bronze-2  { background-image: url('../images/icons/award_star_bronze_2.png') !important;}  
+.icon-award-star-bronze-3  { background-image: url('../images/icons/award_star_bronze_3.png') !important;}  
+.icon-award-star-delete  { background-image: url('../images/icons/award_star_delete.png') !important;}  
+.icon-award-star-gold-1  { background-image: url('../images/icons/award_star_gold_1.png') !important;}  
+.icon-award-star-gold-2  { background-image: url('../images/icons/award_star_gold_2.png') !important;}  
+.icon-award-star-gold-3  { background-image: url('../images/icons/award_star_gold_3.png') !important;}  
+.icon-award-star-silver-1  { background-image: url('../images/icons/award_star_silver_1.png') !important;}  
+.icon-award-star-silver-2  { background-image: url('../images/icons/award_star_silver_2.png') !important;}  
+.icon-award-star-silver-3  { background-image: url('../images/icons/award_star_silver_3.png') !important;}  
+.icon-base  { background-image: url('../images/icons/base.gif ') !important;}  
+.icon-basket  { background-image: url('../images/icons/basket.png') !important;}  
+.icon-basket-add  { background-image: url('../images/icons/basket_add.png') !important;}  
+.icon-basket-delete  { background-image: url('../images/icons/basket_delete.png') !important;}  
+.icon-basket-edit  { background-image: url('../images/icons/basket_edit.png') !important;}  
+.icon-basket-error  { background-image: url('../images/icons/basket_error.png') !important;}  
+.icon-basket-go  { background-image: url('../images/icons/basket_go.png') !important;}  
+.icon-basket-put  { background-image: url('../images/icons/basket_put.png') !important;}  
+.icon-basket-remove  { background-image: url('../images/icons/basket_remove.png') !important;}  
+.icon-bell  { background-image: url('../images/icons/bell.png') !important;}  
+.icon-bell-add  { background-image: url('../images/icons/bell_add.png') !important;}  
+.icon-bell-delete  { background-image: url('../images/icons/bell_delete.png') !important;}  
+.icon-bell-error  { background-image: url('../images/icons/bell_error.png') !important;}  
+.icon-bell-go  { background-image: url('../images/icons/bell_go.png') !important;}  
+.icon-bell-link  { background-image: url('../images/icons/bell_link.png') !important;}  
+.icon-bin  { background-image: url('../images/icons/bin.png') !important;}  
+.icon-bin-closed  { background-image: url('../images/icons/bin_closed.png') !important;}  
+.icon-bin-empty  { background-image: url('../images/icons/bin_empty.png') !important;}  
+.icon-bomb  { background-image: url('../images/icons/bomb.png') !important;}  
+.icon-book  { background-image: url('../images/icons/book.png') !important;}  
+.icon-book-add  { background-image: url('../images/icons/book_add.png') !important;}  
+.icon-book-addresses  { background-image: url('../images/icons/book_addresses.png') !important;}  
+.icon-book-delete  { background-image: url('../images/icons/book_delete.png') !important;}  
+.icon-book-edit  { background-image: url('../images/icons/book_edit.png') !important;}  
+.icon-book-error  { background-image: url('../images/icons/book_error.png') !important;}  
+.icon-book-go  { background-image: url('../images/icons/book_go.png') !important;}  
+.icon-book-key  { background-image: url('../images/icons/book_key.png') !important;}  
+.icon-book-link  { background-image: url('../images/icons/book_link.png') !important;}  
+.icon-book-next  { background-image: url('../images/icons/book_next.png') !important;}  
+.icon-book-open  { background-image: url('../images/icons/book_open.png') !important;}  
+.icon-book-previous  { background-image: url('../images/icons/book_previous.png') !important;}  
+.icon-box  { background-image: url('../images/icons/box.png') !important;}  
+.icon-brick  { background-image: url('../images/icons/brick.png') !important;}  
+.icon-bricks  { background-image: url('../images/icons/bricks.png') !important;}  
+.icon-brickss  { background-image: url('../images/icons/brickss.png') !important;}  
+.icon-brick-add  { background-image: url('../images/icons/brick_add.png') !important;}  
+.icon-brick-delete  { background-image: url('../images/icons/brick_delete.png') !important;}  
+.icon-brick-edit  { background-image: url('../images/icons/brick_edit.png') !important;}  
+.icon-brick-error  { background-image: url('../images/icons/brick_error.png') !important;}  
+.icon-brick-go  { background-image: url('../images/icons/brick_go.png') !important;}  
+.icon-brick-link  { background-image: url('../images/icons/brick_link.png') !important;}  
+.icon-briefcase  { background-image: url('../images/icons/briefcase.png') !important;}  
+.icon-bug  { background-image: url('../images/icons/bug.png') !important;}  
+.icon-bug-add  { background-image: url('../images/icons/bug_add.png') !important;}  
+.icon-bug-delete  { background-image: url('../images/icons/bug_delete.png') !important;}  
+.icon-bug-edit  { background-image: url('../images/icons/bug_edit.png') !important;}  
+.icon-bug-error  { background-image: url('../images/icons/bug_error.png') !important;}  
+.icon-bug-go  { background-image: url('../images/icons/bug_go.png') !important;}  
+.icon-bug-link  { background-image: url('../images/icons/bug_link.png') !important;}  
+.icon-building  { background-image: url('../images/icons/building.png') !important;}  
+.icon-building-add  { background-image: url('../images/icons/building_add.png') !important;}  
+.icon-building-delete  { background-image: url('../images/icons/building_delete.png') !important;}  
+.icon-building-edit  { background-image: url('../images/icons/building_edit.png') !important;}  
+.icon-building-error  { background-image: url('../images/icons/building_error.png') !important;}  
+.icon-building-go  { background-image: url('../images/icons/building_go.png') !important;}  
+.icon-building-key  { background-image: url('../images/icons/building_key.png') !important;}  
+.icon-building-link  { background-image: url('../images/icons/building_link.png') !important;}  
+.icon-bullet-add  { background-image: url('../images/icons/bullet_add.png') !important;}  
+.icon-bullet-arrow-bottom  { background-image: url('../images/icons/bullet_arrow_bottom.png') !important;}  
+.icon-bullet-arrow-down  { background-image: url('../images/icons/bullet_arrow_down.png') !important;}  
+.icon-bullet-arrow-top  { background-image: url('../images/icons/bullet_arrow_top.png') !important;}  
+.icon-bullet-arrow-up  { background-image: url('../images/icons/bullet_arrow_up.png') !important;}  
+.icon-bullet-black  { background-image: url('../images/icons/bullet_black.png') !important;}  
+.icon-bullet-blue  { background-image: url('../images/icons/bullet_blue.png') !important;}  
+.icon-bullet-delete  { background-image: url('../images/icons/bullet_delete.png') !important;}  
+.icon-bullet-disk  { background-image: url('../images/icons/bullet_disk.png') !important;}  
+.icon-bullet-error  { background-image: url('../images/icons/bullet_error.png') !important;}  
+.icon-bullet-feed  { background-image: url('../images/icons/bullet_feed.png') !important;}  
+.icon-bullet-go  { background-image: url('../images/icons/bullet_go.png') !important;}  
+.icon-bullet-green  { background-image: url('../images/icons/bullet_green.png') !important;}  
+.icon-bullet-key  { background-image: url('../images/icons/bullet_key.png') !important;}  
+.icon-bullet-orange  { background-image: url('../images/icons/bullet_orange.png') !important;}  
+.icon-bullet-picture  { background-image: url('../images/icons/bullet_picture.png') !important;}  
+.icon-bullet-pink  { background-image: url('../images/icons/bullet_pink.png') !important;}  
+.icon-bullet-purple  { background-image: url('../images/icons/bullet_purple.png') !important;}  
+.icon-bullet-red  { background-image: url('../images/icons/bullet_red.png') !important;}  
+.icon-bullet-star  { background-image: url('../images/icons/bullet_star.png') !important;}  
+.icon-bullet-toggle-minus  { background-image: url('../images/icons/bullet_toggle_minus.png') !important;}  
+.icon-bullet-toggle-plus  { background-image: url('../images/icons/bullet_toggle_plus.png') !important;}  
+.icon-bullet-white  { background-image: url('../images/icons/bullet_white.png') !important;}  
+.icon-bullet-wrench  { background-image: url('../images/icons/bullet_wrench.png') !important;}  
+.icon-bullet-yellow  { background-image: url('../images/icons/bullet_yellow.png') !important;}  
+.icon-busorg-three  { background-image: url('../images/icons/busorg_three.png') !important;}  
+.icon-busorg-two  { background-image: url('../images/icons/busorg_two.png') !important;}  
+.icon-cake  { background-image: url('../images/icons/cake.png') !important;}  
+.icon-calculator-C  { background-image: url('../images/icons/calculator-C.gif ') !important;}  
+.icon-calculator  { background-image: url('../images/icons/calculator.png') !important;}  
+.icon-calculator-add  { background-image: url('../images/icons/calculator_add.png') !important;}  
+.icon-calculator-delete  { background-image: url('../images/icons/calculator_delete.png') !important;}  
+.icon-calculator-edit  { background-image: url('../images/icons/calculator_edit.png') !important;}  
+.icon-calculator-error  { background-image: url('../images/icons/calculator_error.png') !important;}  
+.icon-calculator-link  { background-image: url('../images/icons/calculator_link.png') !important;}  
+.icon-calendar  { background-image: url('../images/icons/calendar.png') !important;}  
+.icon-calendar-add  { background-image: url('../images/icons/calendar_add.png') !important;}  
+.icon-calendar-delete  { background-image: url('../images/icons/calendar_delete.png') !important;}  
+.icon-calendar-edit  { background-image: url('../images/icons/calendar_edit.png') !important;}  
+.icon-calendar-link  { background-image: url('../images/icons/calendar_link.png') !important;}  
+.icon-calendar-view-day  { background-image: url('../images/icons/calendar_view_day.png') !important;}  
+.icon-calendar-view-month  { background-image: url('../images/icons/calendar_view_month.png') !important;}  
+.icon-calendar-view-week  { background-image: url('../images/icons/calendar_view_week.png') !important;}  
+.icon-camera  { background-image: url('../images/icons/camera.png') !important;}  
+.icon-camera-add  { background-image: url('../images/icons/camera_add.png') !important;}  
+.icon-camera-delete  { background-image: url('../images/icons/camera_delete.png') !important;}  
+.icon-camera-edit  { background-image: url('../images/icons/camera_edit.png') !important;}  
+.icon-camera-error  { background-image: url('../images/icons/camera_error.png') !important;}  
+.icon-camera-go  { background-image: url('../images/icons/camera_go.png') !important;}  
+.icon-camera-link  { background-image: url('../images/icons/camera_link.png') !important;}  
+.icon-camera-small  { background-image: url('../images/icons/camera_small.png') !important;}  
+.icon-cancel  { background-image: url('../images/icons/cancel.png') !important;}  
+.icon-car  { background-image: url('../images/icons/car.png') !important;}  
+.icon-cart  { background-image: url('../images/icons/cart.png') !important;}  
+.icon-cart-add  { background-image: url('../images/icons/cart_add.png') !important;}  
+.icon-cart-delete  { background-image: url('../images/icons/cart_delete.png') !important;}  
+.icon-cart-edit  { background-image: url('../images/icons/cart_edit.png') !important;}  
+.icon-cart-error  { background-image: url('../images/icons/cart_error.png') !important;}  
+.icon-cart-full  { background-image: url('../images/icons/cart_full.png') !important;}  
+.icon-cart-go  { background-image: url('../images/icons/cart_go.png') !important;}  
+.icon-cart-put  { background-image: url('../images/icons/cart_put.png') !important;}  
+.icon-cart-remove  { background-image: url('../images/icons/cart_remove.png') !important;}  
+.icon-car-add  { background-image: url('../images/icons/car_add.png') !important;}  
+.icon-car-delete  { background-image: url('../images/icons/car_delete.png') !important;}  
+.icon-cd  { background-image: url('../images/icons/cd.png') !important;}  
+.icon-cd-add  { background-image: url('../images/icons/cd_add.png') !important;}  
+.icon-cd-burn  { background-image: url('../images/icons/cd_burn.png') !important;}  
+.icon-cd-delete  { background-image: url('../images/icons/cd_delete.png') !important;}  
+.icon-cd-edit  { background-image: url('../images/icons/cd_edit.png') !important;}  
+.icon-cd-eject  { background-image: url('../images/icons/cd_eject.png') !important;}  
+.icon-cd-go  { background-image: url('../images/icons/cd_go.png') !important;}  
+.icon-chart-bar  { background-image: url('../images/icons/chart_bar.png') !important;}  
+.icon-chart-bar-add  { background-image: url('../images/icons/chart_bar_add.png') !important;}  
+.icon-chart-bar-delete  { background-image: url('../images/icons/chart_bar_delete.png') !important;}  
+.icon-chart-bar-edit  { background-image: url('../images/icons/chart_bar_edit.png') !important;}  
+.icon-chart-bar-error  { background-image: url('../images/icons/chart_bar_error.png') !important;}  
+.icon-chart-bar-link  { background-image: url('../images/icons/chart_bar_link.png') !important;}  
+.icon-chart-curve  { background-image: url('../images/icons/chart_curve.png') !important;}  
+.icon-chart-curve-add  { background-image: url('../images/icons/chart_curve_add.png') !important;}  
+.icon-chart-curve-delete  { background-image: url('../images/icons/chart_curve_delete.png') !important;}  
+.icon-chart-curve-edit  { background-image: url('../images/icons/chart_curve_edit.png') !important;}  
+.icon-chart-curve-error  { background-image: url('../images/icons/chart_curve_error.png') !important;}  
+.icon-chart-curve-go  { background-image: url('../images/icons/chart_curve_go.png') !important;}  
+.icon-chart-curve-link  { background-image: url('../images/icons/chart_curve_link.png') !important;}  
+.icon-chart-line  { background-image: url('../images/icons/chart_line.png') !important;}  
+.icon-chart-line-add  { background-image: url('../images/icons/chart_line_add.png') !important;}  
+.icon-chart-line-delete  { background-image: url('../images/icons/chart_line_delete.png') !important;}  
+.icon-chart-line-edit  { background-image: url('../images/icons/chart_line_edit.png') !important;}  
+.icon-chart-line-error  { background-image: url('../images/icons/chart_line_error.png') !important;}  
+.icon-chart-line-link  { background-image: url('../images/icons/chart_line_link.png') !important;}  
+.icon-chart-organisation  { background-image: url('../images/icons/chart_organisation.png') !important;}  
+.icon-chart-organisation-add  { background-image: url('../images/icons/chart_organisation_add.png') !important;}  
+.icon-chart-organisation-block  { background-image: url('../images/icons/chart_organisation_block.png') !important;}  
+.icon-chart-organisation-delete  { background-image: url('../images/icons/chart_organisation_delete.png') !important;}  
+.icon-chart-organisation-edit  { background-image: url('../images/icons/chart_organisation_edit.png') !important;}  
+.icon-chart-organisation-key  { background-image: url('../images/icons/chart_organisation_key.png') !important;}  
+.icon-chart-pie  { background-image: url('../images/icons/chart_pie.png') !important;}  
+.icon-chart-pie-add  { background-image: url('../images/icons/chart_pie_add.png') !important;}  
+.icon-chart-pie-delete  { background-image: url('../images/icons/chart_pie_delete.png') !important;}  
+.icon-chart-pie-edit  { background-image: url('../images/icons/chart_pie_edit.png') !important;}  
+.icon-chart-pie-error  { background-image: url('../images/icons/chart_pie_error.png') !important;}  
+.icon-chart-pie-link  { background-image: url('../images/icons/chart_pie_link.png') !important;}  
+.icon-clock  { background-image: url('../images/icons/clock.png') !important;}  
+.icon-clock-add  { background-image: url('../images/icons/clock_add.png') !important;}  
+.icon-clock-delete  { background-image: url('../images/icons/clock_delete.png') !important;}  
+.icon-clock-edit  { background-image: url('../images/icons/clock_edit.png') !important;}  
+.icon-clock-error  { background-image: url('../images/icons/clock_error.png') !important;}  
+.icon-clock-go  { background-image: url('../images/icons/clock_go.png') !important;}  
+.icon-clock-link  { background-image: url('../images/icons/clock_link.png') !important;}  
+.icon-clock-pause  { background-image: url('../images/icons/clock_pause.png') !important;}  
+.icon-clock-play  { background-image: url('../images/icons/clock_play.png') !important;}  
+.icon-clock-red  { background-image: url('../images/icons/clock_red.png') !important;}  
+.icon-clock-stop  { background-image: url('../images/icons/clock_stop.png') !important;}  
+.icon-cog  { background-image: url('../images/icons/cog.png') !important;}  
+.icon-cog-add  { background-image: url('../images/icons/cog_add.png') !important;}  
+.icon-cog-delete  { background-image: url('../images/icons/cog_delete.png') !important;}  
+.icon-cog-edit  { background-image: url('../images/icons/cog_edit.png') !important;}  
+.icon-cog-error  { background-image: url('../images/icons/cog_error.png') !important;}  
+.icon-cog-go  { background-image: url('../images/icons/cog_go.png') !important;}  
+.icon-coins  { background-image: url('../images/icons/coins.png') !important;}  
+.icon-coins-add  { background-image: url('../images/icons/coins_add.png') !important;}  
+.icon-coins-delete  { background-image: url('../images/icons/coins_delete.png') !important;}  
+.icon-color-swatch  { background-image: url('../images/icons/color_swatch.png') !important;}  
+.icon-color-wheel  { background-image: url('../images/icons/color_wheel.png') !important;}  
+.icon-comment  { background-image: url('../images/icons/comment.png') !important;}  
+.icon-comments  { background-image: url('../images/icons/comments.png') !important;}  
+.icon-comments-add  { background-image: url('../images/icons/comments_add.png') !important;}  
+.icon-comments-delete  { background-image: url('../images/icons/comments_delete.png') !important;}  
+.icon-comment-add  { background-image: url('../images/icons/comment_add.png') !important;}  
+.icon-comment-delete  { background-image: url('../images/icons/comment_delete.png') !important;}  
+.icon-comment-edit  { background-image: url('../images/icons/comment_edit.png') !important;}  
+.icon-company  { background-image: url('../images/icons/company.png') !important;height:46px;
+	background-repeat: no-repeat;
+	background-position: 10% 0%;}  
+.icon-compress  { background-image: url('../images/icons/compress.png') !important;}  
+.icon-computer  { background-image: url('../images/icons/computer.png') !important;}  
+.icon-computer-add  { background-image: url('../images/icons/computer_add.png') !important;}  
+.icon-computer-delete  { background-image: url('../images/icons/computer_delete.png') !important;}  
+.icon-computer-edit  { background-image: url('../images/icons/computer_edit.png') !important;}  
+.icon-computer-error  { background-image: url('../images/icons/computer_error.png') !important;}  
+.icon-computer-go  { background-image: url('../images/icons/computer_go.png') !important;}  
+.icon-computer-key  { background-image: url('../images/icons/computer_key.png') !important;}  
+.icon-computer-link  { background-image: url('../images/icons/computer_link.png') !important;}  
+.icon-connect  { background-image: url('../images/icons/connect.png') !important;}  
+.icon-contrast  { background-image: url('../images/icons/contrast.png') !important;}  
+.icon-contrast-decrease  { background-image: url('../images/icons/contrast_decrease.png') !important;}  
+.icon-contrast-high  { background-image: url('../images/icons/contrast_high.png') !important;}  
+.icon-contrast-increase  { background-image: url('../images/icons/contrast_increase.png') !important;}  
+.icon-contrast-low  { background-image: url('../images/icons/contrast_low.png') !important;}  
+.icon-controller  { background-image: url('../images/icons/controller.png') !important;}  
+.icon-controller-add  { background-image: url('../images/icons/controller_add.png') !important;}  
+.icon-controller-delete  { background-image: url('../images/icons/controller_delete.png') !important;}  
+.icon-controller-error  { background-image: url('../images/icons/controller_error.png') !important;}  
+.icon-control-eject  { background-image: url('../images/icons/control_eject.png') !important;}  
+.icon-control-eject-blue  { background-image: url('../images/icons/control_eject_blue.png') !important;}  
+.icon-control-end  { background-image: url('../images/icons/control_end.png') !important;}  
+.icon-control-end-blue  { background-image: url('../images/icons/control_end_blue.png') !important;}  
+.icon-control-equalizer  { background-image: url('../images/icons/control_equalizer.png') !important;}  
+.icon-control-equalizer-blue  { background-image: url('../images/icons/control_equalizer_blue.png') !important;}  
+.icon-control-fastforward  { background-image: url('../images/icons/control_fastforward.png') !important;}  
+.icon-control-fastforward-blue  { background-image: url('../images/icons/control_fastforward_blue.png') !important;}  
+.icon-control-pause  { background-image: url('../images/icons/control_pause.png') !important;}  
+.icon-control-pause-blue  { background-image: url('../images/icons/control_pause_blue.png') !important;}  
+.icon-control-play  { background-image: url('../images/icons/control_play.png') !important;}  
+.icon-control-play-blue  { background-image: url('../images/icons/control_play_blue.png') !important;}  
+.icon-control-repeat  { background-image: url('../images/icons/control_repeat.png') !important;}  
+.icon-control-repeat-blue  { background-image: url('../images/icons/control_repeat_blue.png') !important;}  
+.icon-control-rewind  { background-image: url('../images/icons/control_rewind.png') !important;}  
+.icon-control-rewind-blue  { background-image: url('../images/icons/control_rewind_blue.png') !important;}  
+.icon-control-start  { background-image: url('../images/icons/control_start.png') !important;}  
+.icon-control-start-blue  { background-image: url('../images/icons/control_start_blue.png') !important;}  
+.icon-control-stop  { background-image: url('../images/icons/control_stop.png') !important;}  
+.icon-control-stop-blue  { background-image: url('../images/icons/control_stop_blue.png') !important;}  
+.icon-creditcards  { background-image: url('../images/icons/creditcards.png') !important;}  
+.icon-cross  { background-image: url('../images/icons/cross.png') !important;}  
+.icon-css  { background-image: url('../images/icons/css.png') !important;}  
+.icon-css-add  { background-image: url('../images/icons/css_add.png') !important;}  
+.icon-css-delete  { background-image: url('../images/icons/css_delete.png') !important;}  
+.icon-css-go  { background-image: url('../images/icons/css_go.png') !important;}  
+.icon-css-valid  { background-image: url('../images/icons/css_valid.png') !important;}  
+.icon-cup  { background-image: url('../images/icons/cup.png') !important;}  
+.icon-cup-add  { background-image: url('../images/icons/cup_add.png') !important;}  
+.icon-cup-delete  { background-image: url('../images/icons/cup_delete.png') !important;}  
+.icon-cup-edit  { background-image: url('../images/icons/cup_edit.png') !important;}  
+.icon-cup-error  { background-image: url('../images/icons/cup_error.png') !important;}  
+.icon-cup-go  { background-image: url('../images/icons/cup_go.png') !important;}  
+.icon-cup-key  { background-image: url('../images/icons/cup_key.png') !important;}  
+.icon-cup-link  { background-image: url('../images/icons/cup_link.png') !important;}  
+.icon-cursor  { background-image: url('../images/icons/cursor.png') !important;}  
+.icon-cut  { background-image: url('../images/icons/cut.png') !important;}  
+.icon-cut-red  { background-image: url('../images/icons/cut_red.png') !important;}  
+.icon-database  { background-image: url('../images/icons/database.png') !important;}  
+.icon-database-add  { background-image: url('../images/icons/database_add.png') !important;}  
+.icon-database-connect  { background-image: url('../images/icons/database_connect.png') !important;}  
+.icon-database-delete  { background-image: url('../images/icons/database_delete.png') !important;}  
+.icon-database-edit  { background-image: url('../images/icons/database_edit.png') !important;}  
+.icon-database-error  { background-image: url('../images/icons/database_error.png') !important;}  
+.icon-database-gear  { background-image: url('../images/icons/database_gear.png') !important;}  
+.icon-database-go  { background-image: url('../images/icons/database_go.png') !important;}  
+.icon-database-key  { background-image: url('../images/icons/database_key.png') !important;}  
+.icon-database-lightning  { background-image: url('../images/icons/database_lightning.png') !important;}  
+.icon-database-link  { background-image: url('../images/icons/database_link.png') !important;}  
+.icon-database-refresh  { background-image: url('../images/icons/database_refresh.png') !important;}  
+.icon-database-save  { background-image: url('../images/icons/database_save.png') !important;}  
+.icon-database-table  { background-image: url('../images/icons/database_table.png') !important;}  
+.icon-date  { background-image: url('../images/icons/date.png') !important;}  
+.icon-date-add  { background-image: url('../images/icons/date_add.png') !important;}  
+.icon-date-delete  { background-image: url('../images/icons/date_delete.png') !important;}  
+.icon-date-edit  { background-image: url('../images/icons/date_edit.png') !important;}  
+.icon-date-error  { background-image: url('../images/icons/date_error.png') !important;}  
+.icon-date-go  { background-image: url('../images/icons/date_go.png') !important;}  
+.icon-date-link  { background-image: url('../images/icons/date_link.png') !important;}  
+.icon-date-magnify  { background-image: url('../images/icons/date_magnify.png') !important;}  
+.icon-date-next  { background-image: url('../images/icons/date_next.png') !important;}  
+.icon-date-previous  { background-image: url('../images/icons/date_previous.png') !important;}  
+.icon-del  { background-image: url('../images/icons/del.png') !important;}  
+.icon-del-min  { background: url('../images/icons/del_min.png') repeat-y !important;}  
+.icon-delete-icon  { background-image: url('../images/icons/delete_icon.gif') !important;}
+.icon-dept  { background-image: url('../images/icons/company.png') !important;} 
+.icon-deselect  { background-image: url('../images/icons/deselect.gif') !important;}  
+.icon-disconnect  { background-image: url('../images/icons/disconnect.png') !important;}  
+.icon-disk  { background-image: url('../images/icons/disk.png') !important;}  
+.icon-disk-multiple  { background-image: url('../images/icons/disk_multiple.png') !important;}  
+.icon-done  { background-image: url('../images/icons/done.gif') !important;}  
+.icon-door  { background-image: url('../images/icons/door.png') !important;}  
+.icon-door-in  { background-image: url('../images/icons/door_in.png') !important;}  
+.icon-door-open  { background-image: url('../images/icons/door_open.png') !important;}  
+.icon-door-out  { background-image: url('../images/icons/door_out.png') !important;}  
+.icon-download  { background-image: url('../images/icons/download_min.png') !important;}  
+.icon-download-min  { background: url('../images/icons/download_min.png') repeat-y !important;}  
+.icon-drink  { background-image: url('../images/icons/drink.png') !important;}  
+.icon-drink-empty  { background-image: url('../images/icons/drink_empty.png') !important;}  
+.icon-drive  { background-image: url('../images/icons/drive.png') !important;}  
+.icon-drive-add  { background-image: url('../images/icons/drive_add.png') !important;}  
+.icon-drive-burn  { background-image: url('../images/icons/drive_burn.png') !important;}  
+.icon-drive-cd  { background-image: url('../images/icons/drive_cd.png') !important;}  
+.icon-drive-cd-empty  { background-image: url('../images/icons/drive_cd_empty.png') !important;}  
+.icon-drive-delete  { background-image: url('../images/icons/drive_delete.png') !important;}  
+.icon-drive-disk  { background-image: url('../images/icons/drive_disk.png') !important;}  
+.icon-drive-edit  { background-image: url('../images/icons/drive_edit.png') !important;}  
+.icon-drive-error  { background-image: url('../images/icons/drive_error.png') !important;}  
+.icon-drive-go  { background-image: url('../images/icons/drive_go.png') !important;}  
+.icon-drive-key  { background-image: url('../images/icons/drive_key.png') !important;}  
+.icon-drive-link  { background-image: url('../images/icons/drive_link.png') !important;}  
+.icon-drive-magnify  { background-image: url('../images/icons/drive_magnify.png') !important;}  
+.icon-drive-network  { background-image: url('../images/icons/drive_network.png') !important;}  
+.icon-drive-rename  { background-image: url('../images/icons/drive_rename.png') !important;}  
+.icon-drive-user  { background-image: url('../images/icons/drive_user.png') !important;}  
+.icon-drive-web  { background-image: url('../images/icons/drive_web.png') !important;}  
+.icon-duty  { background-image: url('../images/icons/duty.png') !important;}  
+.icon-duty-group  { background-image: url('../images/icons/duty_group.png') !important;}  
+.icon-duty-manager  { background-image: url('../images/icons/duty_manager.png') !important;}  
+.icon-dvd  { background-image: url('../images/icons/dvd.png') !important;}  
+.icon-dvd-add  { background-image: url('../images/icons/dvd_add.png') !important;}  
+.icon-dvd-delete  { background-image: url('../images/icons/dvd_delete.png') !important;}  
+.icon-dvd-edit  { background-image: url('../images/icons/dvd_edit.png') !important;}  
+.icon-dvd-error  { background-image: url('../images/icons/dvd_error.png') !important;}  
+.icon-dvd-go  { background-image: url('../images/icons/dvd_go.png') !important;}  
+.icon-dvd-key  { background-image: url('../images/icons/dvd_key.png') !important;}  
+.icon-dvd-link  { background-image: url('../images/icons/dvd_link.png') !important;}  
+.icon-edit  { background-image: url('../images/icons/edit.gif ') !important;}  
+.icon-email  { background-image: url('../images/icons/email.png') !important;}  
+.icon-email-add  { background-image: url('../images/icons/email_add.png') !important;}  
+.icon-email-attach  { background-image: url('../images/icons/email_attach.png') !important;}  
+.icon-email-delete  { background-image: url('../images/icons/email_delete.png') !important;}  
+.icon-email-edit  { background-image: url('../images/icons/email_edit.png') !important;}  
+.icon-email-error  { background-image: url('../images/icons/email_error.png') !important;}  
+.icon-email-go  { background-image: url('../images/icons/email_go.png') !important;}  
+.icon-email-link  { background-image: url('../images/icons/email_link.png') !important;}  
+.icon-email-open  { background-image: url('../images/icons/email_open.png') !important;}  
+.icon-email-open-image  { background-image: url('../images/icons/email_open_image.png') !important;}  
+.icon-emoticon-evilgrin  { background-image: url('../images/icons/emoticon_evilgrin.png') !important;}  
+.icon-emoticon-grin  { background-image: url('../images/icons/emoticon_grin.png') !important;}  
+.icon-emoticon-happy  { background-image: url('../images/icons/emoticon_happy.png') !important;}  
+.icon-emoticon-smile  { background-image: url('../images/icons/emoticon_smile.png') !important;}  
+.icon-emoticon-surprised  { background-image: url('../images/icons/emoticon_surprised.png') !important;}  
+.icon-emoticon-tongue  { background-image: url('../images/icons/emoticon_tongue.png') !important;}  
+.icon-emoticon-unhappy  { background-image: url('../images/icons/emoticon_unhappy.png') !important;}  
+.icon-emoticon-waii  { background-image: url('../images/icons/emoticon_waii.png') !important;}  
+.icon-emoticon-wink  { background-image: url('../images/icons/emoticon_wink.png') !important;}  
+.icon-emp  { background-image: url('../images/icons/emp.png') !important;}  
+.icon-empty  { background-image: url('../images/icons/empty.gif ') !important;}  
+.icon-error  { background-image: url('../images/icons/error.png') !important;}  
+.icon-error-min  { background: url('../images/icons/error_min.png') !important;}  
+.icon-error-add  { background-image: url('../images/icons/error_add.png') !important;}  
+.icon-error-delete  { background-image: url('../images/icons/error_delete.png') !important;}  
+.icon-error-go  { background-image: url('../images/icons/error_go.png') !important;}  
+.icon-event  { background-image: url('../images/icons/event.png') !important;}  
+.icon-exclamation  { background-image: url('../images/icons/exclamation.png') !important;}  
+.icon-exclamation-min  { background: url('../images/icons/exclamation_min.png') repeat-y !important;}  
+.icon-expand  { background-image: url('../images/icons/expand.png') !important;}  
+.icon-export  { background-image: url('../images/icons/export.png') !important;}  
+.icon-eye  { background-image: url('../images/icons/eye.png') !important;}  
+.icon-feed  { background-image: url('../images/icons/feed.png') !important;}  
+.icon-feed-add  { background-image: url('../images/icons/feed_add.png') !important;}  
+.icon-feed-delete  { background-image: url('../images/icons/feed_delete.png') !important;}  
+.icon-feed-disk  { background-image: url('../images/icons/feed_disk.png') !important;}  
+.icon-feed-edit  { background-image: url('../images/icons/feed_edit.png') !important;}  
+.icon-feed-error  { background-image: url('../images/icons/feed_error.png') !important;}  
+.icon-feed-go  { background-image: url('../images/icons/feed_go.png') !important;}  
+.icon-feed-key  { background-image: url('../images/icons/feed_key.png') !important;}  
+.icon-feed-link  { background-image: url('../images/icons/feed_link.png') !important;}  
+.icon-feed-magnify  { background-image: url('../images/icons/feed_magnify.png') !important;}  
+.icon-female  { background-image: url('../images/icons/female.png') !important;}
+.icon-female  { background-image: url('../images/icons/female.png') !important;}
+.icon-file-uploading  { background-image: url('../images/icons/file_uploading.gif') !important;}  
+.icon-film-add  { background-image: url('../images/icons/film_add.png') !important;}  
+.icon-film-delete  { background-image: url('../images/icons/film_delete.png') !important;}  
+.icon-film-edit  { background-image: url('../images/icons/film_edit.png') !important;}  
+.icon-film-error  { background-image: url('../images/icons/film_error.png') !important;}  
+.icon-film-go  { background-image: url('../images/icons/film_go.png') !important;}  
+.icon-film-key  { background-image: url('../images/icons/film_key.png') !important;}  
+.icon-film-link  { background-image: url('../images/icons/film_link.png') !important;}  
+.icon-film-save  { background-image: url('../images/icons/film_save.png') !important;}  
+.icon-find  { background-image: url('../images/icons/find.png') !important;}  
+.icon-flag-blue  { background-image: url('../images/icons/flag_blue.png') !important;}  
+.icon-flag-green  { background-image: url('../images/icons/flag_green.png') !important;}  
+.icon-flag-orange  { background-image: url('../images/icons/flag_orange.png') !important;}  
+.icon-flag-pink  { background-image: url('../images/icons/flag_pink.png') !important;}  
+.icon-flag-purple  { background-image: url('../images/icons/flag_purple.png') !important;}  
+.icon-flag-red  { background-image: url('../images/icons/flag_red.png') !important;}  
+.icon-flag-yellow  { background-image: url('../images/icons/flag_yellow.png') !important;}  
+.icon-folder  { background-image: url('../images/icons/folder.gif ') !important;}  
+.icon-folder  { background-image: url('../images/icons/folder.png') !important;}  
+.icon-folderopen  { background-image: url('../images/icons/folderopen.gif ') !important;}  
+.icon-folder-add  { background-image: url('../images/icons/folder_add.png') !important;}  
+.icon-folder-bell  { background-image: url('../images/icons/folder_bell.png') !important;}  
+.icon-folder-brick  { background-image: url('../images/icons/folder_brick.png') !important;}  
+.icon-folder-bug  { background-image: url('../images/icons/folder_bug.png') !important;}  
+.icon-folder-camera  { background-image: url('../images/icons/folder_camera.png') !important;}  
+.icon-folder-database  { background-image: url('../images/icons/folder_database.png') !important;}  
+.icon-folder-delete  { background-image: url('../images/icons/folder_delete.png') !important;}  
+.icon-folder-edit  { background-image: url('../images/icons/folder_edit.png') !important;}  
+.icon-folder-error  { background-image: url('../images/icons/folder_error.png') !important;}  
+.icon-folder-explore  { background-image: url('../images/icons/folder_explore.png') !important;}  
+.icon-folder-feed  { background-image: url('../images/icons/folder_feed.png') !important;}  
+.icon-folder-find  { background-image: url('../images/icons/folder_find.png') !important;}  
+.icon-folder-go  { background-image: url('../images/icons/folder_go.png') !important;}  
+.icon-folder-heart  { background-image: url('../images/icons/folder_heart.png') !important;}  
+.icon-folder-image  { background-image: url('../images/icons/folder_image.png') !important;}  
+.icon-folder-key  { background-image: url('../images/icons/folder_key.png') !important;}  
+.icon-folder-lightbulb  { background-image: url('../images/icons/folder_lightbulb.png') !important;}  
+.icon-folder-link  { background-image: url('../images/icons/folder_link.png') !important;}  
+.icon-folder-magnify  { background-image: url('../images/icons/folder_magnify.png') !important;}  
+.icon-folder-page  { background-image: url('../images/icons/folder_page.png') !important;}  
+.icon-folder-page-white  { background-image: url('../images/icons/folder_page_white.png') !important;}  
+.icon-folder-palette  { background-image: url('../images/icons/folder_palette.png') !important;}  
+.icon-folder-picture  { background-image: url('../images/icons/folder_picture.png') !important;}  
+.icon-folder-star  { background-image: url('../images/icons/folder_star.png') !important;}  
+.icon-folder-table  { background-image: url('../images/icons/folder_table.png') !important;}  
+.icon-folder-upload  { background-image: url('../images/icons/folder_upload.gif ') !important;}  
+.icon-folder-user  { background-image: url('../images/icons/folder_user.png') !important;}  
+.icon-folder-wrench  { background-image: url('../images/icons/folder_wrench.png') !important;}  
+.icon-font  { background-image: url('../images/icons/font.png') !important;}  
+.icon-font-add  { background-image: url('../images/icons/font_add.png') !important;}  
+.icon-font-delete  { background-image: url('../images/icons/font_delete.png') !important;}  
+.icon-font-go  { background-image: url('../images/icons/font_go.png') !important;}  
+.icon-function  { background-image: url('../images/icons/function.png') !important;}  
+.icon-function-group-close  { background-image: url('../images/icons/function_group_close.png') !important;}  
+.icon-function-group-open  { background-image: url('../images/icons/function_group_open.png') !important;}  
+.icon-gatherwarning  { background-image: url('../images/icons/gatherwarning.gif ') !important;}  
+.icon-grid-tool-first  { background-image: url('../images/icons/grid_tool_first.gif ') !important;}  
+.icon-grid-tool-last  { background-image: url('../images/icons/grid_tool_last.gif ') !important;}  
+.icon-grid-tool-next  { background-image: url('../images/icons/grid_tool_next.gif ') !important;}  
+.icon-grid-tool-prev  { background-image: url('../images/icons/grid_tool_prev.gif ') !important;}  
+.icon-group  { background-image: url('../images/icons/group.png') !important;}  
+.icon-group-add  { background-image: url('../images/icons/group_add.png') !important;}  
+.icon-group-delete  { background-image: url('../images/icons/group_delete.png') !important;}  
+.icon-group-edit  { background-image: url('../images/icons/group_edit.png') !important;}  
+.icon-group-error  { background-image: url('../images/icons/group_error.png') !important;}  
+.icon-group-gear  { background-image: url('../images/icons/group_gear.png') !important;}  
+.icon-group-go  { background-image: url('../images/icons/group_go.png') !important;}  
+.icon-group-key  { background-image: url('../images/icons/group_key.png') !important;}  
+.icon-group-link  { background-image: url('../images/icons/group_link.png') !important;}  
+.icon-heart  { background-image: url('../images/icons/heart.png') !important;}  
+.icon-heart-add  { background-image: url('../images/icons/heart_add.png') !important;}  
+.icon-heart-delete  { background-image: url('../images/icons/heart_delete.png') !important;}  
+.icon-help  { background-image: url('../images/icons/help.png') !important;}  
+.icon-histogram  { background-image: url('../images/icons/histogram.png') !important;}  
+.icon-hourglass  { background-image: url('../images/icons/hourglass.png') !important;}  
+.icon-hourglass-add  { background-image: url('../images/icons/hourglass_add.png') !important;}  
+.icon-hourglass-delete  { background-image: url('../images/icons/hourglass_delete.png') !important;}  
+.icon-hourglass-go  { background-image: url('../images/icons/hourglass_go.png') !important;}  
+.icon-hourglass-link  { background-image: url('../images/icons/hourglass_link.png') !important;}  
+.icon-house  { background-image: url('../images/icons/house.png') !important;}  
+.icon-house-go  { background-image: url('../images/icons/house_go.png') !important;}  
+.icon-house-link  { background-image: url('../images/icons/house_link.png') !important;}  
+.icon-html  { background-image: url('../images/icons/html.png') !important;}  
+.icon-html-add  { background-image: url('../images/icons/html_add.png') !important;}  
+.icon-html-delete  { background-image: url('../images/icons/html_delete.png') !important;}  
+.icon-html-go  { background-image: url('../images/icons/html_go.png') !important;}  
+.icon-html-valid  { background-image: url('../images/icons/html_valid.png') !important;}  
+.icon-image  { background-image: url('../images/icons/image.png') !important;}  
+.icon-images  { background-image: url('../images/icons/images.png') !important;}  
+.icon-image-add  { background-image: url('../images/icons/image_add.png') !important;}  
+.icon-image-delete  { background-image: url('../images/icons/image_delete.png') !important;}  
+.icon-image-edit  { background-image: url('../images/icons/image_edit.png') !important;}  
+.icon-image-link  { background-image: url('../images/icons/image_link.png') !important;}  
+.icon-information  { background-image: url('../images/icons/information.png') !important;}  
+.icon-ipod  { background-image: url('../images/icons/ipod.png') !important;}  
+.icon-ipod-cast  { background-image: url('../images/icons/ipod_cast.png') !important;}  
+.icon-ipod-cast-add  { background-image: url('../images/icons/ipod_cast_add.png') !important;}  
+.icon-ipod-cast-delete  { background-image: url('../images/icons/ipod_cast_delete.png') !important;}  
+.icon-ipod-sound  { background-image: url('../images/icons/ipod_sound.png') !important;}  
+.icon-join  { background-image: url('../images/icons/join.gif ') !important;}  
+.icon-joinbottom  { background-image: url('../images/icons/joinbottom.gif ') !important;}  
+.icon-joystick  { background-image: url('../images/icons/joystick.png') !important;}  
+.icon-joystick-add  { background-image: url('../images/icons/joystick_add.png') !important;}  
+.icon-joystick-delete  { background-image: url('../images/icons/joystick_delete.png') !important;}  
+.icon-joystick-error  { background-image: url('../images/icons/joystick_error.png') !important;}  
+.icon-key  { background-image: url('../images/icons/key.png') !important;}  
+.icon-keyboard  { background-image: url('../images/icons/keyboard.png') !important;}  
+.icon-keyboard-add  { background-image: url('../images/icons/keyboard_add.png') !important;}  
+.icon-keyboard-delete  { background-image: url('../images/icons/keyboard_delete.png') !important;}  
+.icon-keyboard-magnify  { background-image: url('../images/icons/keyboard_magnify.png') !important;}  
+.icon-key-add  { background-image: url('../images/icons/key_add.png') !important;}  
+.icon-key-delete  { background-image: url('../images/icons/key_delete.png') !important;}  
+.icon-key-go  { background-image: url('../images/icons/key_go.png') !important;}  
+.icon-layers  { background-image: url('../images/icons/layers.png') !important;}  
+.icon-layout  { background-image: url('../images/icons/layout.png') !important;}  
+.icon-layout-add  { background-image: url('../images/icons/layout_add.png') !important;}  
+.icon-layout-content  { background-image: url('../images/icons/layout_content.png') !important;}  
+.icon-layout-delete  { background-image: url('../images/icons/layout_delete.png') !important;}  
+.icon-layout-edit  { background-image: url('../images/icons/layout_edit.png') !important;}  
+.icon-layout-error  { background-image: url('../images/icons/layout_error.png') !important;}  
+.icon-layout-header  { background-image: url('../images/icons/layout_header.png') !important;}  
+.icon-layout-link  { background-image: url('../images/icons/layout_link.png') !important;}  
+.icon-layout-sidebar  { background-image: url('../images/icons/layout_sidebar.png') !important;}  
+.icon-lightbulb  { background-image: url('../images/icons/lightbulb.png') !important;}  
+.icon-lightbulb-add  { background-image: url('../images/icons/lightbulb_add.png') !important;}  
+.icon-lightbulb-delete  { background-image: url('../images/icons/lightbulb_delete.png') !important;}  
+.icon-lightbulb-off  { background-image: url('../images/icons/lightbulb_off.png') !important;}  
+.icon-lightning  { background-image: url('../images/icons/lightning.png') !important;}  
+.icon-lightning-add  { background-image: url('../images/icons/lightning_add.png') !important;}  
+.icon-lightning-delete  { background-image: url('../images/icons/lightning_delete.png') !important;}  
+.icon-lightning-go  { background-image: url('../images/icons/lightning_go.png') !important;}  
+.icon-line  { background-image: url('../images/icons/line.gif ') !important;}  
+.icon-linechart  { background-image: url('../images/icons/linechart.png') !important;}  
+.icon-link  { background-image: url('../images/icons/link.png') !important;}  
+.icon-link-add  { background-image: url('../images/icons/link_add.png') !important;}  
+.icon-link-break  { background-image: url('../images/icons/link_break.png') !important;}  
+.icon-link-delete  { background-image: url('../images/icons/link_delete.png') !important;}  
+.icon-link-edit  { background-image: url('../images/icons/link_edit.png') !important;}  
+.icon-link-error  { background-image: url('../images/icons/link_error.png') !important;}  
+.icon-link-go  { background-image: url('../images/icons/link_go.png') !important;}  
+.icon-loading  { background-image: url('../images/icons/loading.gif') !important;}  
+.icon-lock  { background-image: url('../images/icons/lock.png') !important;}  
+.icon-lock-add  { background-image: url('../images/icons/lock_add.png') !important;}  
+.icon-lock-break  { background-image: url('../images/icons/lock_break.png') !important;}  
+.icon-lock-delete  { background-image: url('../images/icons/lock_delete.png') !important;}  
+.icon-lock-edit  { background-image: url('../images/icons/lock_edit.png') !important;}  
+.icon-lock-go  { background-image: url('../images/icons/lock_go.png') !important;}  
+.icon-lock-open  { background-image: url('../images/icons/lock_open.png') !important;}  
+.icon-lorry  { background-image: url('../images/icons/lorry.png') !important;}  
+.icon-lorry-add  { background-image: url('../images/icons/lorry_add.png') !important;}  
+.icon-lorry-delete  { background-image: url('../images/icons/lorry_delete.png') !important;}  
+.icon-lorry-error  { background-image: url('../images/icons/lorry_error.png') !important;}  
+.icon-lorry-flatbed  { background-image: url('../images/icons/lorry_flatbed.png') !important;}  
+.icon-lorry-go  { background-image: url('../images/icons/lorry_go.png') !important;}  
+.icon-lorry-link  { background-image: url('../images/icons/lorry_link.png') !important;}  
+.icon-lstep  { background-image: url('../images/icons/lstep.gif ') !important;}  
+.icon-lstep-button  { background-image: url('../images/icons/lstep_button.gif ') !important;}  
+.icon-magifier-zoom-out  { background-image: url('../images/icons/magifier_zoom_out.png') !important;}  
+.icon-magnifier  { background-image: url('../images/icons/magnifier.png') !important;}  
+.icon-magnifier-zoom-in  { background-image: url('../images/icons/magnifier_zoom_in.png') !important;}  
+.icon-male  { background-image: url('../images/icons/male.png') !important;}  
+.icon-map  { background-image: url('../images/icons/map.png') !important;}  
+.icon-map-add  { background-image: url('../images/icons/map_add.png') !important;}  
+.icon-map-delete  { background-image: url('../images/icons/map_delete.png') !important;}  
+.icon-map-edit  { background-image: url('../images/icons/map_edit.png') !important;}  
+.icon-map-go  { background-image: url('../images/icons/map_go.png') !important;}  
+.icon-map-magnify  { background-image: url('../images/icons/map_magnify.png') !important;}  
+.icon-medal-bronze-1  { background-image: url('../images/icons/medal_bronze_1.png') !important;}  
+.icon-medal-bronze-2  { background-image: url('../images/icons/medal_bronze_2.png') !important;}  
+.icon-medal-bronze-3  { background-image: url('../images/icons/medal_bronze_3.png') !important;}  
+.icon-medal-bronze-add  { background-image: url('../images/icons/medal_bronze_add.png') !important;}  
+.icon-medal-bronze-delete  { background-image: url('../images/icons/medal_bronze_delete.png') !important;}  
+.icon-medal-gold-1  { background-image: url('../images/icons/medal_gold_1.png') !important;}  
+.icon-medal-gold-2  { background-image: url('../images/icons/medal_gold_2.png') !important;}  
+.icon-medal-gold-3  { background-image: url('../images/icons/medal_gold_3.png') !important;}  
+.icon-medal-gold-add  { background-image: url('../images/icons/medal_gold_add.png') !important;}  
+.icon-medal-gold-delete  { background-image: url('../images/icons/medal_gold_delete.png') !important;}  
+.icon-medal-silver-1  { background-image: url('../images/icons/medal_silver_1.png') !important;}  
+.icon-medal-silver-2  { background-image: url('../images/icons/medal_silver_2.png') !important;}  
+.icon-medal-silver-3  { background-image: url('../images/icons/medal_silver_3.png') !important;}  
+.icon-medal-silver-add  { background-image: url('../images/icons/medal_silver_add.png') !important;}  
+.icon-medal-silver-delete  { background-image: url('../images/icons/medal_silver_delete.png') !important;}  
+.icon-menu  { background-image: url('../images/icons/menu.png') !important;}  
+.icon-minus  { background-image: url('../images/icons/minus.gif ') !important;}  
+.icon-minusbottom  { background-image: url('../images/icons/minusbottom.gif ') !important;}  
+.icon-money  { background-image: url('../images/icons/money.png') !important;}  
+.icon-money-add  { background-image: url('../images/icons/money_add.png') !important;}  
+.icon-money-delete  { background-image: url('../images/icons/money_delete.png') !important;}  
+.icon-money-dollar  { background-image: url('../images/icons/money_dollar.png') !important;}  
+.icon-money-euro  { background-image: url('../images/icons/money_euro.png') !important;}  
+.icon-money-pound  { background-image: url('../images/icons/money_pound.png') !important;}  
+.icon-money-yen  { background-image: url('../images/icons/money_yen.png') !important;}  
+.icon-monitor  { background-image: url('../images/icons/monitor.png') !important;}  
+.icon-monitor-add  { background-image: url('../images/icons/monitor_add.png') !important;}  
+.icon-monitor-delete  { background-image: url('../images/icons/monitor_delete.png') !important;}  
+.icon-monitor-edit  { background-image: url('../images/icons/monitor_edit.png') !important;}  
+.icon-monitor-error  { background-image: url('../images/icons/monitor_error.png') !important;}  
+.icon-monitor-go  { background-image: url('../images/icons/monitor_go.png') !important;}  
+.icon-monitor-lightning  { background-image: url('../images/icons/monitor_lightning.png') !important;}  
+.icon-monitor-link  { background-image: url('../images/icons/monitor_link.png') !important;}  
+.icon-mouse  { background-image: url('../images/icons/mouse.png') !important;}  
+.icon-mouse-add  { background-image: url('../images/icons/mouse_add.png') !important;}  
+.icon-mouse-delete  { background-image: url('../images/icons/mouse_delete.png') !important;}  
+.icon-mouse-error  { background-image: url('../images/icons/mouse_error.png') !important;}  
+.icon-music  { background-image: url('../images/icons/music.png') !important;}  
+.icon-navigation  { background-image: url('../images/icons/navigation.png') !important;}  
+.icon-newspaper  { background-image: url('../images/icons/newspaper.png') !important;}  
+.icon-newspaper-add  { background-image: url('../images/icons/newspaper_add.png') !important;}  
+.icon-newspaper-delete  { background-image: url('../images/icons/newspaper_delete.png') !important;}  
+.icon-newspaper-go  { background-image: url('../images/icons/newspaper_go.png') !important;}  
+.icon-newspaper-link  { background-image: url('../images/icons/newspaper_link.png') !important;}  
+.icon-new-icon  { background-image: url('../images/icons/new_icon.png') !important;}  
+.icon-note  { background-image: url('../images/icons/note.png') !important;}  
+.icon-note-add  { background-image: url('../images/icons/note_add.png') !important;}  
+.icon-note-delete  { background-image: url('../images/icons/note_delete.png') !important;}  
+.icon-note-edit  { background-image: url('../images/icons/note_edit.png') !important;}  
+.icon-note-error  { background-image: url('../images/icons/note_error.png') !important;}  
+.icon-note-go  { background-image: url('../images/icons/note_go.png') !important;}  
+.icon-nstep  { background-image: url('../images/icons/nstep.gif ') !important;}  
+.icon-org  { background-image: url('../images/icons/org.gif ') !important;}  
+.icon-orgsub  { background-image: url('../images/icons/orgsub.gif ') !important;}  
+.icon-other-copy  { background-image: url('../images/icons/other_copy.gif ') !important;}  
+.icon-overlays  { background-image: url('../images/icons/overlays.png') !important;}  
+.icon-package-add  { background-image: url('../images/icons/package_add.png') !important;}  
+.icon-package-delete  { background-image: url('../images/icons/package_delete.png') !important;}  
+.icon-package-go  { background-image: url('../images/icons/package_go.png') !important;}  
+.icon-package-green  { background-image: url('../images/icons/package_green.png') !important;}  
+.icon-package-icon  { background-image: url('../images/icons/package_icon.png') !important;}  
+.icon-package-link  { background-image: url('../images/icons/package_link.png') !important;}  
+.icon-page  { background-image: url('../images/icons/page.png') !important;}  
+.icon-page-add  { background-image: url('../images/icons/page_add.png') !important;}  
+.icon-page-attach  { background-image: url('../images/icons/page_attach.png') !important;}  
+.icon-page-code  { background-image: url('../images/icons/page_code.png') !important;}  
+.icon-page-copy  { background-image: url('../images/icons/page_copy.png') !important;}  
+.icon-page-delete  { background-image: url('../images/icons/page_delete.png') !important;}  
+.icon-page-edit  { background-image: url('../images/icons/page_edit.png') !important;}  
+.icon-page-error  { background-image: url('../images/icons/page_error.png') !important;}  
+.icon-page-excel  { background-image: url('../images/icons/page_excel.png') !important;}  
+.icon-page-find  { background-image: url('../images/icons/page_find.png') !important;}  
+.icon-page-gear  { background-image: url('../images/icons/page_gear.png') !important;}  
+.icon-page-go  { background-image: url('../images/icons/page_go.png') !important;}  
+.icon-page-green  { background-image: url('../images/icons/page_green.png') !important;}  
+.icon-page-key  { background-image: url('../images/icons/page_key.png') !important;}  
+.icon-page-lightning  { background-image: url('../images/icons/page_lightning.png') !important;}  
+.icon-page-link  { background-image: url('../images/icons/page_link.png') !important;}  
+.icon-page-paintbrush  { background-image: url('../images/icons/page_paintbrush.png') !important;}  
+.icon-page-paste  { background-image: url('../images/icons/page_paste.png') !important;}  
+.icon-page-red  { background-image: url('../images/icons/page_red.png') !important;}  
+.icon-page-refresh  { background-image: url('../images/icons/page_refresh.png') !important;}  
+.icon-page-save  { background-image: url('../images/icons/page_save.png') !important;}  
+.icon-page-white  { background-image: url('../images/icons/page_white.png') !important;}  
+.icon-page-white-acrobat  { background-image: url('../images/icons/page_white_acrobat.png') !important;}  
+.icon-page-white-actionscript  { background-image: url('../images/icons/page_white_actionscript.png') !important;}  
+.icon-page-white-add  { background-image: url('../images/icons/page_white_add.png') !important;}  
+.icon-page-white-c  { background-image: url('../images/icons/page_white_c.png') !important;}  
+.icon-page-white-camera  { background-image: url('../images/icons/page_white_camera.png') !important;}  
+.icon-page-white-cd  { background-image: url('../images/icons/page_white_cd.png') !important;}  
+.icon-page-white-code  { background-image: url('../images/icons/page_white_code.png') !important;}  
+.icon-page-white-code-red  { background-image: url('../images/icons/page_white_code_red.png') !important;}  
+.icon-page-white-coldfusion  { background-image: url('../images/icons/page_white_coldfusion.png') !important;}  
+.icon-page-white-compressed  { background-image: url('../images/icons/page_white_compressed.png') !important;}  
+.icon-page-white-copy  { background-image: url('../images/icons/page_white_copy.png') !important;}  
+.icon-page-white-cplusplus  { background-image: url('../images/icons/page_white_cplusplus.png') !important;}  
+.icon-page-white-csharp  { background-image: url('../images/icons/page_white_csharp.png') !important;}  
+.icon-page-white-cup  { background-image: url('../images/icons/page_white_cup.png') !important;}  
+.icon-page-white-database  { background-image: url('../images/icons/page_white_database.png') !important;}  
+.icon-page-white-delete  { background-image: url('../images/icons/page_white_delete.png') !important;}  
+.icon-page-white-dvd  { background-image: url('../images/icons/page_white_dvd.png') !important;}  
+.icon-page-white-edit  { background-image: url('../images/icons/page_white_edit.png') !important;}  
+.icon-page-white-error  { background-image: url('../images/icons/page_white_error.png') !important;}  
+.icon-page-white-excel  { background-image: url('../images/icons/page_white_excel.png') !important;}  
+.icon-page-white-find  { background-image: url('../images/icons/page_white_find.png') !important;}  
+.icon-page-white-flash  { background-image: url('../images/icons/page_white_flash.png') !important;}  
+.icon-page-white-freehand  { background-image: url('../images/icons/page_white_freehand.png') !important;}  
+.icon-page-white-gear  { background-image: url('../images/icons/page_white_gear.png') !important;}  
+.icon-page-white-get  { background-image: url('../images/icons/page_white_get.png') !important;}  
+.icon-page-white-go  { background-image: url('../images/icons/page_white_go.png') !important;}  
+.icon-page-white-h  { background-image: url('../images/icons/page_white_h.png') !important;}  
+.icon-page-white-horizontal  { background-image: url('../images/icons/page_white_horizontal.png') !important;}  
+.icon-page-white-key  { background-image: url('../images/icons/page_white_key.png') !important;}  
+.icon-page-white-lightning  { background-image: url('../images/icons/page_white_lightning.png') !important;}  
+.icon-page-white-link  { background-image: url('../images/icons/page_white_link.png') !important;}  
+.icon-page-white-magnify  { background-image: url('../images/icons/page_white_magnify.png') !important;}  
+.icon-page-white-medal  { background-image: url('../images/icons/page_white_medal.png') !important;}  
+.icon-page-white-office  { background-image: url('../images/icons/page_white_office.png') !important;}  
+.icon-page-white-paint  { background-image: url('../images/icons/page_white_paint.png') !important;}  
+.icon-page-white-paintbrush  { background-image: url('../images/icons/page_white_paintbrush.png') !important;}  
+.icon-page-white-paste  { background-image: url('../images/icons/page_white_paste.png') !important;}  
+.icon-page-white-php  { background-image: url('../images/icons/page_white_php.png') !important;}  
+.icon-page-white-picture  { background-image: url('../images/icons/page_white_picture.png') !important;}  
+.icon-page-white-powerpoint  { background-image: url('../images/icons/page_white_powerpoint.png') !important;}  
+.icon-page-white-put  { background-image: url('../images/icons/page_white_put.png') !important;}  
+.icon-page-white-ruby  { background-image: url('../images/icons/page_white_ruby.png') !important;}  
+.icon-page-white-stack  { background-image: url('../images/icons/page_white_stack.png') !important;}  
+.icon-page-white-star  { background-image: url('../images/icons/page_white_star.png') !important;}  
+.icon-page-white-swoosh  { background-image: url('../images/icons/page_white_swoosh.png') !important;}  
+.icon-page-white-text  { background-image: url('../images/icons/page_white_text.png') !important;}  
+.icon-page-white-text-width  { background-image: url('../images/icons/page_white_text_width.png') !important;}  
+.icon-page-white-tux  { background-image: url('../images/icons/page_white_tux.png') !important;}  
+.icon-page-white-vector  { background-image: url('../images/icons/page_white_vector.png') !important;}  
+.icon-page-white-visualstudio  { background-image: url('../images/icons/page_white_visualstudio.png') !important;}  
+.icon-page-white-width  { background-image: url('../images/icons/page_white_width.png') !important;}  
+.icon-page-white-word  { background-image: url('../images/icons/page_white_word.png') !important;}  
+.icon-page-white-world  { background-image: url('../images/icons/page_white_world.png') !important;}  
+.icon-page-white-wrench  { background-image: url('../images/icons/page_white_wrench.png') !important;}  
+.icon-page-white-zip  { background-image: url('../images/icons/page_white_zip.png') !important;}  
+.icon-page-word  { background-image: url('../images/icons/page_word.png') !important;}  
+.icon-page-world  { background-image: url('../images/icons/page_world.png') !important;}  
+.icon-paintbrush  { background-image: url('../images/icons/paintbrush.png') !important;}  
+.icon-paintcan  { background-image: url('../images/icons/paintcan.png') !important;}  
+.icon-palette  { background-image: url('../images/icons/palette.png') !important;}  
+.icon-paste-plain  { background-image: url('../images/icons/paste_plain.png') !important;}  
+.icon-paste-word  { background-image: url('../images/icons/paste_word.png') !important;}  
+.icon-pencil  { background-image: url('../images/icons/pencil.png') !important;}  
+.icon-pencil-add  { background-image: url('../images/icons/pencil_add.png') !important;}  
+.icon-pencil-delete  { background-image: url('../images/icons/pencil_delete.png') !important;}  
+.icon-pencil-go  { background-image: url('../images/icons/pencil_go.png') !important;}  
+.icon-phone  { background-image: url('../images/icons/phone.png') !important;}  
+.icon-phone-add  { background-image: url('../images/icons/phone_add.png') !important;}  
+.icon-phone-delete  { background-image: url('../images/icons/phone_delete.png') !important;}  
+.icon-phone-sound  { background-image: url('../images/icons/phone_sound.png') !important;}  
+.icon-photo  { background-image: url('../images/icons/photo.png') !important;}  
+.icon-photos  { background-image: url('../images/icons/photos.png') !important;}  
+.icon-photo-add  { background-image: url('../images/icons/photo_add.png') !important;}  
+.icon-photo-delete  { background-image: url('../images/icons/photo_delete.png') !important;}  
+.icon-photo-link  { background-image: url('../images/icons/photo_link.png') !important;}  
+.icon-picture  { background-image: url('../images/icons/picture.png') !important;}  
+.icon-pictures  { background-image: url('../images/icons/pictures.png') !important;}  
+.icon-picture-add  { background-image: url('../images/icons/picture_add.png') !important;}  
+.icon-picture-delete  { background-image: url('../images/icons/picture_delete.png') !important;}  
+.icon-picture-edit  { background-image: url('../images/icons/picture_edit.png') !important;}  
+.icon-picture-empty  { background-image: url('../images/icons/picture_empty.png') !important;}  
+.icon-picture-error  { background-image: url('../images/icons/picture_error.png') !important;}  
+.icon-picture-go  { background-image: url('../images/icons/picture_go.png') !important;}  
+.icon-picture-key  { background-image: url('../images/icons/picture_key.png') !important;}  
+.icon-picture-link  { background-image: url('../images/icons/picture_link.png') !important;}  
+.icon-picture-save  { background-image: url('../images/icons/picture_save.png') !important;}  
+.icon-pie chart  { background-image: url('../images/icons/pie chart.png') !important;}  
+.icon-pilcrow  { background-image: url('../images/icons/pilcrow.png') !important;}  
+.icon-pill  { background-image: url('../images/icons/pill.png') !important;}  
+.icon-pill-add  { background-image: url('../images/icons/pill_add.png') !important;}  
+.icon-pill-delete  { background-image: url('../images/icons/pill_delete.png') !important;}  
+.icon-pill-go  { background-image: url('../images/icons/pill_go.png') !important;}  
+.icon-plugin  { background-image: url('../images/icons/plugin.png') !important;}  
+.icon-plugin-add  { background-image: url('../images/icons/plugin_add.png') !important;}  
+.icon-plugin-delete  { background-image: url('../images/icons/plugin_delete.png') !important;}  
+.icon-plugin-disabled  { background-image: url('../images/icons/plugin_disabled.png') !important;}  
+.icon-plugin-edit  { background-image: url('../images/icons/plugin_edit.png') !important;}  
+.icon-plugin-error  { background-image: url('../images/icons/plugin_error.png') !important;}  
+.icon-plugin-go  { background-image: url('../images/icons/plugin_go.png') !important;}  
+.icon-plugin-link  { background-image: url('../images/icons/plugin_link.png') !important;}  
+.icon-plus  { background-image: url('../images/icons/plus.gif ') !important;}  
+.icon-plusbottom  { background-image: url('../images/icons/plusbottom.gif ') !important;}  
+.icon-position  { background-image: url('../images/icons/position.png') !important;}  
+.icon-printer  { background-image: url('../images/icons/printer.png') !important;}  
+.icon-printer-add  { background-image: url('../images/icons/printer_add.png') !important;}  
+.icon-printer-delete  { background-image: url('../images/icons/printer_delete.png') !important;}  
+.icon-printer-empty  { background-image: url('../images/icons/printer_empty.png') !important;}  
+.icon-printer-error  { background-image: url('../images/icons/printer_error.png') !important;}  
+.icon-rainbow  { background-image: url('../images/icons/rainbow.png') !important;}  
+.icon-report  { background-image: url('../images/icons/report.png') !important;}  
+.icon-report-add  { background-image: url('../images/icons/report_add.png') !important;}  
+.icon-report-delete  { background-image: url('../images/icons/report_delete.png') !important;}  
+.icon-report-disk  { background-image: url('../images/icons/report_disk.png') !important;}  
+.icon-report-edit  { background-image: url('../images/icons/report_edit.png') !important;}  
+.icon-report-go  { background-image: url('../images/icons/report_go.png') !important;}  
+.icon-report-key  { background-image: url('../images/icons/report_key.png') !important;}  
+.icon-report-link  { background-image: url('../images/icons/report_link.png') !important;}  
+.icon-report-magnify  { background-image: url('../images/icons/report_magnify.png') !important;}  
+.icon-report-picture  { background-image: url('../images/icons/report_picture.png') !important;}  
+.icon-report-user  { background-image: url('../images/icons/report_user.png') !important;}  
+.icon-report-word  { background-image: url('../images/icons/report_word.png') !important;}  
+.icon-resultset-first  { background-image: url('../images/icons/resultset_first.png') !important;}  
+.icon-resultset-last  { background-image: url('../images/icons/resultset_last.png') !important;}  
+.icon-resultset-next  { background-image: url('../images/icons/resultset_next.png') !important;}  
+.icon-resultset-previous  { background-image: url('../images/icons/resultset_previous.png') !important;}  
+.icon-risk  { background-image: url('../images/icons/risk.png') !important;}  
+.icon-root  { background-image: url('../images/icons/root.png') !important;}  
+.icon-rosette  { background-image: url('../images/icons/rosette.png') !important;}  
+.icon-rss  { background-image: url('../images/icons/rss.png') !important;}  
+.icon-rss-add  { background-image: url('../images/icons/rss_add.png') !important;}  
+.icon-rss-delete  { background-image: url('../images/icons/rss_delete.png') !important;}  
+.icon-rss-go  { background-image: url('../images/icons/rss_go.png') !important;}  
+.icon-rss-valid  { background-image: url('../images/icons/rss_valid.png') !important;}  
+.icon-ruby  { background-image: url('../images/icons/ruby.png') !important;}  
+.icon-ruby-add  { background-image: url('../images/icons/ruby_add.png') !important;}  
+.icon-ruby-delete  { background-image: url('../images/icons/ruby_delete.png') !important;}  
+.icon-ruby-gear  { background-image: url('../images/icons/ruby_gear.png') !important;}  
+.icon-ruby-get  { background-image: url('../images/icons/ruby_get.png') !important;}  
+.icon-ruby-go  { background-image: url('../images/icons/ruby_go.png') !important;}  
+.icon-ruby-key  { background-image: url('../images/icons/ruby_key.png') !important;}  
+.icon-ruby-link  { background-image: url('../images/icons/ruby_link.png') !important;}  
+.icon-ruby-put  { background-image: url('../images/icons/ruby_put.png') !important;}  
+.icon-save  { background-image: url('../images/icons/save.gif ') !important;}  
+.icon-script  { background-image: url('../images/icons/script.png') !important;}  
+.icon-script-add  { background-image: url('../images/icons/script_add.png') !important;}  
+.icon-script-code  { background-image: url('../images/icons/script_code.png') !important;}  
+.icon-script-code-red  { background-image: url('../images/icons/script_code_red.png') !important;}  
+.icon-script-delete  { background-image: url('../images/icons/script_delete.png') !important;}  
+.icon-script-edit  { background-image: url('../images/icons/script_edit.png') !important;}  
+.icon-script-error  { background-image: url('../images/icons/script_error.png') !important;}  
+.icon-script-gear  { background-image: url('../images/icons/script_gear.png') !important;}  
+.icon-script-go  { background-image: url('../images/icons/script_go.png') !important;}  
+.icon-script-key  { background-image: url('../images/icons/script_key.png') !important;}  
+.icon-script-lightning  { background-image: url('../images/icons/script_lightning.png') !important;}  
+.icon-script-link  { background-image: url('../images/icons/script_link.png') !important;}  
+.icon-script-palette  { background-image: url('../images/icons/script_palette.png') !important;}  
+.icon-script-save  { background-image: url('../images/icons/script_save.png') !important;}  
+.icon-select  { background-image: url('../images/icons/select.gif ') !important;}  
+.icon-self-copy  { background-image: url('../images/icons/self_copy.png') !important;}  
+.icon-server  { background-image: url('../images/icons/server.png') !important;}  
+.icon-server-add  { background-image: url('../images/icons/server_add.png') !important;}  
+.icon-server-chart  { background-image: url('../images/icons/server_chart.png') !important;}  
+.icon-server-compressed  { background-image: url('../images/icons/server_compressed.png') !important;}  
+.icon-server-connect  { background-image: url('../images/icons/server_connect.png') !important;}  
+.icon-server-database  { background-image: url('../images/icons/server_database.png') !important;}  
+.icon-server-delete  { background-image: url('../images/icons/server_delete.png') !important;}  
+.icon-server-edit  { background-image: url('../images/icons/server_edit.png') !important;}  
+.icon-server-error  { background-image: url('../images/icons/server_error.png') !important;}  
+.icon-server-go  { background-image: url('../images/icons/server_go.png') !important;}  
+.icon-server-key  { background-image: url('../images/icons/server_key.png') !important;}  
+.icon-server-lightning  { background-image: url('../images/icons/server_lightning.png') !important;}  
+.icon-server-link  { background-image: url('../images/icons/server_link.png') !important;}  
+.icon-server-uncompressed  { background-image: url('../images/icons/server_uncompressed.png') !important;}  
+.icon-shading  { background-image: url('../images/icons/shading.png') !important;}  
+.icon-shape-align-bottom  { background-image: url('../images/icons/shape_align_bottom.png') !important;}  
+.icon-shape-align-center  { background-image: url('../images/icons/shape_align_center.png') !important;}  
+.icon-shape-align-left  { background-image: url('../images/icons/shape_align_left.png') !important;}  
+.icon-shape-align-middle  { background-image: url('../images/icons/shape_align_middle.png') !important;}  
+.icon-shape-align-right  { background-image: url('../images/icons/shape_align_right.png') !important;}  
+.icon-shape-align-top  { background-image: url('../images/icons/shape_align_top.png') !important;}  
+.icon-shape-flip-horizontal  { background-image: url('../images/icons/shape_flip_horizontal.png') !important;}  
+.icon-shape-flip-vertical  { background-image: url('../images/icons/shape_flip_vertical.png') !important;}  
+.icon-shape-group  { background-image: url('../images/icons/shape_group.png') !important;}  
+.icon-shape-handles  { background-image: url('../images/icons/shape_handles.png') !important;}  
+.icon-shape-move-back  { background-image: url('../images/icons/shape_move_back.png') !important;}  
+.icon-shape-move-backwards  { background-image: url('../images/icons/shape_move_backwards.png') !important;}  
+.icon-shape-move-forwards  { background-image: url('../images/icons/shape_move_forwards.png') !important;}  
+.icon-shape-move-front  { background-image: url('../images/icons/shape_move_front.png') !important;}  
+.icon-shape-rotate-anticlockwise  { background-image: url('../images/icons/shape_rotate_anticlockwise.png') !important;}  
+.icon-shape-rotate-clockwise  { background-image: url('../images/icons/shape_rotate_clockwise.png') !important;}  
+.icon-shape-square  { background-image: url('../images/icons/shape_square.png') !important;}  
+.icon-shape-square-add  { background-image: url('../images/icons/shape_square_add.png') !important;}  
+.icon-shape-square-delete  { background-image: url('../images/icons/shape_square_delete.png') !important;}  
+.icon-shape-square-edit  { background-image: url('../images/icons/shape_square_edit.png') !important;}  
+.icon-shape-square-error  { background-image: url('../images/icons/shape_square_error.png') !important;}  
+.icon-shape-square-go  { background-image: url('../images/icons/shape_square_go.png') !important;}  
+.icon-shape-square-key  { background-image: url('../images/icons/shape_square_key.png') !important;}  
+.icon-shape-square-link  { background-image: url('../images/icons/shape_square_link.png') !important;}  
+.icon-shape-ungroup  { background-image: url('../images/icons/shape_ungroup.png') !important;}  
+.icon-shield  { background-image: url('../images/icons/shield.png') !important;}  
+.icon-shield-add  { background-image: url('../images/icons/shield_add.png') !important;}  
+.icon-shield-delete  { background-image: url('../images/icons/shield_delete.png') !important;}  
+.icon-shield-go  { background-image: url('../images/icons/shield_go.png') !important;}  
+.icon-sitemap  { background-image: url('../images/icons/sitemap.png') !important;}  
+.icon-sitemap-color  { background-image: url('../images/icons/sitemap_color.png') !important;}  
+.icon-sound  { background-image: url('../images/icons/sound.png') !important;}  
+.icon-sound-add  { background-image: url('../images/icons/sound_add.png') !important;}  
+.icon-sound-delete  { background-image: url('../images/icons/sound_delete.png') !important;}  
+.icon-sound-low  { background-image: url('../images/icons/sound_low.png') !important;}  
+.icon-sound-mute  { background-image: url('../images/icons/sound_mute.png') !important;}  
+.icon-sound-none  { background-image: url('../images/icons/sound_none.png') !important;}  
+.icon-spellcheck  { background-image: url('../images/icons/spellcheck.png') !important;}  
+.icon-sport-8ball  { background-image: url('../images/icons/sport_8ball.png') !important;}  
+.icon-sport-basketball  { background-image: url('../images/icons/sport_basketball.png') !important;}  
+.icon-sport-football  { background-image: url('../images/icons/sport_football.png') !important;}  
+.icon-sport-golf  { background-image: url('../images/icons/sport_golf.png') !important;}  
+.icon-sport-raquet  { background-image: url('../images/icons/sport_raquet.png') !important;}  
+.icon-sport-shuttlecock  { background-image: url('../images/icons/sport_shuttlecock.png') !important;}  
+.icon-sport-soccer  { background-image: url('../images/icons/sport_soccer.png') !important;}  
+.icon-sport-tennis  { background-image: url('../images/icons/sport_tennis.png') !important;}  
+.icon-star  { background-image: url('../images/icons/star.png') !important;}  
+.icon-status-away  { background-image: url('../images/icons/status_away.png') !important;}  
+.icon-status-busy  { background-image: url('../images/icons/status_busy.png') !important;}  
+.icon-status-offline  { background-image: url('../images/icons/status_offline.png') !important;}  
+.icon-status-online  { background-image: url('../images/icons/status_online.png') !important;}  
+.icon-stop  { background-image: url('../images/icons/stop.png') !important;}  
+.icon-storm  { background-image: url('../images/icons/storm.png') !important;}  
+.icon-style  { background-image: url('../images/icons/style.png') !important;}  
+.icon-style-add  { background-image: url('../images/icons/style_add.png') !important;}  
+.icon-style-delete  { background-image: url('../images/icons/style_delete.png') !important;}  
+.icon-style-edit  { background-image: url('../images/icons/style_edit.png') !important;}  
+.icon-style-go  { background-image: url('../images/icons/style_go.png') !important;}  
+.icon-sum  { background-image: url('../images/icons/sum.png') !important;}  
+.icon-tab  { background-image: url('../images/icons/tab.png') !important;}  
+.icon-table  { background-image: url('../images/icons/table.png') !important;}  
+.icon-table-add  { background-image: url('../images/icons/table_add.png') !important;}  
+.icon-table-delete  { background-image: url('../images/icons/table_delete.png') !important;}  
+.icon-table-edit  { background-image: url('../images/icons/table_edit.png') !important;}  
+.icon-table-error  { background-image: url('../images/icons/table_error.png') !important;}  
+.icon-table-gear  { background-image: url('../images/icons/table_gear.png') !important;}  
+.icon-table-go  { background-image: url('../images/icons/table_go.png') !important;}  
+.icon-table-key  { background-image: url('../images/icons/table_key.png') !important;}  
+.icon-table-lightning  { background-image: url('../images/icons/table_lightning.png') !important;}  
+.icon-table-link  { background-image: url('../images/icons/table_link.png') !important;}  
+.icon-table-multiple  { background-image: url('../images/icons/table_multiple.png') !important;}  
+.icon-table-refresh  { background-image: url('../images/icons/table_refresh.png') !important;}  
+.icon-table-relationship  { background-image: url('../images/icons/table_relationship.png') !important;}  
+.icon-table-row-delete  { background-image: url('../images/icons/table_row_delete.png') !important;}  
+.icon-table-row-insert  { background-image: url('../images/icons/table_row_insert.png') !important;}  
+.icon-table-save  { background-image: url('../images/icons/table_save.png') !important;}  
+.icon-table-sort  { background-image: url('../images/icons/table_sort.png') !important;}  
+.icon-tab-add  { background-image: url('../images/icons/tab_add.png') !important;}  
+.icon-tab-delete  { background-image: url('../images/icons/tab_delete.png') !important;}  
+.icon-tab-edit  { background-image: url('../images/icons/tab_edit.png') !important;}  
+.icon-tab-go  { background-image: url('../images/icons/tab_go.png') !important;}  
+.icon-tag  { background-image: url('../images/icons/tag.png') !important;}  
+.icon-tag-blue  { background-image: url('../images/icons/tag_blue.png') !important;}  
+.icon-tag-blue-add  { background-image: url('../images/icons/tag_blue_add.png') !important;}  
+.icon-tag-blue-delete  { background-image: url('../images/icons/tag_blue_delete.png') !important;}  
+.icon-tag-blue-edit  { background-image: url('../images/icons/tag_blue_edit.png') !important;}  
+.icon-tag-green  { background-image: url('../images/icons/tag_green.png') !important;}  
+.icon-tag-orange  { background-image: url('../images/icons/tag_orange.png') !important;}  
+.icon-tag-pink  { background-image: url('../images/icons/tag_pink.png') !important;}  
+.icon-tag-purple  { background-image: url('../images/icons/tag_purple.png') !important;}  
+.icon-tag-red  { background-image: url('../images/icons/tag_red.png') !important;}  
+.icon-tag-yellow  { background-image: url('../images/icons/tag_yellow.png') !important;}  
+.icon-telephone  { background-image: url('../images/icons/telephone.png') !important;}  
+.icon-telephone-add  { background-image: url('../images/icons/telephone_add.png') !important;}  
+.icon-telephone-delete  { background-image: url('../images/icons/telephone_delete.png') !important;}  
+.icon-telephone-edit  { background-image: url('../images/icons/telephone_edit.png') !important;}  
+.icon-telephone-error  { background-image: url('../images/icons/telephone_error.png') !important;}  
+.icon-telephone-go  { background-image: url('../images/icons/telephone_go.png') !important;}  
+.icon-telephone-key  { background-image: url('../images/icons/telephone_key.png') !important;}  
+.icon-telephone-link  { background-image: url('../images/icons/telephone_link.png') !important;}  
+.icon-television  { background-image: url('../images/icons/television.png') !important;}  
+.icon-television-add  { background-image: url('../images/icons/television_add.png') !important;}  
+.icon-television-delete  { background-image: url('../images/icons/television_delete.png') !important;}  
+.icon-textfield  { background-image: url('../images/icons/textfield.png') !important;}  
+.icon-textfield-add  { background-image: url('../images/icons/textfield_add.png') !important;}  
+.icon-textfield-delete  { background-image: url('../images/icons/textfield_delete.png') !important;}  
+.icon-textfield-key  { background-image: url('../images/icons/textfield_key.png') !important;}  
+.icon-textfield-rename  { background-image: url('../images/icons/textfield_rename.png') !important;}  
+.icon-text-align-center  { background-image: url('../images/icons/text_align_center.png') !important;}  
+.icon-text-align-justify  { background-image: url('../images/icons/text_align_justify.png') !important;}  
+.icon-text-align-left  { background-image: url('../images/icons/text_align_left.png') !important;}  
+.icon-text-align-right  { background-image: url('../images/icons/text_align_right.png') !important;}  
+.icon-text-allcaps  { background-image: url('../images/icons/text_allcaps.png') !important;}  
+.icon-text-bold  { background-image: url('../images/icons/text_bold.png') !important;}  
+.icon-text-columns  { background-image: url('../images/icons/text_columns.png') !important;}  
+.icon-text-dropcaps  { background-image: url('../images/icons/text_dropcaps.png') !important;}  
+.icon-text-heading-1  { background-image: url('../images/icons/text_heading_1.png') !important;}  
+.icon-text-heading-2  { background-image: url('../images/icons/text_heading_2.png') !important;}  
+.icon-text-heading-3  { background-image: url('../images/icons/text_heading_3.png') !important;}  
+.icon-text-heading-4  { background-image: url('../images/icons/text_heading_4.png') !important;}  
+.icon-text-heading-5  { background-image: url('../images/icons/text_heading_5.png') !important;}  
+.icon-text-heading-6  { background-image: url('../images/icons/text_heading_6.png') !important;}  
+.icon-text-horizontalrule  { background-image: url('../images/icons/text_horizontalrule.png') !important;}  
+.icon-text-indent  { background-image: url('../images/icons/text_indent.png') !important;}  
+.icon-text-indent-remove  { background-image: url('../images/icons/text_indent_remove.png') !important;}  
+.icon-text-italic  { background-image: url('../images/icons/text_italic.png') !important;}  
+.icon-text-kerning  { background-image: url('../images/icons/text_kerning.png') !important;}  
+.icon-text-letterspacing  { background-image: url('../images/icons/text_letterspacing.png') !important;}  
+.icon-text-letter-omega  { background-image: url('../images/icons/text_letter_omega.png') !important;}  
+.icon-text-linespacing  { background-image: url('../images/icons/text_linespacing.png') !important;}  
+.icon-text-list-bullets  { background-image: url('../images/icons/text_list_bullets.png') !important;}  
+.icon-text-list-numbers  { background-image: url('../images/icons/text_list_numbers.png') !important;}  
+.icon-text-lowercase  { background-image: url('../images/icons/text_lowercase.png') !important;}  
+.icon-text-padding-bottom  { background-image: url('../images/icons/text_padding_bottom.png') !important;}  
+.icon-text-padding-left  { background-image: url('../images/icons/text_padding_left.png') !important;}  
+.icon-text-padding-right  { background-image: url('../images/icons/text_padding_right.png') !important;}  
+.icon-text-padding-top  { background-image: url('../images/icons/text_padding_top.png') !important;}  
+.icon-text-replace  { background-image: url('../images/icons/text_replace.png') !important;}  
+.icon-text-signature  { background-image: url('../images/icons/text_signature.png') !important;}  
+.icon-text-smallcaps  { background-image: url('../images/icons/text_smallcaps.png') !important;}  
+.icon-text-strikethrough  { background-image: url('../images/icons/text_strikethrough.png') !important;}  
+.icon-text-subscript  { background-image: url('../images/icons/text_subscript.png') !important;}  
+.icon-text-superscript  { background-image: url('../images/icons/text_superscript.png') !important;}  
+.icon-text-underline  { background-image: url('../images/icons/text_underline.png') !important;}  
+.icon-text-uppercase  { background-image: url('../images/icons/text_uppercase.png') !important;}  
+.icon-thumb-down  { background-image: url('../images/icons/thumb_down.png') !important;}  
+.icon-thumb-up  { background-image: url('../images/icons/thumb_up.png') !important;}  
+.icon-tick  { background-image: url('../images/icons/tick.png') !important;}  
+.icon-time  { background-image: url('../images/icons/time.png') !important;}  
+.icon-timeline-marker  { background-image: url('../images/icons/timeline_marker.png') !important;}  
+.icon-time-add  { background-image: url('../images/icons/time_add.png') !important;}  
+.icon-time-delete  { background-image: url('../images/icons/time_delete.png') !important;}  
+.icon-time-go  { background-image: url('../images/icons/time_go.png') !important;}  
+.icon-transmit  { background-image: url('../images/icons/transmit.png') !important;}  
+.icon-transmit-add  { background-image: url('../images/icons/transmit_add.png') !important;}  
+.icon-transmit-blue  { background-image: url('../images/icons/transmit_blue.png') !important;}  
+.icon-transmit-delete  { background-image: url('../images/icons/transmit_delete.png') !important;}  
+.icon-transmit-edit  { background-image: url('../images/icons/transmit_edit.png') !important;}  
+.icon-transmit-error  { background-image: url('../images/icons/transmit_error.png') !important;}  
+.icon-transmit-go  { background-image: url('../images/icons/transmit_go.png') !important;}  
+.icon-tree-folder  { background-image: url('../images/icons/tree_folder.gif ') !important;}  
+.icon-tree-folderopen  { background-image: url('../images/icons/tree_folderopen.gif ') !important;}  
+.icon-trend  { background-image: url('../images/icons/trend.gif ') !important;}  
+.icon-tupu  { background-image: url('../images/icons/tupu.png') !important;}  
+.icon-tux  { background-image: url('../images/icons/tux.png') !important;}  
+.icon-unchecked  { background-image: url('../images/icons/unchecked.gif ') !important;}  
+.icon-user  { background-image: url('../images/icons/user.png') !important;}  
+.icon-user-add  { background-image: url('../images/icons/user_add.png') !important;}  
+.icon-user-comment  { background-image: url('../images/icons/user_comment.png') !important;}  
+.icon-user-delete  { background-image: url('../images/icons/user_delete.png') !important;}  
+.icon-user-edit  { background-image: url('../images/icons/user_edit.png') !important;}  
+.icon-user-female  { background-image: url('../images/icons/user_female.png') !important;}  
+.icon-user-go  { background-image: url('../images/icons/user_go.png') !important;}  
+.icon-user-gray  { background-image: url('../images/icons/user_gray.png') !important;}  
+.icon-user-green  { background-image: url('../images/icons/user_green.png') !important;}  
+.icon-user-orange  { background-image: url('../images/icons/user_orange.png') !important;}  
+.icon-user-red  { background-image: url('../images/icons/user_red.png') !important;}  
+.icon-user-setting  { background-image: url('../images/icons/user_setting.png') !important;}  
+.icon-user-suit  { background-image: url('../images/icons/user_suit.png') !important;}
+.icon-kpistrategymap-add  { background-image: url('../images/icons/kpistrategymap_add.png') !important;}
+.icon-vcard  { background-image: url('../images/icons/vcard.png') !important;}  
+.icon-vcard-add  { background-image: url('../images/icons/vcard_add.png') !important;}  
+.icon-vcard-delete  { background-image: url('../images/icons/vcard_delete.png') !important;}  
+.icon-vcard-edit  { background-image: url('../images/icons/vcard_edit.png') !important;}  
+.icon-vector  { background-image: url('../images/icons/vector.png') !important;}  
+.icon-vector-add  { background-image: url('../images/icons/vector_add.png') !important;}  
+.icon-vector-delete  { background-image: url('../images/icons/vector_delete.png') !important;}  
+.icon-view-analysis  { background-image: url('../images/icons/view_analysis.gif ') !important;}  
+.icon-view-sensanalysis  { background-image: url('../images/icons/view_sensanalysis.gif ') !important;}  
+.icon-wand  { background-image: url('../images/icons/wand.png') !important;}  
+.icon-weather-clouds  { background-image: url('../images/icons/weather_clouds.png') !important;}  
+.icon-weather-cloudy  { background-image: url('../images/icons/weather_cloudy.png') !important;}  
+.icon-weather-lightning  { background-image: url('../images/icons/weather_lightning.png') !important;}  
+.icon-weather-rain  { background-image: url('../images/icons/weather_rain.png') !important;}  
+.icon-weather-snow  { background-image: url('../images/icons/weather_snow.png') !important;}  
+.icon-weather-sun  { background-image: url('../images/icons/weather_sun.png') !important;}  
+.icon-webcam  { background-image: url('../images/icons/webcam.png') !important;}  
+.icon-webcam-add  { background-image: url('../images/icons/webcam_add.png') !important;}  
+.icon-webcam-delete  { background-image: url('../images/icons/webcam_delete.png') !important;}  
+.icon-webcam-error  { background-image: url('../images/icons/webcam_error.png') !important;}  
+.icon-world  { background-image: url('../images/icons/world.png') !important;}  
+.icon-world-add  { background-image: url('../images/icons/world_add.png') !important;}  
+.icon-world-delete  { background-image: url('../images/icons/world_delete.png') !important;}  
+.icon-world-edit  { background-image: url('../images/icons/world_edit.png') !important;}  
+.icon-world-go  { background-image: url('../images/icons/world_go.png') !important;}  
+.icon-world-link  { background-image: url('../images/icons/world_link.png') !important;}  
+.icon-wrench  { background-image: url('../images/icons/wrench.png') !important;}  
+.icon-wrench-orange  { background-image: url('../images/icons/wrench_orange.png') !important;}  
+.icon-xhtml  { background-image: url('../images/icons/xhtml.png') !important;}  
+.icon-xhtml-add  { background-image: url('../images/icons/xhtml_add.png') !important;}  
+.icon-xhtml-delete  { background-image: url('../images/icons/xhtml_delete.png') !important;}  
+.icon-xhtml-go  { background-image: url('../images/icons/xhtml_go.png') !important;}  
+.icon-xhtml-valid  { background-image: url('../images/icons/xhtml_valid.png') !important;}  
+.icon-yahoo-icon  { background-image: url('../images/icons/yahoo-icon.gif ') !important;}  
+.icon-zoom  { background-image: url('../images/icons/zoom.png') !important;}  
+.icon-zoom-in  { background-image: url('../images/icons/zoom_in.png') !important;}  
+.icon-zoom-out  { background-image: url('../images/icons/zoom_out.png') !important;}
+.icon-expand-all { background-image: url(../images/icons/expand-all.gif) !important;}
+.icon-collapse-all { background-image: url(../images/icons/collapse-all.gif) !important;}
+.icon-metrics-16  { background-image: url('../images/icons/icon_metrics_16.gif') !important;}
+.icon-metrictype  { background-image: url('../images/icons/icon_metrictype.gif') !important;}
+.icon-scorecard  { background-image: url('../images/icons/icon_scorecard.gif') !important;}
+.icon-scorecards { background-image: url('../images/icons/icon_scorecards.gif') !important;}
+.icon-strategy  { background-image: url('../images/icons/icon_strategy.gif') !important;}
+.icon-tree { background-image: url('../images/icons/tree.png') !important;}
+.icon-plan-start  { background-image: url('../images/icons/start.gif') !important;}
+.icon-plan-stop  { background-image: url('../images/icons/stop.gif') !important;}
+.icon-ibm-about {background-image: url('../images/icons/about.gif') !important;}
+.icon-ibm-about-background {background-image: url('../images/icons/about_background.gif') !important;}
+.icon-ibm-about-ibm-logo {background-image: url('../images/icons/about_ibm_logo.gif') !important;}
+.icon-ibm-access-execute-grant {background-image: url('../images/icons/access_execute_grant.gif') !important;}
+.icon-ibm-access-none {background-image: url('../images/icons/access_none.gif') !important;}
+.icon-ibm-access-read-comment-deny {background-image: url('../images/icons/access_read_comment_deny.gif') !important;}
+.icon-ibm-access-read-comment-grant {background-image: url('../images/icons/access_read_comment_grant.gif') !important;}
+.icon-ibm-access-read-deny {background-image: url('../images/icons/access_read_deny.gif') !important;}
+.icon-ibm-access-read-grant {background-image: url('../images/icons/access_read_grant.gif') !important;}
+.icon-ibm-access-set-policy-deny {background-image: url('../images/icons/access_set_policy_deny.gif') !important;}
+.icon-ibm-access-set-policy-grant {background-image: url('../images/icons/access_set_policy_grant.gif') !important;}
+.icon-ibm-access-traverse-grant {background-image: url('../images/icons/access_traverse_grant.gif') !important;}
+.icon-ibm-access-write-actuals-deny {background-image: url('../images/icons/access_write_actuals_deny.gif') !important;}
+.icon-ibm-access-write-actuals-grant {background-image: url('../images/icons/access_write_actuals_grant.gif') !important;}
+.icon-ibm-access-write-comment-deny {background-image: url('../images/icons/access_write_comment_deny.gif') !important;}
+.icon-ibm-access-write-comment-grant {background-image: url('../images/icons/access_write_comment_grant.gif') !important;}
+.icon-ibm-access-write-deny {background-image: url('../images/icons/access_write_deny.gif') !important;}
+.icon-ibm-access-write-grant {background-image: url('../images/icons/access_write_grant.gif') !important;}
+.icon-ibm-access-write-project-deny {background-image: url('../images/icons/access_write_project_deny.gif') !important;}
+.icon-ibm-access-write-project-grant {background-image: url('../images/icons/access_write_project_grant.gif') !important;}
+.icon-ibm-access-write-structure-deny {background-image: url('../images/icons/access_write_structure_deny.gif') !important;}
+.icon-ibm-access-write-structure-grant {background-image: url('../images/icons/access_write_structure_grant.gif') !important;}
+.icon-ibm-access-write-targets-deny {background-image: url('../images/icons/access_write_targets_deny.gif') !important;}
+.icon-ibm-access-write-targets-grant {background-image: url('../images/icons/access_write_targets_grant.gif') !important;}
+.icon-ibm-access-write-tolerances-deny {background-image: url('../images/icons/access_write_tolerances_deny.gif') !important;}
+.icon-ibm-access-write-tolerances-grant {background-image: url('../images/icons/access_write_tolerances_grant.gif') !important;}
+.icon-ibm-access-write-udcs-deny {background-image: url('../images/icons/access_write_udcs_deny.gif') !important;}
+.icon-ibm-access-write-udcs-grant {background-image: url('../images/icons/access_write_udcs_grant.gif') !important;}
+.icon-ibm-action-about {background-image: url('../images/icons/action_about.gif') !important;}
+.icon-ibm-action-add-watch {background-image: url('../images/icons/action_add_watch.gif') !important;}
+.icon-ibm-action-add-watch-dis {background-image: url('../images/icons/action_add_watch_dis.gif') !important;}
+.icon-ibm-action-add-watch-header {background-image: url('../images/icons/action_add_watch_header.gif') !important;}
+.icon-ibm-action-delete-20 {background-image: url('../images/icons/action_delete_20.gif') !important;}
+.icon-ibm-action-edit {background-image: url('../images/icons/action_edit.gif') !important;}
+.icon-ibm-action-edit-with-AN {background-image: url('../images/icons/action_edit_with_AN.gif') !important;}
+.icon-ibm-action-edit-with-AS {background-image: url('../images/icons/action_edit_with_AS.gif') !important;}
+.icon-ibm-action-edit-with-cmm {background-image: url('../images/icons/action_edit_with_cmm.gif') !important;}
+.icon-ibm-action-edit-with-PP {background-image: url('../images/icons/action_edit_with_PP.gif') !important;}
+.icon-ibm-action-edit-with-PS {background-image: url('../images/icons/action_edit_with_PS.gif') !important;}
+.icon-ibm-action-edit-with-QS {background-image: url('../images/icons/action_edit_with_QS.gif') !important;}
+.icon-ibm-action-edit-with-RS {background-image: url('../images/icons/action_edit_with_RS.gif') !important;}
+.icon-ibm-action-export-to-excel {background-image: url('../images/icons/action_export_to_excel.gif') !important;}
+.icon-ibm-action-frame-hide {background-image: url('../images/icons/action_frame_hide.gif') !important;}
+.icon-ibm-action-frame-show {background-image: url('../images/icons/action_frame_show.gif') !important;}
+.icon-ibm-action-help {background-image: url('../images/icons/action_help.gif') !important;}
+.icon-ibm-action-home {background-image: url('../images/icons/action_home.gif') !important;}
+.icon-ibm-action-home-dis {background-image: url('../images/icons/action_home_dis.gif') !important;}
+.icon-ibm-action-new-crnreport {background-image: url('../images/icons/action_new_crnreport.gif') !important;}
+.icon-ibm-action-new-crnreport-dis {background-image: url('../images/icons/action_new_crnreport_dis.gif') !important;}
+.icon-ibm-action-new-datasource-20 {background-image: url('../images/icons/action_new_datasource_20.gif') !important;}
+.icon-ibm-action-new-diagram {background-image: url('../images/icons/action_new_diagram.gif') !important;}
+.icon-ibm-action-new-diagram-dis {background-image: url('../images/icons/action_new_diagram_dis.gif') !important;}
+.icon-ibm-action-new-indicator {background-image: url('../images/icons/action_new_indicator.gif') !important;}
+.icon-ibm-action-new-kpiclass {background-image: url('../images/icons/action_new_kpiclass.gif') !important;}
+.icon-ibm-action-new-metrics-package-20 {background-image: url('../images/icons/action_new_metrics_package_20.gif') !important;}
+.icon-ibm-action-new-metric-package {background-image: url('../images/icons/action_new_metric_package.gif') !important;}
+.icon-ibm-action-new-plan-entry {background-image: url('../images/icons/action_new_plan_entry.gif') !important;}
+.icon-ibm-action-new-plan-entry-dis {background-image: url('../images/icons/action_new_plan_entry_dis.gif') !important;}
+.icon-ibm-action-new-qualifier {background-image: url('../images/icons/action_new_qualifier.gif') !important;}
+.icon-ibm-action-new-report {background-image: url('../images/icons/action_new_report.gif') !important;}
+.icon-ibm-action-new-report-dis {background-image: url('../images/icons/action_new_report_dis.gif') !important;}
+.icon-ibm-action-new-scorecard {background-image: url('../images/icons/action_new_scorecard.gif') !important;}
+.icon-ibm-action-order-20 {background-image: url('../images/icons/action_order_20.gif') !important;}
+.icon-ibm-action-order-20-dis {background-image: url('../images/icons/action_order_20_dis.gif') !important;}
+.icon-ibm-action-prepare-bookmark {background-image: url('../images/icons/action_prepare_bookmark.gif') !important;}
+.icon-ibm-action-prepare-bookmark-dis {background-image: url('../images/icons/action_prepare_bookmark_dis.gif') !important;}
+.icon-ibm-action-print {background-image: url('../images/icons/action_print.gif') !important;}
+.icon-ibm-action-print-dis {background-image: url('../images/icons/action_print_dis.gif') !important;}
+.icon-ibm-action-properties {background-image: url('../images/icons/action_properties.gif') !important;}
+.icon-ibm-action-properties-dis {background-image: url('../images/icons/action_properties_dis.gif') !important;}
+.icon-ibm-action-properties-path {background-image: url('../images/icons/action_properties_path.gif') !important;}
+.icon-ibm-action-run {background-image: url('../images/icons/action_run.gif') !important;}
+.icon-ibm-action-search {background-image: url('../images/icons/action_search.gif') !important;}
+.icon-ibm-action-select-view {background-image: url('../images/icons/action_select_view.gif') !important;}
+.icon-ibm-action-set-default {background-image: url('../images/icons/action_set_default.gif') !important;}
+.icon-ibm-action-set-default-dis {background-image: url('../images/icons/action_set_default_dis.gif') !important;}
+.icon-ibm-action-view-metrics-package {background-image: url('../images/icons/action_view_metrics_package.gif') !important;}
+.icon-ibm-action-view-package {background-image: url('../images/icons/action_view_package.gif') !important;}
+.icon-ibm-anim-busy {background-image: url('../images/icons/anim_busy.gif') !important;}
+.icon-ibm-asc {background-image: url('../images/icons/asc.gif') !important;}
+.icon-ibm-backButton {background-image: url('../images/icons/backButton.gif') !important;}
+.icon-ibm-banner {background-image: url('../images/icons/banner.gif') !important;}
+.icon-ibm-banner2 {background-image: url('../images/icons/banner2.gif') !important;}
+.icon-ibm-banner2 {background-image: url('../images/icons/banner2.jpg') !important;}
+.icon-ibm-banner3 {background-image: url('../images/icons/banner3.gif') !important;}
+.icon-ibm-banner-cogsquare {background-image: url('../images/icons/banner_cogsquare.gif') !important;}
+.icon-ibm-bgcolor {background-image: url('../images/icons/bgcolor.gif') !important;}
+.icon-ibm-bgcolor-disabled {background-image: url('../images/icons/bgcolor_disabled.gif') !important;}
+.icon-ibm-bottom-left-box-border {background-image: url('../images/icons/bottom_left_box_border.gif') !important;}
+.icon-ibm-bottom-left-inner-box-border {background-image: url('../images/icons/bottom_left_inner_box_border.gif') !important;}
+.icon-ibm-bottom-right-box-border {background-image: url('../images/icons/bottom_right_box_border.gif') !important;}
+.icon-ibm-bottom-right-inner-box-border {background-image: url('../images/icons/bottom_right_inner_box_border.gif') !important;}
+.icon-ibm-caledar-arrow-left {background-image: url('../images/icons/caledar_arrow_left.gif') !important;}
+.icon-ibm-caledar-arrow-left-dis {background-image: url('../images/icons/caledar_arrow_left_dis.gif') !important;}
+.icon-ibm-caledar-arrow-right {background-image: url('../images/icons/caledar_arrow_right.gif') !important;}
+.icon-ibm-caledar-arrow-right-dis {background-image: url('../images/icons/caledar_arrow_right_dis.gif') !important;}
+.icon-ibm-canada {background-image: url('../images/icons/canada.gif') !important;}
+.icon-ibm-cause-arrow {background-image: url('../images/icons/cause_arrow.gif') !important;}
+.icon-ibm-checkbox-checked {background-image: url('../images/icons/checkbox_checked.gif') !important;}
+.icon-ibm-checkbox-mixed {background-image: url('../images/icons/checkbox_mixed.gif') !important;}
+.icon-ibm-checkbox-unchecked {background-image: url('../images/icons/checkbox_unchecked.gif') !important;}
+.icon-ibm-checks-0-lrg {background-image: url('../images/icons/checks_0_lrg.gif') !important;}
+.icon-ibm-checks-0-med {background-image: url('../images/icons/checks_0_med.gif') !important;}
+.icon-ibm-checks-0-sm {background-image: url('../images/icons/checks_0_sm.gif') !important;}
+.icon-ibm-checks-3-lrg {background-image: url('../images/icons/checks_3_lrg.gif') !important;}
+.icon-ibm-checks-3-med {background-image: url('../images/icons/checks_3_med.gif') !important;}
+.icon-ibm-checks-3-sm {background-image: url('../images/icons/checks_3_sm.gif') !important;}
+.icon-ibm-checks-4-lrg {background-image: url('../images/icons/checks_4_lrg.gif') !important;}
+.icon-ibm-checks-4-med {background-image: url('../images/icons/checks_4_med.gif') !important;}
+.icon-ibm-checks-4-sm {background-image: url('../images/icons/checks_4_sm.gif') !important;}
+.icon-ibm-checks-5-lrg {background-image: url('../images/icons/checks_5_lrg.gif') !important;}
+.icon-ibm-checks-5-med {background-image: url('../images/icons/checks_5_med.gif') !important;}
+.icon-ibm-checks-5-sm {background-image: url('../images/icons/checks_5_sm.gif') !important;}
+.icon-ibm-checks-6-lrg {background-image: url('../images/icons/checks_6_lrg.gif') !important;}
+.icon-ibm-checks-6-med {background-image: url('../images/icons/checks_6_med.gif') !important;}
+.icon-ibm-checks-6-sm {background-image: url('../images/icons/checks_6_sm.gif') !important;}
+.icon-ibm-checks-7-lrg {background-image: url('../images/icons/checks_7_lrg.gif') !important;}
+.icon-ibm-checks-7-med {background-image: url('../images/icons/checks_7_med.gif') !important;}
+.icon-ibm-checks-7-sm {background-image: url('../images/icons/checks_7_sm.gif') !important;}
+.icon-ibm-close {background-image: url('../images/icons/close.gif') !important;}
+.icon-ibm-cmdcube-member {background-image: url('../images/icons/cmdcube_member.gif') !important;}
+.icon-ibm-cognos-logo-sml {background-image: url('../images/icons/cognos_logo_sml.gif') !important;}
+.icon-ibm-collapse {background-image: url('../images/icons/collapse.gif') !important;}
+.icon-ibm-collapse-sel {background-image: url('../images/icons/collapse_sel.gif') !important;}
+.icon-ibm-collapse-up-arrow {background-image: url('../images/icons/collapse_up_arrow.gif') !important;}
+.icon-ibm-control-btn-bottom {background-image: url('../images/icons/control_btn_bottom.gif') !important;}
+.icon-ibm-control-btn-bottom-disabled {background-image: url('../images/icons/control_btn_bottom_disabled.gif') !important;}
+.icon-ibm-control-btn-pagedown {background-image: url('../images/icons/control_btn_pagedown.gif') !important;}
+.icon-ibm-control-btn-pagedown-disabled {background-image: url('../images/icons/control_btn_pagedown_disabled.gif') !important;}
+.icon-ibm-control-btn-pageup {background-image: url('../images/icons/control_btn_pageup.gif') !important;}
+.icon-ibm-control-btn-pageup-disabled {background-image: url('../images/icons/control_btn_pageup_disabled.gif') !important;}
+.icon-ibm-control-btn-top {background-image: url('../images/icons/control_btn_top.gif') !important;}
+.icon-ibm-control-btn-top-disabled {background-image: url('../images/icons/control_btn_top_disabled.gif') !important;}
+.icon-ibm-desc {background-image: url('../images/icons/desc.gif') !important;}
+.icon-ibm-dialog-help1 {background-image: url('../images/icons/dialog_help1.gif') !important;}
+.icon-ibm-dialog-line1 {background-image: url('../images/icons/dialog_line1.gif') !important;}
+.icon-ibm-dialog-photo1 {background-image: url('../images/icons/dialog_photo1.gif') !important;}
+.icon-ibm-dialog-photo2 {background-image: url('../images/icons/dialog_photo2.gif') !important;}
+.icon-ibm-empty {background-image: url('../images/icons/empty.gif') !important;}
+.icon-ibm-expand-down-arrow {background-image: url('../images/icons/expand_down_arrow.gif') !important;}
+.icon-ibm-expr-check {background-image: url('../images/icons/expr_check.gif') !important;}
+.icon-ibm-folder {background-image: url('../images/icons/folder.gif') !important;}
+.icon-ibm-folderopen {background-image: url('../images/icons/folderopen.gif') !important;}
+.icon-ibm-forwardButton {background-image: url('../images/icons/forwardButton.gif') !important;}
+.icon-ibm-frame-ce-bottom {background-image: url('../images/icons/frame_ce_bottom.gif') !important;}
+.icon-ibm-frame-ce-top {background-image: url('../images/icons/frame_ce_top.gif') !important;}
+.icon-ibm-frame-cont-norm {background-image: url('../images/icons/frame_cont_norm.gif') !important;}
+.icon-ibm-frame-cont-roll {background-image: url('../images/icons/frame_cont_roll.gif') !important;}
+.icon-ibm-frame-exp-norm {background-image: url('../images/icons/frame_exp_norm.gif') !important;}
+.icon-ibm-frame-exp-roll {background-image: url('../images/icons/frame_exp_roll.gif') !important;}
+.icon-ibm-go-to {background-image: url('../images/icons/go_to.gif') !important;}
+.icon-ibm-group-view {background-image: url('../images/icons/group_view.gif') !important;}
+.icon-ibm-hide-buttons {background-image: url('../images/icons/hide_buttons.gif') !important;}
+.icon-ibm-horizrule-bot {background-image: url('../images/icons/horizrule_bot.gif') !important;}
+.icon-ibm-horizrule-top {background-image: url('../images/icons/horizrule_top.gif') !important;}
+.icon-ibm-icon-3upview {background-image: url('../images/icons/icon_3upview.gif') !important;}
+.icon-ibm-icon-accountability {background-image: url('../images/icons/icon_accountability.gif') !important;}
+.icon-ibm-icon-actions {background-image: url('../images/icons/icon_actions.gif') !important;}
+.icon-ibm-icon-actions-new {background-image: url('../images/icons/icon_actions_new.gif') !important;}
+.icon-ibm-icon-actions-new-dis {background-image: url('../images/icons/icon_actions_new_dis.gif') !important;}
+.icon-ibm-icon-action-16 {background-image: url('../images/icons/icon_action_16.gif') !important;}
+.icon-ibm-icon-action-32 {background-image: url('../images/icons/icon_action_32.gif') !important;}
+.icon-ibm-icon-action-48 {background-image: url('../images/icons/icon_action_48.gif') !important;}
+.icon-ibm-icon-action-new {background-image: url('../images/icons/icon_action_new.gif') !important;}
+.icon-ibm-icon-add-diagram {background-image: url('../images/icons/icon_add_diagram.gif') !important;}
+.icon-ibm-icon-add-diagram-dis {background-image: url('../images/icons/icon_add_diagram_dis.gif') !important;}
+.icon-ibm-icon-add-group {background-image: url('../images/icons/icon_add_group.gif') !important;}
+.icon-ibm-icon-add-group-shortcut {background-image: url('../images/icons/icon_add_group_shortcut.gif') !important;}
+.icon-ibm-icon-add-impacted-metric {background-image: url('../images/icons/icon_add_impacted_metric.gif') !important;}
+.icon-ibm-icon-add-impacted-metrictype {background-image: url('../images/icons/icon_add_impacted_metrictype.gif') !important;}
+.icon-ibm-icon-add-impacting-metric {background-image: url('../images/icons/icon_add_impacting_metric.gif') !important;}
+.icon-ibm-icon-add-impacting-metrictype {background-image: url('../images/icons/icon_add_impacting_metrictype.gif') !important;}
+.icon-ibm-icon-add-kpiclass {background-image: url('../images/icons/icon_add_kpiclass.gif') !important;}
+.icon-ibm-icon-add-metric {background-image: url('../images/icons/icon_add_metric.gif') !important;}
+.icon-ibm-icon-add-metric-dis {background-image: url('../images/icons/icon_add_metric_dis.gif') !important;}
+.icon-ibm-icon-add-metric-shortcut {background-image: url('../images/icons/icon_add_metric_shortcut.gif') !important;}
+.icon-ibm-icon-add-metric-shortcut-dis {background-image: url('../images/icons/icon_add_metric_shortcut_dis.gif') !important;}
+.icon-ibm-icon-add-perspective {background-image: url('../images/icons/icon_add_perspective.gif') !important;}
+.icon-ibm-icon-add-perspective-dis {background-image: url('../images/icons/icon_add_perspective_dis.gif') !important;}
+.icon-ibm-icon-add-project {background-image: url('../images/icons/icon_add_project.gif') !important;}
+.icon-ibm-icon-add-project-dis {background-image: url('../images/icons/icon_add_project_dis.gif') !important;}
+.icon-ibm-icon-add-report {background-image: url('../images/icons/icon_add_report.gif') !important;}
+.icon-ibm-icon-add-report-dis {background-image: url('../images/icons/icon_add_report_dis.gif') !important;}
+.icon-ibm-icon-add-scorecard {background-image: url('../images/icons/icon_add_scorecard.gif') !important;}
+.icon-ibm-icon-add-strategy {background-image: url('../images/icons/icon_add_strategy.gif') !important;}
+.icon-ibm-icon-add-strategy-shortcut {background-image: url('../images/icons/icon_add_strategy_shortcut.gif') !important;}
+.icon-ibm-icon-allindicators {background-image: url('../images/icons/icon_allindicators.gif') !important;}
+.icon-ibm-icon-allmetrics {background-image: url('../images/icons/icon_allmetrics.gif') !important;}
+.icon-ibm-icon-allmetrics-list {background-image: url('../images/icons/icon_allmetrics_list.gif') !important;}
+.icon-ibm-icon-allmetrics-list2 {background-image: url('../images/icons/icon_allmetrics_list2.gif') !important;}
+.icon-ibm-icon-allmetrics-summary {background-image: url('../images/icons/icon_allmetrics_summary.gif') !important;}
+.icon-ibm-icon-allmetrics-summary1 {background-image: url('../images/icons/icon_allmetrics_summary1.gif') !important;}
+.icon-ibm-icon-application {background-image: url('../images/icons/icon_application.gif') !important;}
+.icon-ibm-icon-arc {background-image: url('../images/icons/icon_arc.gif') !important;}
+.icon-ibm-icon-archive {background-image: url('../images/icons/icon_archive.gif') !important;}
+.icon-ibm-icon-broken-ref {background-image: url('../images/icons/icon_broken_ref.gif') !important;}
+.icon-ibm-icon-broken-sub {background-image: url('../images/icons/icon_broken_sub.gif') !important;}
+.icon-ibm-icon-broken-sub-ref {background-image: url('../images/icons/icon_broken_sub_ref.gif') !important;}
+.icon-ibm-icon-browse {background-image: url('../images/icons/icon_browse.gif') !important;}
+.icon-ibm-icon-browse-d {background-image: url('../images/icons/icon_browse_d.gif') !important;}
+.icon-ibm-icon-browse-dis {background-image: url('../images/icons/icon_browse_dis.gif') !important;}
+.icon-ibm-icon-browse-r {background-image: url('../images/icons/icon_browse_r.gif') !important;}
+.icon-ibm-icon-budgethead {background-image: url('../images/icons/icon_budgethead.gif') !important;}
+.icon-ibm-icon-cancel {background-image: url('../images/icons/icon_cancel.gif') !important;}
+.icon-ibm-icon-cancel-disabled {background-image: url('../images/icons/icon_cancel_disabled.gif') !important;}
+.icon-ibm-icon-causeeffect {background-image: url('../images/icons/icon_causeeffect.gif') !important;}
+.icon-ibm-icon-change-owner {background-image: url('../images/icons/icon_change_owner.gif') !important;}
+.icon-ibm-icon-checked {background-image: url('../images/icons/icon_checked.gif') !important;}
+.icon-ibm-icon-comment {background-image: url('../images/icons/icon_comment.gif') !important;}
+.icon-ibm-icon-comments-new {background-image: url('../images/icons/icon_comments_new.gif') !important;}
+.icon-ibm-icon-comment-head {background-image: url('../images/icons/icon_comment_head.gif') !important;}
+.icon-ibm-icon-comment-importance-high {background-image: url('../images/icons/icon_comment_importance_high.gif') !important;}
+.icon-ibm-icon-comment-importance-low {background-image: url('../images/icons/icon_comment_importance_low.gif') !important;}
+.icon-ibm-icon-completed {background-image: url('../images/icons/icon_completed.gif') !important;}
+.icon-ibm-icon-completed-32 {background-image: url('../images/icons/icon_completed_32.gif') !important;}
+.icon-ibm-icon-completed-48 {background-image: url('../images/icons/icon_completed_48.gif') !important;}
+.icon-ibm-icon-countermeasure {background-image: url('../images/icons/icon_countermeasure.gif') !important;}
+.icon-ibm-icon-countermeasure-late {background-image: url('../images/icons/icon_countermeasure_late.gif') !important;}
+.icon-ibm-icon-counter-measure-new {background-image: url('../images/icons/icon_counter_measure_new.gif') !important;}
+.icon-ibm-icon-crn-report {background-image: url('../images/icons/icon_crn_report.gif') !important;}
+.icon-ibm-icon-crn-report-def {background-image: url('../images/icons/icon_crn_report_def.gif') !important;}
+.icon-ibm-icon-crn-report-ref {background-image: url('../images/icons/icon_crn_report_ref.gif') !important;}
+.icon-ibm-icon-crn-report-ref-def {background-image: url('../images/icons/icon_crn_report_ref_def.gif') !important;}
+.icon-ibm-icon-darrow {background-image: url('../images/icons/icon_darrow.gif') !important;}
+.icon-ibm-icon-darrow-sel {background-image: url('../images/icons/icon_darrow_sel.gif') !important;}
+.icon-ibm-icon-data-store {background-image: url('../images/icons/icon_data_store.gif') !important;}
+.icon-ibm-icon-date01 {background-image: url('../images/icons/icon_date01.gif') !important;}
+.icon-ibm-icon-date01-d {background-image: url('../images/icons/icon_date01_d.gif') !important;}
+.icon-ibm-icon-date01-dis {background-image: url('../images/icons/icon_date01_dis.gif') !important;}
+.icon-ibm-icon-date01-r {background-image: url('../images/icons/icon_date01_r.gif') !important;}
+.icon-ibm-icon-date02 {background-image: url('../images/icons/icon_date02.gif') !important;}
+.icon-ibm-icon-date02-d {background-image: url('../images/icons/icon_date02_d.gif') !important;}
+.icon-ibm-icon-date02-dis {background-image: url('../images/icons/icon_date02_dis.gif') !important;}
+.icon-ibm-icon-date02-r {background-image: url('../images/icons/icon_date02_r.gif') !important;}
+.icon-ibm-icon-dateControl {background-image: url('../images/icons/icon_dateControl.gif') !important;}
+.icon-ibm-icon-datepicker {background-image: url('../images/icons/icon_datepicker.gif') !important;}
+.icon-ibm-icon-details {background-image: url('../images/icons/icon_details.gif') !important;}
+.icon-ibm-icon-diagram {background-image: url('../images/icons/icon_diagram.gif') !important;}
+.icon-ibm-icon-diagrams {background-image: url('../images/icons/icon_diagrams.gif') !important;}
+.icon-ibm-icon-diagram-16 {background-image: url('../images/icons/icon_diagram_16.gif') !important;}
+.icon-ibm-icon-diagram-32 {background-image: url('../images/icons/icon_diagram_32.gif') !important;}
+.icon-ibm-icon-diagram-48 {background-image: url('../images/icons/icon_diagram_48.gif') !important;}
+.icon-ibm-icon-diagram-def {background-image: url('../images/icons/icon_diagram_def.gif') !important;}
+.icon-ibm-icon-diagram-dis {background-image: url('../images/icons/icon_diagram_dis.gif') !important;}
+.icon-ibm-icon-diagram-identifier {background-image: url('../images/icons/icon_diagram_identifier.gif') !important;}
+.icon-ibm-icon-diagram-identifier-dis {background-image: url('../images/icons/icon_diagram_identifier_dis.gif') !important;}
+.icon-ibm-icon-diagram-lrg {background-image: url('../images/icons/icon_diagram_lrg.gif') !important;}
+.icon-ibm-icon-diagram-ref {background-image: url('../images/icons/icon_diagram_ref.gif') !important;}
+.icon-ibm-icon-diagram-ref-def {background-image: url('../images/icons/icon_diagram_ref_def.gif') !important;}
+.icon-ibm-icon-diagram-sm-ref {background-image: url('../images/icons/icon_diagram_sm_ref.gif') !important;}
+.icon-ibm-icon-discussions-new {background-image: url('../images/icons/icon_discussions_new.gif') !important;}
+.icon-ibm-icon-discussions-return {background-image: url('../images/icons/icon_discussions_return.gif') !important;}
+.icon-ibm-icon-down {background-image: url('../images/icons/icon_down.gif') !important;}
+.icon-ibm-icon-down-dis {background-image: url('../images/icons/icon_down_dis.gif') !important;}
+.icon-ibm-icon-down-sel {background-image: url('../images/icons/icon_down_sel.gif') !important;}
+.icon-ibm-icon-drill-through {background-image: url('../images/icons/icon_drill_through.gif') !important;}
+.icon-ibm-icon-edit {background-image: url('../images/icons/icon_edit.gif') !important;}
+.icon-ibm-icon-edit-d {background-image: url('../images/icons/icon_edit_d.gif') !important;}
+.icon-ibm-icon-edit-diagram {background-image: url('../images/icons/icon_edit_diagram.gif') !important;}
+.icon-ibm-icon-edit-diagram-dis {background-image: url('../images/icons/icon_edit_diagram_dis.gif') !important;}
+.icon-ibm-icon-edit-dis {background-image: url('../images/icons/icon_edit_dis.gif') !important;}
+.icon-ibm-icon-edit-metric-list {background-image: url('../images/icons/icon_edit_metric_list.gif') !important;}
+.icon-ibm-icon-edit-metric-list-dis {background-image: url('../images/icons/icon_edit_metric_list_dis.gif') !important;}
+.icon-ibm-icon-edit-r {background-image: url('../images/icons/icon_edit_r.gif') !important;}
+.icon-ibm-icon-edit-values {background-image: url('../images/icons/icon_edit_values.gif') !important;}
+.icon-ibm-icon-edit-values-dis {background-image: url('../images/icons/icon_edit_values_dis.gif') !important;}
+.icon-ibm-icon-email {background-image: url('../images/icons/icon_email.gif') !important;}
+.icon-ibm-icon-email-column-header {background-image: url('../images/icons/icon_email_column_header.gif') !important;}
+.icon-ibm-icon-email-no {background-image: url('../images/icons/icon_email_no.gif') !important;}
+.icon-ibm-icon-email-options {background-image: url('../images/icons/icon_email_options.gif') !important;}
+.icon-ibm-icon-error {background-image: url('../images/icons/icon_error.gif') !important;}
+.icon-ibm-icon-fillcolor {background-image: url('../images/icons/icon_fillcolor.gif') !important;}
+.icon-ibm-icon-folder {background-image: url('../images/icons/icon_folder.gif') !important;}
+.icon-ibm-icon-folder-personal {background-image: url('../images/icons/icon_folder_personal.gif') !important;}
+.icon-ibm-icon-formview {background-image: url('../images/icons/icon_formview.gif') !important;}
+.icon-ibm-icon-freearrow {background-image: url('../images/icons/icon_freearrow.gif') !important;}
+.icon-ibm-icon-general {background-image: url('../images/icons/icon_general.gif') !important;}
+.icon-ibm-icon-grid {background-image: url('../images/icons/icon_grid.gif') !important;}
+.icon-ibm-icon-help {background-image: url('../images/icons/icon_help.gif') !important;}
+.icon-ibm-icon-help-d {background-image: url('../images/icons/icon_help_d.gif') !important;}
+.icon-ibm-icon-help-dis {background-image: url('../images/icons/icon_help_dis.gif') !important;}
+.icon-ibm-icon-help-r {background-image: url('../images/icons/icon_help_r.gif') !important;}
+.icon-ibm-icon-history {background-image: url('../images/icons/icon_history.gif') !important;}
+.icon-ibm-icon-horzline {background-image: url('../images/icons/icon_horzline.gif') !important;}
+.icon-ibm-icon-image {background-image: url('../images/icons/icon_image.gif') !important;}
+.icon-ibm-icon-importance-high {background-image: url('../images/icons/icon_importance_high.gif') !important;}
+.icon-ibm-icon-importance-low {background-image: url('../images/icons/icon_importance_low.gif') !important;}
+.icon-ibm-icon-indicator {background-image: url('../images/icons/icon_indicator.gif') !important;}
+.icon-ibm-icon-kpiarrow {background-image: url('../images/icons/icon_kpiarrow.gif') !important;}
+.icon-ibm-icon-late {background-image: url('../images/icons/icon_late.gif') !important;}
+.icon-ibm-icon-late-32 {background-image: url('../images/icons/icon_late_32.gif') !important;}
+.icon-ibm-icon-late-48 {background-image: url('../images/icons/icon_late_48.gif') !important;}
+.icon-ibm-icon-launch {background-image: url('../images/icons/icon_launch.gif') !important;}
+.icon-ibm-icon-line {background-image: url('../images/icons/icon_line.gif') !important;}
+.icon-ibm-icon-linecolor {background-image: url('../images/icons/icon_linecolor.gif') !important;}
+.icon-ibm-icon-linewidth {background-image: url('../images/icons/icon_linewidth.gif') !important;}
+.icon-ibm-icon-listview {background-image: url('../images/icons/icon_listview.gif') !important;}
+.icon-ibm-icon-metrics {background-image: url('../images/icons/icon_metrics.gif') !important;}
+.icon-ibm-icon-metrics-16 {background-image: url('../images/icons/icon_metrics_16.gif') !important;}
+.icon-ibm-icon-metrics-32 {background-image: url('../images/icons/icon_metrics_32.gif') !important;}
+.icon-ibm-icon-metrics-32-incalc {background-image: url('../images/icons/icon_metrics_32_incalc.gif') !important;}
+.icon-ibm-icon-metrics-48 {background-image: url('../images/icons/icon_metrics_48.gif') !important;}
+.icon-ibm-icon-metrics-archive {background-image: url('../images/icons/icon_metrics_archive.gif') !important;}
+.icon-ibm-icon-metrics-package {background-image: url('../images/icons/icon_metrics_package.gif') !important;}
+.icon-ibm-icon-metrics-ref-16 {background-image: url('../images/icons/icon_metrics_ref_16.gif') !important;}
+.icon-ibm-icon-metrics-ref-32 {background-image: url('../images/icons/icon_metrics_ref_32.gif') !important;}
+.icon-ibm-icon-metrics-ref-48 {background-image: url('../images/icons/icon_metrics_ref_48.gif') !important;}
+.icon-ibm-icon-metrictype {background-image: url('../images/icons/icon_metrictype.gif') !important;}
+.icon-ibm-icon-metrictypes {background-image: url('../images/icons/icon_metrictypes.gif') !important;}
+.icon-ibm-icon-metrictype-32 {background-image: url('../images/icons/icon_metrictype_32.gif') !important;}
+.icon-ibm-icon-metrictype-32-incalc {background-image: url('../images/icons/icon_metrictype_32_incalc.gif') !important;}
+.icon-ibm-icon-metrictype-48 {background-image: url('../images/icons/icon_metrictype_48.gif') !important;}
+.icon-ibm-icon-metrictype-new {background-image: url('../images/icons/icon_metrictype_new.gif') !important;}
+.icon-ibm-icon-metrictype-new-dis {background-image: url('../images/icons/icon_metrictype_new_dis.gif') !important;}
+.icon-ibm-icon-namespace {background-image: url('../images/icons/icon_namespace.gif') !important;}
+.icon-ibm-icon-next {background-image: url('../images/icons/icon_next.gif') !important;}
+.icon-ibm-icon-next-d {background-image: url('../images/icons/icon_next_d.gif') !important;}
+.icon-ibm-icon-next-dis {background-image: url('../images/icons/icon_next_dis.gif') !important;}
+.icon-ibm-icon-next-r {background-image: url('../images/icons/icon_next_r.gif') !important;}
+.icon-ibm-icon-next-sel {background-image: url('../images/icons/icon_next_sel.gif') !important;}
+.icon-ibm-icon-noreport-properties {background-image: url('../images/icons/icon_noreport_properties.gif') !important;}
+.icon-ibm-icon-note {background-image: url('../images/icons/icon_note.gif') !important;}
+.icon-ibm-icon-notes {background-image: url('../images/icons/icon_notes.gif') !important;}
+.icon-ibm-icon-note-high-priority {background-image: url('../images/icons/icon_note_high_priority.gif') !important;}
+.icon-ibm-icon-not-started {background-image: url('../images/icons/icon_not_started.gif') !important;}
+.icon-ibm-icon-not-started-32 {background-image: url('../images/icons/icon_not_started_32.gif') !important;}
+.icon-ibm-icon-not-started-48 {background-image: url('../images/icons/icon_not_started_48.gif') !important;}
+.icon-ibm-icon-ok {background-image: url('../images/icons/icon_ok.gif') !important;}
+.icon-ibm-icon-on-track {background-image: url('../images/icons/icon_on_track.gif') !important;}
+.icon-ibm-icon-on-track-32 {background-image: url('../images/icons/icon_on_track_32.gif') !important;}
+.icon-ibm-icon-on-track-48 {background-image: url('../images/icons/icon_on_track_48.gif') !important;}
+.icon-ibm-icon-oval {background-image: url('../images/icons/icon_oval.gif') !important;}
+.icon-ibm-icon-owner {background-image: url('../images/icons/icon_owner.gif') !important;}
+.icon-ibm-icon-package {background-image: url('../images/icons/icon_package.gif') !important;}
+.icon-ibm-icon-pdf {background-image: url('../images/icons/icon_pdf.gif') !important;}
+.icon-ibm-icon-pending {background-image: url('../images/icons/icon_pending.gif') !important;}
+.icon-ibm-icon-pointer {background-image: url('../images/icons/icon_pointer.gif') !important;}
+.icon-ibm-icon-popmenu {background-image: url('../images/icons/icon_popmenu.gif') !important;}
+.icon-ibm-icon-popmenu-dis {background-image: url('../images/icons/icon_popmenu_dis.gif') !important;}
+.icon-ibm-icon-popmenu-opened {background-image: url('../images/icons/icon_popmenu_opened.gif') !important;}
+.icon-ibm-icon-portal {background-image: url('../images/icons/icon_portal.gif') !important;}
+.icon-ibm-icon-preferences {background-image: url('../images/icons/icon_preferences.gif') !important;}
+.icon-ibm-icon-preferences-d {background-image: url('../images/icons/icon_preferences_d.gif') !important;}
+.icon-ibm-icon-preferences-dis {background-image: url('../images/icons/icon_preferences_dis.gif') !important;}
+.icon-ibm-icon-preferences-r {background-image: url('../images/icons/icon_preferences_r.gif') !important;}
+.icon-ibm-icon-previous {background-image: url('../images/icons/icon_previous.gif') !important;}
+.icon-ibm-icon-previous-d {background-image: url('../images/icons/icon_previous_d.gif') !important;}
+.icon-ibm-icon-previous-date {background-image: url('../images/icons/icon_previous_date.gif') !important;}
+.icon-ibm-icon-previous-dis {background-image: url('../images/icons/icon_previous_dis.gif') !important;}
+.icon-ibm-icon-previous-r {background-image: url('../images/icons/icon_previous_r.gif') !important;}
+.icon-ibm-icon-previous-sel {background-image: url('../images/icons/icon_previous_sel.gif') !important;}
+.icon-ibm-icon-priority-confirm {background-image: url('../images/icons/icon_priority_confirm.gif') !important;}
+.icon-ibm-icon-priority-confirm-28 {background-image: url('../images/icons/icon_priority_confirm_28.gif') !important;}
+.icon-ibm-icon-priority-high {background-image: url('../images/icons/icon_priority_high.gif') !important;}
+.icon-ibm-icon-priority-low {background-image: url('../images/icons/icon_priority_low.gif') !important;}
+.icon-ibm-icon-priority-marker {background-image: url('../images/icons/icon_priority_marker.gif') !important;}
+.icon-ibm-icon-priority-marker-28 {background-image: url('../images/icons/icon_priority_marker_28.gif') !important;}
+.icon-ibm-icon-priority-normal {background-image: url('../images/icons/icon_priority_normal.gif') !important;}
+.icon-ibm-icon-priority-null {background-image: url('../images/icons/icon_priority_null.gif') !important;}
+.icon-ibm-icon-priority-null-28 {background-image: url('../images/icons/icon_priority_null_28.gif') !important;}
+.icon-ibm-icon-priority-roll {background-image: url('../images/icons/icon_priority_roll.gif') !important;}
+.icon-ibm-icon-project {background-image: url('../images/icons/icon_project.gif') !important;}
+.icon-ibm-icon-project2 {background-image: url('../images/icons/icon_project2.GIF') !important;}
+.icon-ibm-icon-projects {background-image: url('../images/icons/icon_projects.gif') !important;}
+.icon-ibm-icon-project-16 {background-image: url('../images/icons/icon_project_16.gif') !important;}
+.icon-ibm-icon-project-32 {background-image: url('../images/icons/icon_project_32.gif') !important;}
+.icon-ibm-icon-project-48 {background-image: url('../images/icons/icon_project_48.gif') !important;}
+.icon-ibm-icon-project-header {background-image: url('../images/icons/icon_project_header.gif') !important;}
+.icon-ibm-icon-project-late {background-image: url('../images/icons/icon_project_late.gif') !important;}
+.icon-ibm-icon-project-new {background-image: url('../images/icons/icon_project_new.gif') !important;}
+.icon-ibm-icon-project-new-dis {background-image: url('../images/icons/icon_project_new_dis.gif') !important;}
+.icon-ibm-icon-ps-analysis {background-image: url('../images/icons/icon_ps_analysis.gif') !important;}
+.icon-ibm-icon-ps-analysis-def {background-image: url('../images/icons/icon_ps_analysis_def.gif') !important;}
+.icon-ibm-icon-ps-analysis-sub {background-image: url('../images/icons/icon_ps_analysis_sub.gif') !important;}
+.icon-ibm-icon-qs-query {background-image: url('../images/icons/icon_qs_query.gif') !important;}
+.icon-ibm-icon-qs-query-def {background-image: url('../images/icons/icon_qs_query_def.gif') !important;}
+.icon-ibm-icon-qs-query-sub {background-image: url('../images/icons/icon_qs_query_sub.gif') !important;}
+.icon-ibm-icon-qualifier {background-image: url('../images/icons/icon_qualifier.gif') !important;}
+.icon-ibm-icon-rarrow {background-image: url('../images/icons/icon_rarrow.gif') !important;}
+.icon-ibm-icon-report {background-image: url('../images/icons/icon_report.gif') !important;}
+.icon-ibm-icon-reports {background-image: url('../images/icons/icon_reports.gif') !important;}
+.icon-ibm-icon-report-crn {background-image: url('../images/icons/icon_report_crn.gif') !important;}
+.icon-ibm-icon-report-def {background-image: url('../images/icons/icon_report_def.gif') !important;}
+.icon-ibm-icon-report-sub {background-image: url('../images/icons/icon_report_sub.gif') !important;}
+.icon-ibm-icon-result-csv {background-image: url('../images/icons/icon_result_csv.gif') !important;}
+.icon-ibm-icon-result-csv-def {background-image: url('../images/icons/icon_result_csv_def.gif') !important;}
+.icon-ibm-icon-result-csv-ref {background-image: url('../images/icons/icon_result_csv_ref.gif') !important;}
+.icon-ibm-icon-result-csv-sub {background-image: url('../images/icons/icon_result_csv_sub.gif') !important;}
+.icon-ibm-icon-result-csv-sub-ref {background-image: url('../images/icons/icon_result_csv_sub_ref.gif') !important;}
+.icon-ibm-icon-result-excel {background-image: url('../images/icons/icon_result_excel.gif') !important;}
+.icon-ibm-icon-result-excel-def {background-image: url('../images/icons/icon_result_excel_def.gif') !important;}
+.icon-ibm-icon-result-excel-ref {background-image: url('../images/icons/icon_result_excel_ref.gif') !important;}
+.icon-ibm-icon-result-excel-sub {background-image: url('../images/icons/icon_result_excel_sub.gif') !important;}
+.icon-ibm-icon-result-excel-sub-ref {background-image: url('../images/icons/icon_result_excel_sub_ref.gif') !important;}
+.icon-ibm-icon-result-html {background-image: url('../images/icons/icon_result_html.gif') !important;}
+.icon-ibm-icon-result-htmlfragment {background-image: url('../images/icons/icon_result_htmlfragment.gif') !important;}
+.icon-ibm-icon-result-htmlfragment-def {background-image: url('../images/icons/icon_result_htmlfragment_def.gif') !important;}
+.icon-ibm-icon-result-htmlfragment-ref {background-image: url('../images/icons/icon_result_htmlfragment_ref.gif') !important;}
+.icon-ibm-icon-result-htmlfragment-sub {background-image: url('../images/icons/icon_result_htmlfragment_sub.gif') !important;}
+.icon-ibm-icon-result-htmlfragment-sub-ref {background-image: url('../images/icons/icon_result_htmlfragment_sub_ref.gif') !important;}
+.icon-ibm-icon-result-html-def {background-image: url('../images/icons/icon_result_html_def.gif') !important;}
+.icon-ibm-icon-result-html-ref {background-image: url('../images/icons/icon_result_html_ref.gif') !important;}
+.icon-ibm-icon-result-html-sub {background-image: url('../images/icons/icon_result_html_sub.gif') !important;}
+.icon-ibm-icon-result-html-sub-ref {background-image: url('../images/icons/icon_result_html_sub_ref.gif') !important;}
+.icon-ibm-icon-result-pdf {background-image: url('../images/icons/icon_result_pdf.gif') !important;}
+.icon-ibm-icon-result-pdf-def {background-image: url('../images/icons/icon_result_pdf_def.gif') !important;}
+.icon-ibm-icon-result-pdf-ref {background-image: url('../images/icons/icon_result_pdf_ref.gif') !important;}
+.icon-ibm-icon-result-pdf-sub {background-image: url('../images/icons/icon_result_pdf_sub.gif') !important;}
+.icon-ibm-icon-result-pdf-sub-ref {background-image: url('../images/icons/icon_result_pdf_sub_ref.gif') !important;}
+.icon-ibm-icon-result-xhtml {background-image: url('../images/icons/icon_result_xhtml.gif') !important;}
+.icon-ibm-icon-result-xhtml-def {background-image: url('../images/icons/icon_result_xhtml_def.gif') !important;}
+.icon-ibm-icon-result-xhtml-ref {background-image: url('../images/icons/icon_result_xhtml_ref.gif') !important;}
+.icon-ibm-icon-result-xhtml-sub {background-image: url('../images/icons/icon_result_xhtml_sub.gif') !important;}
+.icon-ibm-icon-result-xhtml-sub-ref {background-image: url('../images/icons/icon_result_xhtml_sub_ref.gif') !important;}
+.icon-ibm-icon-result-xml {background-image: url('../images/icons/icon_result_xml.gif') !important;}
+.icon-ibm-icon-result-xml-def {background-image: url('../images/icons/icon_result_xml_def.gif') !important;}
+.icon-ibm-icon-result-xml-ref {background-image: url('../images/icons/icon_result_xml_ref.gif') !important;}
+.icon-ibm-icon-result-xml-sub {background-image: url('../images/icons/icon_result_xml_sub.gif') !important;}
+.icon-ibm-icon-result-xml-sub-ref {background-image: url('../images/icons/icon_result_xml_sub_ref.gif') !important;}
+.icon-ibm-icon-return {background-image: url('../images/icons/icon_return.gif') !important;}
+.icon-ibm-icon-return-d {background-image: url('../images/icons/icon_return_d.gif') !important;}
+.icon-ibm-icon-return-r {background-image: url('../images/icons/icon_return_r.gif') !important;}
+.icon-ibm-icon-rs-report {background-image: url('../images/icons/icon_rs_report.gif') !important;}
+.icon-ibm-icon-rs-report-def {background-image: url('../images/icons/icon_rs_report_def.gif') !important;}
+.icon-ibm-icon-rs-report-sub {background-image: url('../images/icons/icon_rs_report_sub.gif') !important;}
+.icon-ibm-icon-scgroup {background-image: url('../images/icons/icon_scgroup.gif') !important;}
+.icon-ibm-icon-scgroup-collapse {background-image: url('../images/icons/icon_scgroup_collapse.gif') !important;}
+.icon-ibm-icon-scgroup-expand {background-image: url('../images/icons/icon_scgroup_expand.gif') !important;}
+.icon-ibm-icon-scorecard {background-image: url('../images/icons/icon_scorecard.gif') !important;}
+.icon-ibm-icon-scorecards {background-image: url('../images/icons/icon_scorecards.gif') !important;}
+.icon-ibm-icon-scorecard-new {background-image: url('../images/icons/icon_scorecard_new.gif') !important;}
+.icon-ibm-icon-scorecard-new-dis {background-image: url('../images/icons/icon_scorecard_new_dis.gif') !important;}
+.icon-ibm-icon-scorecard-open {background-image: url('../images/icons/icon_scorecard_open.gif') !important;}
+.icon-ibm-icon-search {background-image: url('../images/icons/icon_search.gif') !important;}
+.icon-ibm-icon-signout {background-image: url('../images/icons/icon_signout.gif') !important;}
+.icon-ibm-icon-signout-d {background-image: url('../images/icons/icon_signout_d.gif') !important;}
+.icon-ibm-icon-signout-dis {background-image: url('../images/icons/icon_signout_dis.gif') !important;}
+.icon-ibm-icon-signout-r {background-image: url('../images/icons/icon_signout_r.gif') !important;}
+.icon-ibm-icon-square {background-image: url('../images/icons/icon_square.gif') !important;}
+.icon-ibm-icon-statushead {background-image: url('../images/icons/icon_statushead.gif') !important;}
+.icon-ibm-icon-strategies {background-image: url('../images/icons/icon_strategies.gif') !important;}
+.icon-ibm-icon-strategy-count {background-image: url('../images/icons/icon_strategy_count.gif') !important;}
+.icon-ibm-icon-strategy-element {background-image: url('../images/icons/icon_strategy_element.gif') !important;}
+.icon-ibm-icon-strategy-element-new {background-image: url('../images/icons/icon_strategy_element_new.gif') !important;}
+.icon-ibm-icon-strategy-element-new-dis {background-image: url('../images/icons/icon_strategy_element_new_dis.gif') !important;}
+.icon-ibm-icon-strategy-element-shortcut {background-image: url('../images/icons/icon_strategy_element_shortcut.gif') !important;}
+.icon-ibm-icon-strategy-new {background-image: url('../images/icons/icon_strategy_new.gif') !important;}
+.icon-ibm-icon-strategy-new-dis {background-image: url('../images/icons/icon_strategy_new_dis.gif') !important;}
+.icon-ibm-icon-strategy-shortcut {background-image: url('../images/icons/icon_strategy_shortcut.gif') !important;}
+.icon-ibm-icon-summary {background-image: url('../images/icons/icon_summary.gif') !important;}
+.icon-ibm-icon-tabbar-collapse {background-image: url('../images/icons/icon_tabbar_collapse.gif') !important;}
+.icon-ibm-icon-tabbar-expand {background-image: url('../images/icons/icon_tabbar_expand.gif') !important;}
+.icon-ibm-icon-tasks {background-image: url('../images/icons/icon_tasks.gif') !important;}
+.icon-ibm-icon-task-new {background-image: url('../images/icons/icon_task_new.gif') !important;}
+.icon-ibm-icon-task-new-dis {background-image: url('../images/icons/icon_task_new_dis.gif') !important;}
+.icon-ibm-icon-text {background-image: url('../images/icons/icon_text.gif') !important;}
+.icon-ibm-icon-text-style {background-image: url('../images/icons/icon_text_style.gif') !important;}
+.icon-ibm-icon-timegrain {background-image: url('../images/icons/icon_timegrain.gif') !important;}
+.icon-ibm-icon-tool {background-image: url('../images/icons/icon_tool.gif') !important;}
+.icon-ibm-icon-toolbar-seperator {background-image: url('../images/icons/icon_toolbar_seperator.gif') !important;}
+.icon-ibm-icon-trafficlight {background-image: url('../images/icons/icon_trafficlight.gif') !important;}
+.icon-ibm-icon-trafficlight-new {background-image: url('../images/icons/icon_trafficlight_new.gif') !important;}
+.icon-ibm-icon-trend {background-image: url('../images/icons/icon_trend.gif') !important;}
+.icon-ibm-icon-trendhead {background-image: url('../images/icons/icon_trendhead.gif') !important;}
+.icon-ibm-icon-trend-falling-negative {background-image: url('../images/icons/icon_trend_falling_negative.gif') !important;}
+.icon-ibm-icon-trend-falling-null {background-image: url('../images/icons/icon_trend_falling_null.gif') !important;}
+.icon-ibm-icon-trend-neutral-null {background-image: url('../images/icons/icon_trend_neutral_null.gif') !important;}
+.icon-ibm-icon-trend-rising-null {background-image: url('../images/icons/icon_trend_rising_null.gif') !important;}
+.icon-ibm-icon-trend-rising-positive {background-image: url('../images/icons/icon_trend_rising_positive.gif') !important;}
+.icon-ibm-icon-uarrow {background-image: url('../images/icons/icon_uarrow.gif') !important;}
+.icon-ibm-icon-uarrow-sel {background-image: url('../images/icons/icon_uarrow_sel.gif') !important;}
+.icon-ibm-icon-understand {background-image: url('../images/icons/icon_understand.gif') !important;}
+.icon-ibm-icon-up {background-image: url('../images/icons/icon_up.gif') !important;}
+.icon-ibm-icon-up-dis {background-image: url('../images/icons/icon_up_dis.gif') !important;}
+.icon-ibm-icon-up-sel {background-image: url('../images/icons/icon_up_sel.gif') !important;}
+.icon-ibm-icon-url {background-image: url('../images/icons/icon_url.gif') !important;}
+.icon-ibm-icon-url-def {background-image: url('../images/icons/icon_url_def.gif') !important;}
+.icon-ibm-icon-url-ref {background-image: url('../images/icons/icon_url_ref.gif') !important;}
+.icon-ibm-icon-url-ref-def {background-image: url('../images/icons/icon_url_ref_def.gif') !important;}
+.icon-ibm-icon-user {background-image: url('../images/icons/icon_user.gif') !important;}
+.icon-ibm-icon-user-group {background-image: url('../images/icons/icon_user_group.gif') !important;}
+.icon-ibm-icon-user-role {background-image: url('../images/icons/icon_user_role.gif') !important;}
+.icon-ibm-icon-validity-date {background-image: url('../images/icons/icon_validity_date.gif') !important;}
+.icon-ibm-icon-version-new {background-image: url('../images/icons/icon_version_new.gif') !important;}
+.icon-ibm-icon-version-new-dis {background-image: url('../images/icons/icon_version_new_dis.gif') !important;}
+.icon-ibm-icon-vertline {background-image: url('../images/icons/icon_vertline.gif') !important;}
+.icon-ibm-icon-views {background-image: url('../images/icons/icon_views.gif') !important;}
+.icon-ibm-icon-view-history-chart {background-image: url('../images/icons/icon_view_history_chart.gif') !important;}
+.icon-ibm-icon-view-history-comparison {background-image: url('../images/icons/icon_view_history_comparison.gif') !important;}
+.icon-ibm-icon-view-history-xtab {background-image: url('../images/icons/icon_view_history_xtab.gif') !important;}
+.icon-ibm-icon-warning {background-image: url('../images/icons/icon_warning.gif') !important;}
+.icon-ibm-icon-warning-16x16 {background-image: url('../images/icons/icon_warning_16x16.gif') !important;}
+.icon-ibm-icon-watch {background-image: url('../images/icons/icon_watch.gif') !important;}
+.icon-ibm-indfolder {background-image: url('../images/icons/indfolder.gif') !important;}
+.icon-ibm-indfolderopen {background-image: url('../images/icons/indfolderopen.gif') !important;}
+.icon-ibm-indpage {background-image: url('../images/icons/indpage.gif') !important;}
+.icon-ibm-join {background-image: url('../images/icons/join.gif') !important;}
+.icon-ibm-joinbottom {background-image: url('../images/icons/joinbottom.gif') !important;}
+.icon-ibm-line {background-image: url('../images/icons/line.gif') !important;}
+.icon-ibm-list-sort-ascending {background-image: url('../images/icons/list_sort_ascending.gif') !important;}
+.icon-ibm-list-sort-descending {background-image: url('../images/icons/list_sort_descending.gif') !important;}
+.icon-ibm-list-sort-no {background-image: url('../images/icons/list_sort_no.gif') !important;}
+.icon-ibm-minus {background-image: url('../images/icons/minus.gif') !important;}
+.icon-ibm-minusbottom {background-image: url('../images/icons/minusbottom.gif') !important;}
+.icon-ibm-mnu-publish {background-image: url('../images/icons/mnu_publish.gif') !important;}
+.icon-ibm-module-active {background-image: url('../images/icons/module-active.gif') !important;}
+.icon-ibm-module-inactive {background-image: url('../images/icons/module-inactive.gif') !important;}
+.icon-ibm-moveall-left {background-image: url('../images/icons/moveall_left.gif') !important;}
+.icon-ibm-moveall-left-disabled {background-image: url('../images/icons/moveall_left_disabled.gif') !important;}
+.icon-ibm-moveall-right {background-image: url('../images/icons/moveall_right.gif') !important;}
+.icon-ibm-moveall-right-disabled {background-image: url('../images/icons/moveall_right_disabled.gif') !important;}
+.icon-ibm-mover {background-image: url('../images/icons/mover.gif') !important;}
+.icon-ibm-move-down {background-image: url('../images/icons/move_down.gif') !important;}
+.icon-ibm-move-down-disabled {background-image: url('../images/icons/move_down_disabled.gif') !important;}
+.icon-ibm-move-left {background-image: url('../images/icons/move_left.gif') !important;}
+.icon-ibm-move-left-disabled {background-image: url('../images/icons/move_left_disabled.gif') !important;}
+.icon-ibm-move-right {background-image: url('../images/icons/move_right.gif') !important;}
+.icon-ibm-move-right-disabled {background-image: url('../images/icons/move_right_disabled.gif') !important;}
+.icon-ibm-move-up {background-image: url('../images/icons/move_up.gif') !important;}
+.icon-ibm-move-up-disabled {background-image: url('../images/icons/move_up_disabled.gif') !important;}
+.icon-ibm-msg-information {background-image: url('../images/icons/msg_information.gif') !important;}
+.icon-ibm-msg-information-16 {background-image: url('../images/icons/msg_information_16.gif') !important;}
+.icon-ibm-msg-warning-16 {background-image: url('../images/icons/msg_warning_16.gif') !important;}
+.icon-ibm-navigation-bg {background-image: url('../images/icons/navigation_bg.gif') !important;}
+.icon-ibm-new-group-view {background-image: url('../images/icons/new_group_view.gif') !important;}
+.icon-ibm-next {background-image: url('../images/icons/next.gif') !important;}
+.icon-ibm-next-dis {background-image: url('../images/icons/next_dis.gif') !important;}
+.icon-ibm-page {background-image: url('../images/icons/page.gif') !important;}
+.icon-ibm-path {background-image: url('../images/icons/path.gif') !important;}
+.icon-ibm-person {background-image: url('../images/icons/person.gif') !important;}
+.icon-ibm-plus {background-image: url('../images/icons/plus.gif') !important;}
+.icon-ibm-plusbottom {background-image: url('../images/icons/plusbottom.gif') !important;}
+.icon-ibm-ppw-icon-pp {background-image: url('../images/icons/ppw_icon_pp.gif') !important;}
+.icon-ibm-preferences-left {background-image: url('../images/icons/preferences_left.gif') !important;}
+.icon-ibm-preferences-left2 {background-image: url('../images/icons/preferences_left2.gif') !important;}
+.icon-ibm-preferences-right {background-image: url('../images/icons/preferences_right.gif') !important;}
+.icon-ibm-previous {background-image: url('../images/icons/previous.gif') !important;}
+.icon-ibm-previous-dis {background-image: url('../images/icons/previous_dis.gif') !important;}
+.icon-ibm-rangestyle-down-normal {background-image: url('../images/icons/rangestyle_down_normal.gif') !important;}
+.icon-ibm-rangestyle-down-pressed {background-image: url('../images/icons/rangestyle_down_pressed.gif') !important;}
+.icon-ibm-rangestyle-down-rollover {background-image: url('../images/icons/rangestyle_down_rollover.gif') !important;}
+.icon-ibm-rangestyle-up-normal {background-image: url('../images/icons/rangestyle_up_normal.gif') !important;}
+.icon-ibm-rangestyle-up-pressed {background-image: url('../images/icons/rangestyle_up_pressed.gif') !important;}
+.icon-ibm-rangestyle-up-rollover {background-image: url('../images/icons/rangestyle_up_rollover.gif') !important;}
+.icon-ibm-range-bottom {background-image: url('../images/icons/range_bottom.gif') !important;}
+.icon-ibm-range-middle {background-image: url('../images/icons/range_middle.gif') !important;}
+.icon-ibm-range-resize {background-image: url('../images/icons/range_resize.gif') !important;}
+.icon-ibm-range-tic {background-image: url('../images/icons/range_tic.gif') !important;}
+.icon-ibm-range-tic-mid { background-image: url('../images/icons/range_tic_mid.gif') !important;}
+.icon-ibm-range-top {background-image: url('../images/icons/range_top.gif') !important;}
+.icon-ibm-report-left {background-image: url('../images/icons/report_left.gif') !important;}
+.icon-ibm-report-right {background-image: url('../images/icons/report_right.gif') !important;}
+.icon-ibm-selector {background-image: url('../images/icons/selector.gif') !important;}
+.icon-ibm-seperator {background-image: url('../images/icons/seperator.gif') !important;}
+.icon-ibm-shift-backward {background-image: url('../images/icons/shift_backward.gif') !important;}
+.icon-ibm-shift-backward-dis {background-image: url('../images/icons/shift_backward_dis.gif') !important;}
+.icon-ibm-shift-forward {background-image: url('../images/icons/shift_forward.gif') !important;}
+.icon-ibm-shift-forward-dis {background-image: url('../images/icons/shift_forward_dis.gif') !important;}
+.icon-ibm-show-buttons {background-image: url('../images/icons/show_buttons.gif') !important;}
+.icon-ibm-show-left {background-image: url('../images/icons/show_left.gif') !important;}
+.icon-ibm-show-right {background-image: url('../images/icons/show_right.gif') !important;}
+.icon-ibm-space {background-image: url('../images/icons/space.gif') !important;}
+.icon-ibm-spacer {background-image: url('../images/icons/spacer.gif') !important;}
+.icon-ibm-state-error {background-image: url('../images/icons/state_error.gif') !important;}
+.icon-ibm-state-ok {background-image: url('../images/icons/state_ok.gif') !important;}
+.icon-ibm-symbol-0-lrg {background-image: url('../images/icons/symbol_0_lrg.gif') !important;}
+.icon-ibm-symbol-0-med {background-image: url('../images/icons/symbol_0_med.gif') !important;}
+.icon-ibm-symbol-0-sm {background-image: url('../images/icons/symbol_0_sm.gif') !important;}
+.icon-ibm-symbol-3-lrg {background-image: url('../images/icons/symbol_3_lrg.gif') !important;}
+.icon-ibm-symbol-3-med {background-image: url('../images/icons/symbol_3_med.gif') !important;}
+.icon-ibm-symbol-3-sm {background-image: url('../images/icons/symbol_3_sm.gif') !important;}
+.icon-ibm-symbol-4-lrg {background-image: url('../images/icons/symbol_4_lrg.gif') !important;}
+.icon-ibm-symbol-4-med {background-image: url('../images/icons/symbol_4_med.gif') !important;}
+.icon-ibm-symbol-4-sm {background-image: url('../images/icons/symbol_jrj_r_sm.gif') !important;}
+.icon-ibm-symbol-5-lrg {background-image: url('../images/icons/symbol_5_lrg.gif') !important;}
+.icon-ibm-symbol-5-med {background-image: url('../images/icons/symbol_5_med.gif') !important;}
+.icon-ibm-symbol-5-sm {background-image: url('../images/icons/symbol_jrj_c_sm.gif') !important;}
+.icon-ibm-symbol-6-lrg {background-image: url('../images/icons/symbol_6_lrg.gif') !important;}
+.icon-ibm-symbol-6-med {background-image: url('../images/icons/symbol_6_med.gif') !important;}
+.icon-ibm-symbol-6-sm {background-image: url('../images/icons/symbol_jrj_y_sm.gif') !important;}
+.icon-ibm-symbol-safe-sm {background-image: url('../images/icons/symbol_jrj_g_sm.gif') !important;}
+.icon-ibm-symbol-7-lrg {background-image: url('../images/icons/symbol_7_lrg.gif') !important;}
+.icon-ibm-symbol-7-med {background-image: url('../images/icons/symbol_7_med.gif') !important;}
+.icon-ibm-symbol-7-sm {background-image: url('../images/icons/symbol_7_sm.gif') !important;}
+.icon-ibm-tab-topleft {background-image: url('../images/icons/tab_topleft.gif') !important;}
+.icon-ibm-tab-topright {background-image: url('../images/icons/tab_topright.gif') !important;}
+.icon-ibm-tile-bottom {background-image: url('../images/icons/tile_bottom.gif') !important;}
+.icon-ibm-tile-bottom-sel {background-image: url('../images/icons/tile_bottom_sel.gif') !important;}
+.icon-ibm-tile-right {background-image: url('../images/icons/tile_right.gif') !important;}
+.icon-ibm-tile-right-sel {background-image: url('../images/icons/tile_right_sel.gif') !important;}
+.icon-ibm-tip-template {background-image: url('../images/icons/tip_template.gif') !important;}
+.icon-ibm-tool-edit {background-image: url('../images/icons/tool_edit.gif') !important;}
+.icon-ibm-tool-edit-disabled {background-image: url('../images/icons/tool_edit_disabled.gif') !important;}
+.icon-ibm-tool-filters {background-image: url('../images/icons/tool_filters.gif') !important;}
+.icon-ibm-tool-filters-disabled {background-image: url('../images/icons/tool_filters_disabled.gif') !important;}
+.icon-ibm-tool-main-cancel {background-image: url('../images/icons/tool_main_cancel.gif') !important;}
+.icon-ibm-tool-main-cancel-disabled {background-image: url('../images/icons/tool_main_cancel_disabled.gif') !important;}
+.icon-ibm-tool-main-copy {background-image: url('../images/icons/tool_main_copy.gif') !important;}
+.icon-ibm-tool-main-copy-disabled {background-image: url('../images/icons/tool_main_copy_disabled.gif') !important;}
+.icon-ibm-tool-main-cut {background-image: url('../images/icons/tool_main_cut.gif') !important;}
+.icon-ibm-tool-main-cut-disabled {background-image: url('../images/icons/tool_main_cut_disabled.gif') !important;}
+.icon-ibm-tool-main-delete {background-image: url('../images/icons/tool_main_delete.gif') !important;}
+.icon-ibm-tool-main-delete-disabled {background-image: url('../images/icons/tool_main_delete_disabled.gif') !important;}
+.icon-ibm-tool-main-order {background-image: url('../images/icons/tool_main_order.gif') !important;}
+.icon-ibm-tool-main-order-disabled {background-image: url('../images/icons/tool_main_order_disabled.gif') !important;}
+.icon-ibm-tool-main-paste {background-image: url('../images/icons/tool_main_paste.gif') !important;}
+.icon-ibm-tool-main-paste-disabled {background-image: url('../images/icons/tool_main_paste_disabled.gif') !important;}
+.icon-ibm-tool-main-save {background-image: url('../images/icons/tool_main_save.gif') !important;}
+.icon-ibm-tool-main-save-disabled {background-image: url('../images/icons/tool_main_save_disabled.gif') !important;}
+.icon-ibm-tool-refresh {background-image: url('../images/icons/tool_refresh.gif') !important;}
+.icon-ibm-tool-refresh-dis {background-image: url('../images/icons/tool_refresh_dis.gif') !important;}
+.icon-ibm-tool-toplevel {background-image: url('../images/icons/tool_toplevel.gif') !important;}
+.icon-ibm-top-left-box-border {background-image: url('../images/icons/top_left_box_border.gif') !important;}
+.icon-ibm-top-left-inner-box-border {background-image: url('../images/icons/top_left_inner_box_border.gif') !important;}
+.icon-ibm-top-right-box-border {background-image: url('../images/icons/top_right_box_border.gif') !important;}
+.icon-ibm-top-right-inner-box-border {background-image: url('../images/icons/top_right_inner_box_border.gif') !important;}
+.icon-ibm-traffic-0-lrg {background-image: url('../images/icons/traffic_0_lrg.gif') !important;}
+.icon-ibm-traffic-0-med {background-image: url('../images/icons/traffic_0_med.gif') !important;}
+.icon-ibm-traffic-0-sm {background-image: url('../images/icons/traffic_0_sm.gif') !important;}
+.icon-ibm-traffic-3-lrg {background-image: url('../images/icons/traffic_3_lrg.gif') !important;}
+.icon-ibm-traffic-3-med {background-image: url('../images/icons/traffic_3_med.gif') !important;}
+.icon-ibm-traffic-3-sm {background-image: url('../images/icons/traffic_3_sm.gif') !important;}
+.icon-ibm-traffic-4-lrg {background-image: url('../images/icons/traffic_4_lrg.gif') !important;}
+.icon-ibm-traffic-4-med {background-image: url('../images/icons/traffic_4_med.gif') !important;}
+.icon-ibm-traffic-4-sm {background-image: url('../images/icons/traffic_4_sm.gif') !important;}
+.icon-ibm-traffic-5-lrg {background-image: url('../images/icons/traffic_5_lrg.gif') !important;}
+.icon-ibm-traffic-5-med {background-image: url('../images/icons/traffic_5_med.gif') !important;}
+.icon-ibm-traffic-5-sm {background-image: url('../images/icons/traffic_5_sm.gif') !important;}
+.icon-ibm-traffic-6-lrg {background-image: url('../images/icons/traffic_6_lrg.gif') !important;}
+.icon-ibm-traffic-6-med {background-image: url('../images/icons/traffic_6_med.gif') !important;}
+.icon-ibm-traffic-6-sm {background-image: url('../images/icons/traffic_6_sm.gif') !important;}
+.icon-ibm-traffic-7-lrg {background-image: url('../images/icons/traffic_7_lrg.gif') !important;}
+.icon-ibm-traffic-7-med {background-image: url('../images/icons/traffic_7_med.gif') !important;}
+.icon-ibm-traffic-7-sm {background-image: url('../images/icons/traffic_7_sm.gif') !important;}
+.icon-ibm-tree-indicatortypes {background-image: url('../images/icons/tree_indicatortypes.gif') !important;}
+.icon-ibm-tree-node-collapsed {background-image: url('../images/icons/tree_node_collapsed.gif') !important;}
+.icon-ibm-tree-node-expanded {background-image: url('../images/icons/tree_node_expanded.gif') !important;}
+.icon-ibm-tree-scorecard {background-image: url('../images/icons/tree_scorecard.gif') !important;}
+.icon-ibm-tree-scorecard-group-bad {background-image: url('../images/icons/tree_scorecard_group_bad.gif') !important;}
+.icon-ibm-tree-scorecard-group-good {background-image: url('../images/icons/tree_scorecard_group_good.gif') !important;}
+.icon-ibm-tree-scorecard-group-neutral {background-image: url('../images/icons/tree_scorecard_group_neutral.gif') !important;}
+.icon-ibm-tree-scorecard-group-null {background-image: url('../images/icons/tree_scorecard_group_null.gif') !important;}
+.icon-ibm-tree-scorecard-open {background-image: url('../images/icons/tree_scorecard_open.gif') !important;}
+.icon-ibm-tree-scorecard-solo-bad {background-image: url('../images/icons/tree_scorecard_solo_bad.gif') !important;}
+.icon-ibm-tree-scorecard-solo-good {background-image: url('../images/icons/tree_scorecard_solo_good.gif') !important;}
+.icon-ibm-tree-scorecard-solo-neutral {background-image: url('../images/icons/tree_scorecard_solo_neutral.gif') !important;}
+.icon-ibm-tree-scorecard-solo-null {background-image: url('../images/icons/tree_scorecard_solo_null.gif') !important;}
+.icon-ibm-uk {background-image: url('../images/icons/uk.gif') !important;}
+.icon-ibm-underconstruction-large {background-image: url('../images/icons/underconstruction_large.gif') !important;}
+.icon-ibm-underconstruction-med {background-image: url('../images/icons/underconstruction_med.gif') !important;}
+.icon-ibm-underconstruction-small {background-image: url('../images/icons/underconstruction_small.gif') !important;}
+.icon-ibm-unionflag {background-image: url('../images/icons/unionflag.gif') !important;}
+.icon-ibm-vertrule {background-image: url('../images/icons/vertrule.gif') !important;}
+.icon-ibm-vertsep {background-image: url('../images/icons/vertsep.gif') !important;}
+.icon-ibm-width-menu {background-image: url('../images/icons/width_menu.gif') !important;}
+.icon-ibm-width-menu {background-image: url('../images/icons/width_menu.gif') !important;}
+.icon-selectorButton {background-image: url('../images/icons/find.jpg') !important;}
+.icon-dateControl {background-image: url('../images/icons/dateControl.gif') !important;}
+.icon-001 {background-image: url('../images/icons/001.png') !important;}
+.icon-002 {background-image: url('../images/icons/002.png') !important;}
+.icon-003 {background-image: url('../images/icons/003.png') !important;}
+.icon-004 {background-image: url('../images/icons/004.png') !important;}
+.icon-005 {background-image: url('../images/icons/005.png') !important;}
+.icon-006 {background-image: url('../images/icons/006.png') !important;}
+.icon-007 {background-image: url('../images/icons/007.png') !important;}
+.icon-008 {background-image: url('../images/icons/008.png') !important;}
+.icon-009 {background-image: url('../images/icons/009.png') !important;}
+.icon-010 {background-image: url('../images/icons/010.png') !important;}
+.icon-operator-back {background-image: url('../images/icons/operator_back.png') !important;}
+.icon-operator-home {background-image: url('../images/icons/operator_home.png') !important;}
+.icon-operator-next {background-image: url('../images/icons/operator_next.png') !important;}
+.icon-operator-submit {background-image: url('../images/icons/operator_submit.png') !important;}
+.icon-symbol-status-sm {background-image: url('../images/icons/symbol_status_sm.gif') !important;}
+.icon-btn-defect {background-image: url('../images/icons/btn/defect.png') !important;}
+.icon-btn-plan {background-image: url('../images/icons/btn/plan.png') !important;}
+.icon-btn-home {background-image: url('../images/icons/btn/home.png') !important;}
+.icon-btn-assessPlan {background-image: url('../images/icm/plan.png') !important;}
+.icon-btn-execute {background-image: url('../images/icm/execute.png') !important;}
+.icon-btn-testReport{background-image: url('../images/icm/baogao.png') !important;}
+.icon-btn-set {background-image: url('../images/icons/btn/set.png') !important;}
+.icon-btn-rectify{background-image: url('../images/icons/btn/zhenggai.png') !important;}
+
+.icon-status-high{background-image: url('../images/icons/symbol_high_sm.gif') !important;}
+.icon-status-low{background-image: url('../images/icons/symbol_low_sm.gif') !important;}
+.icon-status-mid{background-image: url('../images/icons/symbol_mid_sm.gif') !important;}
+.icon-status-disable{background-image: url('../images/icons/symbol_disable_sm.gif') !important;}
+
+
+
+.icon-theme-layout1{background-image: url('../images/icons/layout1.png') !important;}
+.icon-theme-layout2{background-image: url('../images/icons/layout2.png') !important;}
+.icon-theme-layout3{background-image: url('../images/icons/layout3.png') !important;}
+
+.icon-close {background-color:transparent;background-image:	url("../scripts/ext-4.1/resources/themes/images/default/tab/tab-default-close.gif");background-repeat:no-repeat;background-position:0 0;background-attachment:scroll;opacity:0.6;}

@@ -1,0 +1,13 @@
+[{
+	 id:'1',
+	 name:'高层',
+	 weighting:'3'
+ },{
+	 id:'2',
+	 name:'半层',
+	 weighting:'2'
+ },{
+	 id:'3',
+	 name:'员工',
+	 weighting:'1'
+ }]

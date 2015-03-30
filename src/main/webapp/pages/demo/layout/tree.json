@@ -1,0 +1,38 @@
+[ {
+	"id" : "2",
+	"text" : "北京市",
+	"cls" : "org",
+	"leaf" : true,
+	"title" : "beijing",
+	"name" : "北京市",
+	"parentId" : "",
+	"idSeq" : ".2."
+}, {
+	"id" : "1",
+	"text" : "辽宁省",
+	"cls" : "org",
+	"leaf" : false,
+	"title" : "liaoning",
+	"name" : "辽宁省",
+	"parentId" : "",
+	"idSeq" : ".1.",
+	"children" : [ {
+		"id" : "4",
+		"text" : "大连市",
+		"cls" : "org",
+		"leaf" : true,
+		"title" : "dalian",
+		"name" : "大连市",
+		"parentId" : "1",
+		"idSeq" : ".1.4."
+	}, {
+		"id" : "3",
+		"text" : "沈阳市",
+		"cls" : "org",
+		"leaf" : true,
+		"title" : "shenyang",
+		"name" : "沈阳市",
+		"parentId" : "1",
+		"idSeq" : ".1.3."
+	} ]
+} ]

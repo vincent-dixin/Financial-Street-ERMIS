@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="fhd-fdc:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="fdc.war">
+      <element id="artifact" artifact-name="fhd-fdc:war exploded" />
+    </root>
+  </artifact>
+</component>

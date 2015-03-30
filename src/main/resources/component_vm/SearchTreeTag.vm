@@ -1,0 +1,189 @@
+<div id="${id}" style="float:left"></div>
+<script type="text/javascript">
+var arrayObj${id} = new Array();
+var lastNodeId${id};
+
+var treeloader${id} = new Ext.tree.TreeLoader({
+	${checkNode}
+	dataUrl:'${dataUrl}'
+	#if(${baseParams})
+		,baseParams:${baseParams}
+	#end
+});
+
+var ${id} = new Ext.tree.TreePanel({
+	    el:'${id}',
+		rootVisible:${rootVisible},
+        useArrows: true,
+        autoScroll: true,
+        animate: true,
+        enableDD: true,
+        containerScroll: true,
+        border: false,
+        height:${height},//document.body.offsetHeight-55,
+        width:${width},//200,
+    	hlDrop:false,		
+		checkModel : '${checkModel}',
+		onlyLeafCheckable:${onlyLeafCheckable},
+		loader:treeloader${id},
+		tbar:new Ext.Toolbar({
+			height:25,
+			items : [' ',
+        			new Ext.form.TextField({
+        				id:'searchbox_${id}',
+        				width:${sbWidth},
+        				emptyText:'${sbEmptyText}',
+        				selectOnFocus: true,
+        				enableKeyEvent: true,
+        				listeners:{
+        				   'specialkey': function(f,e){
+        				       if (e.keyCode == 13) {
+        				    	   searchText${id}();
+        				       }
+        				   }
+        				}
+        			}),' ',' ',
+        			{
+                        iconCls: 'icon-expand-all',
+        				tooltip: '',
+                        handler: function(){ root${id}.expand(true); },
+                        scope: this
+                    }, '-', {
+                        iconCls: 'icon-collapse-all',
+                        tooltip: '',
+                        handler: function(){ root${id}.collapse(true); },
+                        scope: this
+                    }
+					${freshBtn}
+                ]})
+    });
+
+	var root${id} = new Ext.tree.AsyncTreeNode({
+		text:'${rootName}',
+		draggable:false,
+		${rootCheck}
+		${rootLink}
+		hrefTarget:'mainframe',
+		iconCls:'risk-tree-icon',
+		cls:'root',
+		id:'${rootId}'
+	 });
+	
+	 ${id}.setRootNode(root${id});
+	 ${id}.render();
+	 ${id}.getRootNode().expand();
+	 ${id}.on('check', ${onCheck}, ${id});
+	 ${expandAll}
+	 
+	 treeloader${id}.on("beforeload", function(treeLoader, node) {
+		${beforeload}
+	 });
+	 
+ 	var lastSearchText${id};
+ 	function searchText${id}(){
+		var param = Ext.getCmp('searchbox_${id}').getValue();
+	    if(param.trim()!=lastSearchText${id}){
+			Ext.Ajax.request({
+				url:'${searchPath}',
+			    method:'post',
+			    params:{
+			    	searchName: param
+			    },
+			    success:function(response){
+					root${id}.reload();
+			    	if(response.responseText!='"1"'){
+			    		lastNodeId${id}="";
+			    		var paths = response.responseText.split("\"");
+			    		paths=paths[1].split(",");
+				        if(paths!="1"){
+					 	    for(var i = 0; i < paths.length; i++) {
+					 	    	 if(i==paths.length-1){
+					 	    		 var nodeIds=paths[i].split("/");
+					 	    		 lastNodeId${id}=nodeIds[nodeIds.length-1];
+					 	    	 }
+				 	    	 	${id}.expandPath(paths[i], 'id', search${id}.onExpandPathComplete);
+		   				  	}
+				    	}else{
+				    		search${id}.allNodeShow(${id}.getNodeById("${rootId}"));
+				    		${id}.selectPath('/${rootId}', 'id', search${id}.onExpandPathComplete);
+				    	 	arrayObj${id}=[];
+				    	}
+			    	}else if(param==''){
+			    		root${id}.reload();
+			    	}else{
+			    		Ext.Msg.alert(LittleUrl.decode('%E6%8F%90%E7%A4%BA'),LittleUrl.decode('%E6%97%A0%E8%AE%B0%E5%BD%95'));
+			    	}
+			    }
+			});
+			lastSearchText${id}=param.trim();
+		}
+	}
+
+   var search${id} = {
+   		 onExpandPathComplete : function(bSuccess, oLastNode) { 
+   			  arrayObj${id}.push(oLastNode);
+   			  search${id}.addArrayObj(oLastNode);
+    		  if(!bSuccess) 
+    		   	return;
+    		  if(oLastNode==${id}.getNodeById(lastNodeId${id})){
+    				  for(var m = 0; m < arrayObj${id}.length; m++) {
+   			  		  if(arrayObj${id}[m].getDepth() == 0) continue;
+   			  		  var nodes = arrayObj${id}[m].parentNode.childNodes;
+					  
+					  var tempNode = arrayObj${id}[m].childNodes;
+   			  		  if(tempNode!=null){
+   			  			for(var i = 0; i < tempNode.length; i++) {
+     				  	      var flag=false;
+     				  	      for(var j = 0; j < arrayObj${id}.length; j++) {
+     				  	    	if(tempNode[i] == arrayObj${id}[j]) {
+     				  	    		flag=true;
+     					  	    }
+     					  	  }
+     					  	  
+	   				  	        if(!flag) {
+	   				  	           tempNode[i].getUI().hide();
+	   				  	        }else{
+	   				  	           tempNode[i].getUI().show();
+	   				  	        }
+     				  	    }
+   	   			  	   }
+					  
+   				  	   for(var i = 0; i < nodes.length; i++) {
+   				  	      var flag=false;
+   				  	      for(var j = 0; j < arrayObj${id}.length; j++) {
+   				  	    	if(nodes[i] == arrayObj${id}[j]) {
+   				  	    		flag=true;
+   					  	        }
+   					  	    }
+   				  	        if(!flag) {
+   				  	           nodes[i].getUI().hide();
+   				  	        }else{
+   				  	           nodes[i].getUI().show();
+   				  	        }
+   				  	    }	  
+   		    	  }
+   			      arrayObj${id}=[];
+   		       }
+   		 },	   		 
+   		 addArrayObj : function(node){
+   			 if(node.getDepth() == 0){
+	    		  return;
+	    	  }else{
+		  		  var parentNode = node.parentNode;
+		  		  arrayObj${id}.push(parentNode);
+		  		  this.addArrayObj(parentNode); 
+	    	  }
+   		 },	   		 
+   		 allNodeShow : function(node){
+   			   if(node.hasChildNodes()){
+   				   var childrenNodes=node.childNodes;
+  		    		for(var i=0;i<childrenNodes.length;i++){
+  		    			childrenNodes[i].getUI().show();
+  		    			this.allNodeShow(childrenNodes[i]);
+  		    		}
+   			   }else{
+   				   return;
+   			   }
+   		 }
+    };
+</script>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.1.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+	<bean id="annotationConfiguration"
+		class="org.compass.annotations.config.CompassAnnotationsConfiguration" />
+	<bean id="compass" class="org.compass.spring.LocalCompassBean">
+		<property name="classMappings">
+			<list>
+				<value>com.fhd.sys.entity.helponline.HelpTopic</value>
+			</list>
+		</property>
+		<property name="compassConfiguration" ref="annotationConfiguration" />
+		<property name="compassSettings">
+			<props>
+				<prop key="compass.engine.connection">/lucene/indexes/fhd</prop>
+				<prop key="compass.transaction.factory">org.compass.spring.transaction.SpringSyncTransactionFactory
+				</prop>
+				<prop key="compass.engine.highlighter.default.formatter.simple.pre">
+                <![CDATA[<font color="red"><b>]]>
+				</prop>
+				<prop key="compass.engine.highlighter.default.formatter.simple.post">
+                <![CDATA[</b></font>]]>
+				</prop>
+			</props>
+		</property>
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+	</bean>
+
+	<bean id="hibernateGpsDevice" class="org.compass.gps.device.hibernate.HibernateGpsDevice">
+		<property name="name">
+			<value>hibernateDevice</value>
+		</property>
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+		<property name="nativeExtractor">
+			<bean class="org.compass.spring.device.hibernate.SpringNativeHibernateExtractor" />
+		</property>
+	</bean>
+
+	<bean id="compassGps" class="org.compass.gps.impl.SingleCompassGps"
+		init-method="start" destroy-method="stop">
+		<property name="compass">
+			<ref bean="compass" />
+		</property>
+		<property name="gpsDevices">
+			<list>
+				<bean class="org.compass.spring.device.SpringSyncTransactionGpsDeviceWrapper">
+					<property name="gpsDevice" ref="hibernateGpsDevice" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	<bean id="compassSearchService" class="com.fhd.fdc.commons.compass.CompassSearchService">
+		<property name="compass" ref="compass" />
+		<property name="pageSize" value="25" />
+	</bean>
+
+	<bean id="compassIndexBuilder" class="com.fhd.fdc.commons.compass.CompassIndexBuilder">
+		<property name="compassGps" ref="compassGps"></property>
+		<property name="buildIndex" value="true" />   
+        <property name="lazyTime" value="5" />
+	</bean>
+	
+	<bean id="taskWebInit" class="com.fhd.sys.business.st.task.TaskWebInit">
+	</bean>
+</beans>

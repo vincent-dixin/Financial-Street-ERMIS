@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tpls>
+	<tpl>
+	    <tpldata>
+	        <![CDATA[
+				<p>
+		<a name="_Toc270004992"></a><span style="font-family:'Times New Roman', 'serif';line-height:150%;"></span></a> 
+	</p>
+	<p style="text-align:center;" align="center">
+		<span><b><span style="font-size:15pt;line-height:150%;">××</span></b></span><span><b><span style="font-size:15pt;font-family:宋体;line-height:150%;">股份有限公司</span></b></span><span><b><span style="font-size:15pt;line-height:150%;">20××</span></b></span><span><b><span style="font-size:15pt;font-family:宋体;line-height:150%;">年度内部控制评价报告</span></b></span><b><span style="font-size:15pt;line-height:150%;"></span></b> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">××</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">股份有限公司全体股东：</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">根据《企业内部控制基本规范》等法律法规的要求，我们对本公司（下称“公司”）内部控制的有效性进行了自我评价。</span> 
+	</p>
+	<p style="text-align:left;text-indent:24.1pt;" align="left">
+		<b><span style="font-size:12pt;font-family:宋体;line-height:150%;">一、董事会声明</span></b> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">公司董事会及全体董事保证本报告内容不存在任何虚假记载、误导性陈述或重大遗漏，并对报告内容的真实性、准确性和完整性承担个别及连带责任。</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">建立健全并有效实施内部控制是公司董事会的责任；监事会对董事会建立与实施内部控制进行监督；经理层负责组织领导公司内部控制的日常运行。</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;"> </span>
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">公司内部控制的目标是：</span><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">[</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">一般包括合理保证经营合法合规、资产安全、财务报告及相关信息真实完整，提高经营效率和效果，促进实现发展战略</span></i><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">]</span></i><span style="font-size:12pt;font-family:宋体;line-height:150%;">。由于内部控制存在固有局限性，故仅能对达到上述目标提供合理保证。</span> 
+	</p>
+	<p style="text-align:left;text-indent:24.1pt;" align="left">
+		<b><span style="font-size:12pt;font-family:宋体;line-height:150%;">二、内部控制评价工作的总体情况</span></b> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">公司董事会授权内部审计机构</span><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">[</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">或其他专门机构</span></i><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">]</span></i><span style="font-size:12pt;font-family:宋体;line-height:150%;">负责内部控制评价的具体组织实施工作，对纳入评价范围的高风险领域和单位进行评价</span><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">[</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">描述评价工作的组织领导体制，一般包括评价工作组织结构图及职责权限、自评价流程、主要负责人及汇报途径等</span></i><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">]</span></i><span style="font-size:12pt;font-family:宋体;line-height:150%;">。</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">公司</span><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">[</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">是／否</span></i><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">]</span></i><span style="font-size:12pt;font-family:宋体;line-height:150%;">聘请了专业机构</span><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">[</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">中介机构名称</span></i><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">]</span></i><span style="font-size:12pt;font-family:宋体;line-height:150%;">实施内部控制评价，并编制内部控制评价报告；公司</span><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">[</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">是／否</span></i><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">]</span></i><span style="font-size:12pt;font-family:宋体;line-height:150%;">聘请会计事务所</span><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">[</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">会计师事务所名称</span></i><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">]</span></i><span style="font-size:12pt;font-family:宋体;line-height:150%;">对公司内部控制有效性进行独立审计。</span> 
+	</p>
+	<p style="text-align:left;text-indent:24.1pt;" align="left">
+		<b><span style="font-size:12pt;font-family:宋体;line-height:150%;">三、内部控制评价的依据</span></b> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">本评价报告旨在根据中华人民共和国财政部等五部委联合发布的《企业内部控制基本规范》</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">(</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">下称“基本规范”</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">)</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">及《企业内部控制评价指引》</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">(</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">下称“评价指引”</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">)</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">的要求，结合企业内部控制制度和评价办法，在内部控制日常监督和专项监督的基础上，对公司截至</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">20</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">××</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">年</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">12</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">月</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">31</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">日内部控制的设计与运行的有效性进行评价。</span> 
+	</p>
+	<p style="text-align:left;text-indent:24.1pt;" align="left">
+		<b><span style="font-size:12pt;font-family:宋体;line-height:150%;">四、内部控制评价的范围</span></b> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">内部控制评价的范围涵盖了公司及其所属单位的各种业务和事项，重点关注下列高风险领域：</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">[</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">列示公司根据风险评估结果确定的前“N大”主要风险</span></i><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">]</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;"></span></i> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">纳入评价范围的单位包括：</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">[</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">描述公司及其所属单位的明确范围</span></i><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">]</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;"></span></i> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">纳入评价范围的业务和事项包括</span><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">(</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">根据实际情况充实调整</span></i><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">)</span></i><span style="font-size:12pt;font-family:宋体;line-height:150%;">：</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;"> </span>
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">(</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">一</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">)</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">组织架构</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">(</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">二</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">)</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">发展战略</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">(</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">三</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">)</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">人力资源</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">(</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">四</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">)</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">社会责任</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">(</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">五</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">)</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">企业文化</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">(</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">六</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">)</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">资金活动</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">(</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">七</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">)</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">采购业务</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">(</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">八</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">)</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">资产管理</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">(</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">九</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">)</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">销售业务</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">(</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">十</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">)</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">研究与开发</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">(</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">十一</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">)</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">工程项目</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">(</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">十二</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">)</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">担保业务</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">(</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">十三</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">)</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">业务外包</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">(</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">十四</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">)</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">财务报告</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">(</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">十五</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">)</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">全面预算</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">(</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">十六</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">)</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">合同管理</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">(</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">十七</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">)</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">内部信息传递</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">(</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">十八</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">)</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">信息系统</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">上述业务和事项的内部控制涵盖了公司经营管理的主要方面，不存在重大遗漏。</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">(</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">如存在重大遗漏</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">)</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">公司本年度未能对以下构成内部控制重要方面的单位或业务</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">(</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">事项</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">)</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">进行内部控制评价：</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">[</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">逐条说明未纳入评价范围的重要单位或业务</span></i><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">(</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">事项</span></i><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">)</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">，包括单位、或业务</span></i><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">(</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">事项</span></i><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">)</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">描述、未纳入的原因、对内部控制评价报告真实完整性产生的重大影响等</span></i><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">]</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;"></span></i> 
+	</p>
+	<p style="text-align:left;text-indent:24.1pt;" align="left">
+		<b><span style="font-size:12pt;font-family:宋体;line-height:150%;">五、内部控制评价的程序和方法</span></b> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">内部控制评价工作严格遵循基本规范、评价指引及公司内部控制评价办法规定的程序执行</span><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">[</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">描述公司开展内部控制检查评价工作的基本流程</span></i><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">]</span></i><span style="font-size:12pt;font-family:宋体;line-height:150%;">。</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">评价过程中，我们采用了（个别访谈、调查问题、专题讨论、穿行测试、实地查验、抽样和比较分析）等适当方法，广泛收集公司内部控制设计和运行是否有效的证据，如实填写评价工作底稿，分析、识别内部控制缺陷</span><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">[</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">说明评价方法的适当性及证据的充分性</span></i><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">]</span></i><span style="font-size:12pt;font-family:宋体;line-height:150%;">。</span> 
+	</p>
+	<p style="text-align:left;text-indent:24.1pt;" align="left">
+		<b><span style="font-size:12pt;font-family:宋体;line-height:150%;">六、内部控制运行情况</span></b> 
+	</p>
+	<p style="text-align:left;text-indent:18pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">（</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">此处重点介绍与财务报告相关的内控五要素内容，如财报相关的内部控制组织架构情况等；报告期内，若公司财务报告内部控制发生的重大变化，或者对财务报告内部控制具有重大影响的因素发生的重大变化，则应在此处进行说明。）</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">（一）内部环境</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">[</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">介绍企业内部控制环境的情况，包括财务报告内部控制工作的总体组织架构、参与财务报告内部控制各组成部分如董事会、监事会、经理层、审计委员会、内部控制职能（部门）、内部审计职能（部门）等就内部控制工作各自的职责及履行情况，以及公司的风险管理与内部控制文化、人力资源政策、内部控制激励约束机制等。]</span></i> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">（二）风险评估</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">[</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">公司对与财务报告相关风险的评估情况、持续性风险评估机制的建立和运行情况，包括公司的风险控制目标设定、风险分类结构、风险辨识、分析、评估的范围、方式及结果。]</span></i> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">（三）控制活动</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">[</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">公司结合所处行业及自身生产经营活动特点和实际情况确定的报告期内对公司财务报告影响重大的风险领域，及公司在该风险领域采取的重点内部控制措施。]</span></i> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">（四）信息与沟通</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">[</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">公司内部与财务报告相关的重要信息传递及处理程序、信息系统在财务报告内部控制中的运用情况、反舞弊机制的建立情况等。]</span></i> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">（五）内部监督</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">[</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">内部控制的日常和专项监督检查制度及其运行情况。]</span></i> 
+	</p>
+	<p style="text-align:left;text-indent:24.1pt;" align="left">
+		<b><span style="font-size:12pt;font-family:宋体;line-height:150%;">七、内部控制缺陷及其认定</span></b> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">公司董事会根据基本规范、评价指引对重大缺陷、重要缺陷和一般缺陷的认定要求，结合公司规模、行业特征、风险水平等因素，研究确定了适用本公司的内部控制缺陷具体认定标准，并与以前年度保持了一致，或作出了调整</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">[</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">描述具体调整标准及原因</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">]</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">。</span> 
+	</p>
+	<p style="text-align:center;text-indent:24pt;" align="center">
+		<span style="font-size:12pt;font-family:黑体;line-height:150%;">表1 缺陷认定标准</span> 
+	</p>
+	<div align="center">
+		<table style="border-collapse:collapse;" cellspacing="0" cellpadding="0" border="1">
+			<tbody>
+				<tr>
+					<td style="background:#b8cce4;" rowspan="2" width="79">
+						<p style="text-align:center;" align="center">
+							<b><span style="font-size:12pt;font-family:宋体;line-height:150%;">缺陷等级</span></b><b><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;"></span></b> 
+						</p>
+					</td>
+					<td style="background:#b8cce4;" width="476" colspan="2">
+						<p style="text-align:center;" align="center">
+							<b><span style="font-size:12pt;font-family:宋体;line-height:150%;">判断依据</span></b><b><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;"></span></b> 
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="background:#b8cce4;" width="236">
+						<p style="text-align:center;" align="center">
+							<b><span style="font-size:12pt;font-family:宋体;line-height:150%;">财报相关</span></b><b><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;"></span></b> 
+						</p>
+					</td>
+					<td style="background:#b8cce4;" width="240">
+						<p style="text-align:center;" align="center">
+							<b><span style="font-size:12pt;font-family:宋体;line-height:150%;">非财报相关</span></b><b><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;"></span></b> 
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="background-color:transparent;" width="79">
+						<p>
+							<span style="font-size:12pt;font-family:宋体;line-height:150%;">重大缺陷</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;"></span> 
+						</p>
+					</td>
+					<td style="background-color:transparent;" rowspan="3" width="236">
+						<p>
+							<span><i><span style="font-family:宋体;color:red;">可采用绝对金额法（例如，规定金额超过</span></i><i><span style="color:red;">10000</span></i><i><span style="font-family:宋体;color:red;">元的错报应当认定为重大错报）或相对比例法（例如，规定超过资产总额</span></i><i><span style="color:red;">1</span></i><i><span style="font-family:宋体;color:red;">％的错报应当认定为重大错报）来确定重要性水平。</span></i><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;"></span></i></span> 
+						</p>
+					</td>
+					<td style="background-color:transparent;" valign="top" width="240">
+						<p style="text-align:left;" align="left">
+							<span><i><span style="font-family:宋体;color:red;">一个或多个控制缺陷的组合，由于其影响程度或汇总后影响程度的严重性，或者由于其造成的经济后果，可能导致企业某类业务或多类业务严重偏离业务控制目标（详见表2）。</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;"></span></i></span> 
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="background-color:transparent;" width="79">
+						<p>
+							<span style="font-size:12pt;font-family:宋体;line-height:150%;">重要缺陷</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;"></span> 
+						</p>
+					</td>
+					<td style="background-color:transparent;" valign="top" width="240">
+						<p style="text-align:left;" align="left">
+							<span><i><span style="font-family:宋体;color:red;">一个或多个控制缺陷的组合，其影响程度或汇总后影响程度的严重性或其经济后果低于重大缺陷，但仍有可能导致企业某类业务或多类业务偏离业务控制目标。</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;"></span></i></span> 
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="background-color:transparent;" width="79">
+						<p>
+							<span style="font-size:12pt;font-family:宋体;line-height:150%;">一般缺陷</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;"></span> 
+						</p>
+					</td>
+					<td style="background-color:transparent;" valign="top" width="240">
+						<p style="text-align:left;" align="left">
+							<span><i><span style="font-family:宋体;color:red;">不属于重大缺陷和重要缺陷的，认定为一般缺陷</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;"></span></i></span> 
+						</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<p style="text-align:center;text-indent:24pt;" align="center">
+		<span style="font-size:12pt;font-family:黑体;line-height:150%;">表2 非财报相关业务控制目标</span> 
+	</p>
+	<div align="center">
+		<table style="border-collapse:collapse;" cellspacing="0" cellpadding="0" border="1">
+			<tbody>
+				<tr>
+					<td style="background-color:transparent;" width="132">
+						<p style="text-align:center;" align="left">
+							<b><span style="font-size:12pt;font-family:宋体;line-height:150%;">业务类型</span></b> 
+						</p>
+						<p style="text-align:center;" align="left">
+							<span style="font-family:宋体;line-height:150%;">（可参考企业业务流程框架，或18项指引）</span> 
+						</p>
+					</td>
+					<td style="background-color:transparent;" width="423">
+						<p style="text-align:center;" align="left">
+							<b><span style="font-size:12pt;font-family:宋体;line-height:150%;">控制目标描述</span></b> 
+						</p>
+						<p style="text-align:center;" align="left">
+							<span style="font-family:宋体;line-height:150%;"></span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="background-color:transparent;" valign="top" width="132">
+						<p style="text-align:center;" align="left">
+							<span style="font-size:12pt;font-family:宋体;line-height:150%;">战略规划</span> 
+						</p>
+					</td>
+					<td style="background-color:transparent;" valign="top" width="423">
+						<p style="text-align:left;" align="left">
+							<span><i><span style="font-family:宋体;color:red;line-height:150%;">企业应当综合考虑宏观经济政策、国内外市场需求变化、技术发展趋势、行业及竞争对手状况、可利用资源水平和自身优势与劣势等影响因素制定明确的发展战略，并通过计划、预算等控制手段进行分解和实施，保障战略目标的实现。</span></i><i><span style="font-family:宋体;line-height:150%;"></span></i></span> 
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="background-color:transparent;" valign="top" width="132">
+						<p style="text-align:center;" align="left">
+							<span style="font-size:12pt;font-family:宋体;line-height:150%;">人力资源</span> 
+						</p>
+					</td>
+					<td style="background-color:transparent;" valign="top" width="423">
+						<p style="text-align:left;" align="left">
+							<span><i><span style="font-family:宋体;color:red;line-height:150%;">企业应当根据发展战略，结合人力资源现状和未来需求预测，建立人力资源发展目标，制定人力资源总体规划和能力框架体系，通过有效运行人力资源的引进、开发、使用、培养、考核、激励、退出等方面的控制程序，实现人力资源的合理配置，优化人力资源整体布局。</span></i></span> 
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="background-color:transparent;" valign="top" width="132">
+						<p style="text-align:center;" align="left">
+							<span style="font-size:12pt;font-family:宋体;line-height:150%;">……</span> 
+						</p>
+					</td>
+					<td style="background-color:transparent;" valign="top" width="423">
+						<p style="text-align:left;" align="left">
+							<span style="font-size:12pt;font-family:宋体;line-height:150%;">……</span>
+						</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">根据上述认定标准．结合日常监督和专项监督情况，我们发现报告期内存在<span style="line-height:150%;font-family:宋体;color:black;font-size:12pt;">${缺陷总数}</span>个缺陷，其中重大缺陷<span style="color:black;">${重大缺陷数量}</span>个，重要缺陷<span style="color:black;">${重要缺陷数量}</span>个。</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<b></b>&nbsp;
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">${缺陷认定结果表}</span>
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<b></b>&nbsp;
+	</p>
+	<p style="text-align:left;text-indent:24.1pt;" align="left">
+		<b><span style="font-size:12pt;font-family:宋体;line-height:150%;">八、内部控制缺陷的整改情况</span></b> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">针对报告期内发现的内部控制缺陷（含上一期间未完成整改的内部控制缺陷），公司采取了相应的整改措施</span><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">[</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">描述整改措施的具体内容和实际效果</span></i><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">]</span></i><span style="font-size:12pt;font-family:宋体;line-height:150%;">。对于整改完成的重大缺陷，公司有足够的测试样本显示，与重大缺陷</span><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">[</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">描述该重大缺陷</span></i><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">]</span></i><span style="font-size:12pt;font-family:宋体;line-height:150%;">相关的内部控制设计且运行有效（运行有效的结论需提供</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">90</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">天内有效运作的证据）。</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<b></b>&nbsp;
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">${缺陷整改情况表}</span>
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<b></b>&nbsp;
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">经过整改，公司在报告期末仍存在<span style="line-height:150%;font-family:宋体;color:black;font-size:12pt;">${整改缺陷总数}</span>个缺陷．其中重大缺陷<span style="color:black;">${整改重大缺陷数量}</span>个，重要缺陷<span style="color:black;">${整改重要缺陷数量}</span>个。重大缺陷分别为：</span><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">[</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">对重大缺陷进行描述</span></i><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">]</span></i><span style="font-size:12pt;font-family:宋体;line-height:150%;">。</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">针对报告期末未完成整改的重大缺陷，公司拟进一步采取相应措施加以整改</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">[</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">描述整改措施的具体内容及预期达到的效果</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">]</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">。</span> 
+	</p>
+	<p style="text-align:left;text-indent:24.1pt;" align="left">
+		<b><span style="font-size:12pt;font-family:宋体;line-height:150%;">九、内部控制有效性的结论</span></b> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">公司已经根据基本规范、评价指引及其他相关法律法规的要求，对公司截至</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">20</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">××</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">年</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">12</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">月</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">31</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">日的内部控制设计与运行的有效性进行了自我评价。</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">（存在重大缺陷的情形）报告期内，公司在内部控制设计与运行方面存在尚未完成整改的重大缺陷</span><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">[</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">描述该缺陷的性质及其对实现相关控制目标的影响程度</span></i><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">]</span></i><span style="font-size:12pt;font-family:宋体;line-height:150%;">。由于存在上述缺陷，可能会给公司未来生产经营带来相关风险</span><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">[</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">描述该风险</span></i><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">]</span></i><span style="font-size:12pt;font-family:宋体;line-height:150%;">。</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">（不存在重大缺陷的情形）报告期内，公司对纳入评价范围的业务与事项均已建立了内部控制，并得以有效执行，达到了公司内部控制的目标，不存在重大缺陷。</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">自内部控制评价报告基准日至内部控制评价报告发出日之间（是</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">/</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">否）发生对评价结论产生实质性影响的内部控制的重大变化。</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">[</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">如存在，描述该事项对评价结论的影响及董事会拟采取的应对措施</span><span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">]</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">。</span> 
+	</p>
+	<p style="text-align:left;text-indent:24pt;" align="left">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">我们注意到，内部控制应当与公司经营规模、业务范围、竞争状况和风险水平等相适应，并随着情况的变化及时加以调整。</span><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">[</span></i><i><span style="font-size:12pt;font-family:宋体;color:red;line-height:150%;">简要描述下一年度内部控制工作计划</span></i><i><span style="font-size:12pt;font-family:'Times New Roman', 'serif';color:red;line-height:150%;">]</span></i><span style="font-size:12pt;font-family:宋体;line-height:150%;">未来期间，公司将继续完善内部控制制度，规范内部控制制度执行，强化内部控制监督检查、促进公司健康、可持续发展。</span> 
+	</p>
+	<p style="text-align:right;text-indent:24pt;" align="right">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">董事长：（签名）</span> 
+	</p>
+	<p style="text-align:right;text-indent:24pt;" align="right">
+		<span style="font-size:12pt;font-family:宋体;line-height:150%;">××</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">股份有限公司</span> 
+	</p>
+	<p style="text-align:right;text-indent:24pt;" align="right">
+		<span style="font-size:12pt;font-family:'Times New Roman', 'serif';line-height:150%;">20</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">××</span><span style="font-size:12pt;font-family:宋体;line-height:150%;">年××月××日</span> 
+	</p>
+			]]>
+	    </tpldata>
+	</tpl>
+</tpls>

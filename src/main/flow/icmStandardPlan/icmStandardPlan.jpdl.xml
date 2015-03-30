@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process name="icmStandardPlan" xmlns="http://jbpm.org/4.4/jpdl">
+	<description>icmStandardPlan</description>
+	<start g="277,0,200,50" name="start1">
+		<description>0</description>
+		<transition to="内控标准更新申请"/>
+	</start>
+	<task assignee="#{ICDepartmentStaffEmpId}" form="FHD.view.icm.standard.bpm.StandardBpmOne" g="200,80,200,50" name="内控标准更新申请">
+		<description>20</description>
+		<transition to="内控标准申请审批"/>
+	</task>
+	<task assignee="#{ICDepartmentMinisterEmpId}" form="FHD.view.icm.standard.bpm.StandardBpmTwo" g="200,160,200,50" name="内控标准申请审批">
+		<description>40</description>
+		<transition to="内控标准申请审批decision"/>
+	</task>
+	<decision g="276,240,48,48" name="内控标准申请审批decision">
+		<transition g="500,264;500,105:" to="内控标准更新申请">
+			<condition expr="#{path=='no'}"/>
+		</transition>
+		<transition to="内控标准更新意见反馈foreach">
+			<condition expr="#{path=='yes'}"/>
+		</transition>
+	</decision>
+	<foreach g="276,320,48,48" in="#{items}" name="内控标准更新意见反馈foreach" var="item">
+		<transition to="内控标准更新意见反馈"/>
+	</foreach>
+	<task assignee="#{item.reviewerEmpId}" form="FHD.view.icm.standard.bpm.StandardBpmThree" g="200,400,200,50" name="内控标准更新意见反馈">
+		<description>60</description>
+		<transition to="内控标准更新反馈确认"/>
+	</task>
+	<task assignee="#{item.reportorEmpId}" form="FHD.view.icm.standard.bpm.StandardBpmFour" g="200,480,200,50" name="内控标准更新反馈确认">
+		<description>80</description>
+		<transition to="内控标准更新审批"/>
+	</task>
+	<task assignee="#{item.approverEmpId}" form="FHD.view.icm.standard.bpm.StandardBpmFive" g="200,560,200,50" name="内控标准更新审批">
+		<description>100</description>
+		<transition to="内控标准更新审批decision"/>
+	</task>
+	<decision g="276,640,48,48" name="内控标准更新审批decision">
+		<transition g="500,664;500,504:" to="内控标准更新反馈确认">
+			<condition expr="#{path=='no'}"/>
+		</transition>
+		<transition to="内控标准更新汇总join">
+			<condition expr="#{path=='yes'}"/>
+		</transition>
+	</decision>
+	<join g="276,720,48,48" multiplicity="#{joinCount}" name="内控标准更新汇总join">
+		<transition to="内控标准更新汇总"/>
+	</join>
+	<java class="com.fhd.icm.web.controller.standard.StandardControl" g="200,800,200,50" method="mergeStandardStatus" name="内控标准更新汇总">
+		<arg>
+			<object expr="#{id}"/>
+		</arg>
+		<transition to="end1"/>
+	</java>
+	<end g="277,880,48,48" name="end1"/>
+</process>

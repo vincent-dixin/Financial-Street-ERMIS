@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<excel-mapping>  
+  <class name="com.kosoon.baseframe.excel.domain.Employee">  
+    <pop excelPop="编 号" classPop="id"/>  
+    <pop excelPop="PASSPORT" classPop="passport"/>  
+    <pop excelPop="昵 称" classPop="nickName"/>  
+    <pop excelPop="真实姓名" classPop="realName"/>  
+    <pop excelPop="年 龄" classPop="age"/>  
+    <pop excelPop="性 别" classPop="gender"/> 
+    <pop excelPop="电 话" classPop="phone"/>
+  </class>
+</excel-mapping>

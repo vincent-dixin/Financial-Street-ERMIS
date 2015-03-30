@@ -1,0 +1,196 @@
+.meshStructureChart{
+	border: 1px solid black;
+	overflow: auto;
+	position:inherit;
+}
+.viewMessage{
+	border:1px solid black #8eaace;
+	background-color:#e9f2ff;
+	position:absolute;
+	display: none;
+	font-weight:bold;
+	padding: 5px;
+	font-size: 12;
+}
+.meshStructureChart DIV.node{
+	position:absolute;
+}
+.meshStructureChart DIV.nodeOpen{
+	cursor:pointer;
+	position:absolute;
+	width:9px;
+	height:9px;
+	overflow:hidden;
+	background-image: url(images/add.png);
+	z-index: 10;
+}
+.meshStructureChart DIV.node TABLE{
+	width: 100%;
+	height: 100%;
+}
+.meshStructureChart DIV.node TABLE TR TD DIV.addDiv{
+	width: 9px;
+	height: 9px;
+	overflow:hidden;
+	cursor:pointer;
+	background-image: url(images/add.png);
+}
+.meshStructureChart DIV.node TABLE TR TD DIV.delDiv{
+	width: 9px;
+	height: 9px;
+	overflow:hidden;
+	cursor:pointer;
+	background-image: url(images/del.png);
+}
+.meshStructureChart DIV.node DIV.openDiv{
+	cursor:pointer;
+	width: 20px;
+	height: 20px;
+	overflow:hidden;
+	position:absolute;
+	z-index: 10;
+	background-image: url(images/open.png);
+}
+.meshStructureChart DIV.node DIV.closeDiv{
+	cursor:pointer;
+	width: 20px;
+	height: 20px;
+	overflow:hidden;
+	position:absolute;
+	z-index: 10;
+	background-image: url(images/close.png);
+}
+.meshStructureChart DIV.node TABLE TR.topTr{
+	height: 9px;
+}
+.meshStructureChart DIV.node TABLE TR.topTr TD.leftTd{
+	width: 9px;
+	height: 9px;
+	background-image: url(images/node_01.png);
+}
+.meshStructureChart DIV.node TABLE TR.topTr TD.midTd{
+	background-image: url(images/node_02.png);
+}
+.meshStructureChart DIV.node TABLE TR.topTr TD.rightTd{
+	width: 9px;
+	background-image: url(images/node_03.png);
+}
+.meshStructureChart DIV.node TABLE TR.midTr{
+}
+.meshStructureChart DIV.node TABLE TR.midTr TD.leftTd{
+	background-image: url(images/node_04.png);
+}
+.meshStructureChart DIV.node TABLE TR.midTr TD.midTd{
+	background-image: url(images/node_05.png);
+}
+.meshStructureChart DIV.node TABLE TR.midTr TD.rightTd{
+	background-image: url(images/node_06.png);
+}
+.meshStructureChart DIV.node TABLE TR.bottomTr{
+	height: 9px;
+}
+.meshStructureChart DIV.node TABLE TR.bottomTr TD.leftTd{
+	width: 9px;
+	height: 9px;
+	background-image: url(images/node_07.png);
+}
+.meshStructureChart DIV.node TABLE TR.bottomTr TD.midTd{
+	background-image: url(images/node_08.png);
+}
+.meshStructureChart DIV.node TABLE TR.bottomTr TD.rightTd{
+	width: 9px;
+	background-image: url(images/node_09.png);
+}
+.meshStructureChart DIV.node DIV.icon{
+	float:left;
+	height: 100%;
+}
+.meshStructureChart DIV.node img.icon{
+	float:left;
+}
+.meshStructureChart DIV.node DIV.text{
+	height: 100%;
+	text-align: center;
+	font-weight:bold;
+	word-break:keep-all;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	font-size: 10;
+}
+.meshStructureChart DIV.line{
+	position:absolute;
+}
+.meshStructureChart DIV.line DIV.leftLine1{
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	float:left;
+	width: 50%;
+	height: 100%;
+}
+.meshStructureChart DIV.line DIV.rightLine1{
+	border-top: 1px solid black;
+	float:left;
+	width: 50%;
+	height: 100%;
+}
+.meshStructureChart DIV.line DIV.leftLine2{
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	float:left;
+	width: 50%;
+	height: 100%;
+}
+.meshStructureChart DIV.line DIV.rightLine2{
+	border-bottom: 1px solid black;
+	float:left;
+	width: 50%;
+	height: 100%;
+}
+.meshStructureChart DIV.line DIV.leftLine{
+	border-top: 1px solid black;
+	width: 100%;
+	float:left;
+	height: 100%;
+}
+.meshStructureChart DIV.line DIV.rightLine{
+	float:left;
+	width:0px;
+	height: 100%;
+}
+.rightMenu{
+	border: 1px solid black;
+	background-color:#e9f2ff;
+	position:absolute;
+	display: none;
+	font-size: 12;
+	width: 150px;
+	cursor :default;
+	z-index:100;
+}
+.rightMenu DIV.item{
+	width: 148px;
+	padding:4px;
+	height: 24px;
+}
+.rightMenu DIV.itemDisabled{
+	color: #BABABA;
+}
+.rightMenu DIV.itemHover{
+	background-color: #CEECFD;
+}
+.rightMenu DIV.item DIV.img{
+	width: 16px;
+	height: 16px;
+	float: left;
+}
+.rightMenu DIV.item DIV.text{
+	height: 16px;
+	width: 184px;
+}
+.rightMenu DIV DIV.add{
+	background-image: url(images/midAdd.png);
+}
+.rightMenu DIV DIV.del{
+	background-image: url(images/midDelete.gif);
+}

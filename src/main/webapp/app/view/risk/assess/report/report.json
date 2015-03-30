@@ -1,0 +1,48 @@
+[ {
+	"id" : "2",
+	"text" : "风险报告",
+	"cls" : "org",
+	"leaf" : false,
+	"title" : "beijing",
+	"name" : "北京市",
+	"parentId" : "",
+	"idSeq" : ".2.",
+	"children" : [ {
+		"id" : "64",
+		"text" : "报告1",
+		"cls" : "org",
+		"leaf" : true,
+		"title" : "dalian",
+		"name" : "大连市",
+		"parentId" : "1",
+		"idSeq" : ".1.4."
+	}]
+}, {
+	"id" : "1",
+	"text" : "内控报告",
+	"cls" : "org",
+	"leaf" : false,
+	"title" : "liaoning",
+	"name" : "辽宁省",
+	"parentId" : "",
+	"idSeq" : ".1.",
+	"children" : [ {
+		"id" : "4",
+		"text" : "报告2",
+		"cls" : "org",
+		"leaf" : true,
+		"title" : "dalian",
+		"name" : "大连市",
+		"parentId" : "1",
+		"idSeq" : ".1.4."
+	}, {
+		"id" : "3",
+		"text" : "报告3",
+		"cls" : "org",
+		"leaf" : true,
+		"title" : "shenyang",
+		"name" : "沈阳市",
+		"parentId" : "1",
+		"idSeq" : ".1.3."
+	} ]
+} ]

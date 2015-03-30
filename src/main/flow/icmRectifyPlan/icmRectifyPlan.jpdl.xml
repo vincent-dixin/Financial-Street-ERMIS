@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process name="icmRectifyPlan" xmlns="http://jbpm.org/4.4/jpdl">
+	<description>icmRectifyPlan</description>
+	<start g="277,0,200,50" name="start1">
+		<transition to="内控整改计划制定"/>
+	</start>
+	<task assignee="#{ICDepartmentStaffEmpId}" form="FHD.view.icm.rectify.bpm.RectifyImproveBpmOne" g="200,80,200,50" name="内控整改计划制定">
+		<description>0</description>
+		<transition to="内控整改计划部长审批"/>
+	</task>
+	<task assignee="#{ICDepartmentMinisterEmpId}" form="FHD.view.icm.rectify.bpm.RectifyImproveBpmTwo" g="200,160,200,50" name="内控整改计划部长审批">
+		<description>9</description>
+		<transition to="内控整改计划部长审批decision"/>
+	</task>
+	<decision g="276,240,48,48" name="内控整改计划部长审批decision">
+		<transition g="500,264;500,105:" to="内控整改计划制定">
+			<condition expr="#{path=='no'}"/>
+		</transition>
+		<transition to="内控整改计划部门领导审批">
+			<condition expr="#{path=='yes'}"/>
+		</transition>
+	</decision>
+	<task assignee="#{ICDepartmentLeaderEmpId}" form="FHD.view.icm.rectify.bpm.RectifyImproveBpmThree" g="200,320,200,50" name="内控整改计划部门领导审批">
+		<description>12</description>
+		<transition to="内控整改计划部门领导审批decision"/>
+	</task>
+	<decision g="276,400,48,48" name="内控整改计划部门领导审批decision">
+		<transition g="100,424;100,105:" to="内控整改计划制定">
+			<condition expr="#{path=='no'}"/>
+		</transition>
+		<transition to="内控整改计划发布">
+			<condition expr="#{path=='yes'}"/>
+		</transition>
+	</decision>
+	<task assignee="#{ICDepartmentStaffEmpId1}" form="FHD.view.icm.rectify.bpm.RectifyImproveBpmFour" g="200,480,200,50" name="内控整改计划发布">
+		<description>14</description>
+		<transition to="内控整改计划发布foreach"/>
+	</task>
+	<foreach g="276,560,48,48" in="#{empIds}" name="内控整改计划发布foreach" var="empId">
+		<transition to="上报整改方案"/>
+	</foreach>
+	<task assignee="#{empId}" form="FHD.view.icm.rectify.bpm.RectifyImproveBpmFive" g="200,640,200,50" name="上报整改方案">
+	<!-- <on event="start">
+   	  		<event-listener class="com.fhd.bpm.jbpm.listener.rectify.RectifyListener"/>
+	</on> -->
+		<description>16,26</description>
+		<transition to="上报整改方案join"/>
+	</task>
+	<join g="276,720,48,48" multiplicity="#{joinCount}" name="上报整改方案join">
+		<transition to="汇总并指定复核人"/>
+	</join>
+	<task assignee="#{ICDepartmentMinisterEmpId1}" form="FHD.view.icm.rectify.bpm.RectifyImproveBpmSix" g="200,800,200,50" name="汇总并指定复核人">
+		<description>26</description>
+		<transition to="汇总并指定复核人foreach"/>
+	</task>
+	<foreach g="276,880,48,48" in="#{items}" name="汇总并指定复核人foreach" var="item">
+		<transition to="填写整改方案进度"/>
+	</foreach>
+	<task assignee="#{item.reportorEmpId}" form="FHD.view.icm.rectify.bpm.RectifyImproveBpmSeven" g="200,960,200,50" name="填写整改方案进度">
+	<!-- <on event="start">
+   	  		<event-listener class="com.fhd.bpm.jbpm.listener.rectify.RectifyListener"/>
+	</on> -->
+		<description>28,100</description>
+		<transition to="整改方案复核"/>
+	</task>
+	<task assignee="#{item.reviewerEmpId}" form="FHD.view.icm.rectify.bpm.RectifyImproveBpmEight" g="200,1040,200,50" name="整改方案复核">
+		<description>75,100</description>
+		<transition to="审批并判断是否更新内控手册"/>
+	</task>
+	<task assignee="#{item.approverEmpId}" form="FHD.view.icm.rectify.bpm.RectifyImproveBpmNine" g="200,1120,200,50" name="审批并判断是否更新内控手册">
+		<description>95,100</description>
+		<transition to="审批并判断是否更新内控手册decision"/>
+	</task>
+	<decision g="276,1200,48,48" name="审批并判断是否更新内控手册decision">
+		<transition g="100,1224;100,1065:" to="整改方案复核">
+			<condition expr="#{path=='no'}"/>
+		</transition>
+		<transition to="endjoin">
+			<condition expr="#{path=='path1'}"/>
+		</transition>
+		<transition g="500,1224:" to="内控体系更新流程">
+			<condition expr="#{path=='path2'}"/>
+		</transition>
+	</decision>
+	<sub-process g="400,1280,200,50" name="内控体系更新流程" sub-process-key="icmSystemUpdatePlan">
+		<parameter-in subvar="id" var="id"/>
+		<transition g="500,1384:" to="endjoin"/>
+	</sub-process>
+	<join g="276,1360,48,48" multiplicity="#{joinCount}" name="endjoin">
+		<transition to="汇总"/>
+	</join>
+	<java class="com.fhd.icm.web.controller.bpm.RectifyPlanBpmControl" g="200,1440,200,50" method="mergeImprovePlanStatus" name="汇总">
+		<arg>
+			<object expr="#{id}"/>
+		</arg>
+		<transition to="end1"/>
+	</java>
+	<end g="277,1520,48,48" name="end1"/>
+</process>

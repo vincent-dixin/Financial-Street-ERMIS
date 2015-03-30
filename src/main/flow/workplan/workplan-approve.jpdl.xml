@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process description="工作计划" name="workplan-approve" xmlns="http://jbpm.org/4.4/jpdl">
+   <start g="206,28,48,48" name="start1">
+      <transition to="计划申请"/>
+   </start>
+   <task assignee="#{proposer}" form="FHD.view.wp.WorkPlanProposForm" g="186,92,92,52" name="计划申请">
+   	  <description>0</description>
+      <transition to="计划审批"/>
+   </task>
+   <task assignee="#{approver}" form="FHD.view.wp.WorkPlanApproveForm" g="187,160,92,52" name="计划审批">
+   	  <description>30</description>
+      <transition to="exclusive2"/>
+   </task>
+   <decision g="209,383,48,48" name="exclusive1">
+      <transition to="foreach1">
+         <condition expr="#{isReject=='yes'}"/>  
+      </transition>
+      <transition g="341,407;341,118:" to="计划申请">
+         <condition expr="#{isReject=='no'}"/>  
+      </transition>
+   </decision>
+   <foreach g="208,467,48,48" in="#{executors}" name="foreach1" var="executor">
+      <transition to="计划执行"/>
+   </foreach>
+   <task assignee="#{executor}" form="FHD.view.wp.WorkPlanExecuteForm" g="186,532,92,52" name="计划执行">
+   	  <description>40,90</description>
+      <transition to="join1"/>
+   </task>
+   <join g="209,618,48,48"  multiplicity="#{joinCount}" name="join1">
+      <transition to="end1"/>
+   </join>
+   <end g="210,688,48,48" name="end1"/>
+   <task assignee="#{superior}" form="FHD.view.wp.WorkPlanApproveForm" g="172,290,126,52" name="计划审批（领导）">
+   	  <description>30</description>
+      <transition to="exclusive1"/>
+   </task>
+   <decision g="208,229,48,48" name="exclusive2">
+      <transition to="计划审批（领导）">
+         <condition expr="#{isSuperior=='yes'}"/> 
+      </transition>
+      <transition g="118,253;118,407:" to="exclusive1">
+         <condition expr="#{isSuperior=='no'}"/>
+      </transition>
+   </decision>
+</process>

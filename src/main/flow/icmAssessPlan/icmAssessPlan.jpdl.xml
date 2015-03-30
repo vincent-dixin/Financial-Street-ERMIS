@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process name="icmAssessPlan" xmlns="http://jbpm.org/4.4/jpdl"> 
+	<description>icmAssessPlan</description>
+	<start g="277,0,200,50" name="start1">
+		<transition to="内控自评价计划制定"/>
+	</start>
+	<task assignee="#{bpmOneEmpId}" form="FHD.view.icm.assess.bpm.AssessPlanBpmOne" g="200,80,200,50" name="内控自评价计划制定">
+		<description>0</description>
+		<transition to="内控自评价计划审批"/>
+	</task>
+	<task assignee="#{bpmTwoEmpId}" form="FHD.view.icm.assess.bpm.AssessPlanBpmTwo" g="200,160,200,50" name="内控自评价计划审批">
+		<description>5</description>
+		<transition to="内控自评价计划审批decision"/>
+	</task>
+	<decision g="276,240,48,48" name="内控自评价计划审批decision">
+		<transition g="500,264;500,105:" to="内控自评价计划制定">
+			<condition expr="#{path=='no'}"/>
+		</transition>
+		<transition to="内控自评价计划分配">
+			<condition expr="#{path=='yes'}"/>
+		</transition>
+	</decision>
+	<task assignee="#{bpmThreeEmpId}" form="FHD.view.icm.assess.bpm.AssessPlanBpmThree" g="200,320,200,50" name="内控自评价计划分配">
+		<description>8</description>
+		<transition to="内控自评价计划分配审批"/>
+	</task>
+	<task assignee="#{bpmFourEmpId}" form="FHD.view.icm.assess.bpm.AssessPlanBpmFour" g="200,400,200,50" name="内控自评价计划分配审批">
+		<description>14</description>
+		<transition to="内控自评价计划分配审批decision"/>
+	</task>
+	<decision g="276,480,48,48" name="内控自评价计划分配审批decision">
+		<transition g="500,504;500,345:" to="内控自评价计划分配">
+			<condition expr="#{path=='no'}"/>
+		</transition>
+		<transition to="内控自评价计划发布">
+			<condition expr="#{path=='yes'}"/>
+		</transition>
+	</decision>
+	<task assignee="#{bpmFiveEmpId}" form="FHD.view.icm.assess.bpm.AssessPlanBpmFive" g="200,560,200,50" name="内控自评价计划发布">
+		<description>17</description>
+		<transition to="内控自评价计划发布foreach"/>
+	</task>
+	<foreach g="276,640,48,48" in="#{items}" name="内控自评价计划发布foreach" var="item">
+		<transition to="内控自评价计划执行"/>
+	</foreach>
+	<task assignee="#{item.executeEmpId}" form="FHD.view.icm.assess.bpm.AssessPlanBpmSix" g="200,720,200,50" name="内控自评价计划执行">
+		<!--  
+		<on event="start">
+   	  		<event-listener class="com.fhd.bpm.jbpm.listener.assessPlan.AssessPlanForeachEventListener"></event-listener>
+		</on>
+		-->
+		<description>19,78</description>
+		<transition to="内控自评价计划执行复核"/>
+	</task>
+	<task assignee="#{item.reviewerEmpId}" form="FHD.view.icm.assess.bpm.AssessPlanBpmSeven" g="200,800,200,50" name="内控自评价计划执行复核">
+		<description>72,78</description>
+		<transition to="内控自评价计划执行复核decision"/>
+	</task>
+	<decision g="276,880,48,48" name="内控自评价计划执行复核decision">
+		<transition g="500,904;500,745:" to="内控自评价计划执行">
+			<condition expr="#{path=='no'}"/>
+		</transition>
+		<transition to="内控自评价计划发布join">
+			<condition expr="#{path=='yes'}"/>
+		</transition>
+	</decision>
+	<join g="276,960,48,48" multiplicity="#{joinCount}" name="内控自评价计划发布join">
+		<transition to="缺陷汇总"/>
+	</join>
+	<task g="200,1040,200,50" assignee="#{bpmThreeEmpId}" form="FHD.view.icm.assess.bpm.AssessPlanBpmEight" name="缺陷汇总">
+        <description>78</description>
+        <transition to="缺陷反馈foreach"/>
+	</task>
+	<foreach g="276,1120,48,48" in="#{empIdLists}" name="缺陷反馈foreach" var="bpmNineEmpId">
+		<transition to="缺陷反馈"/>
+	</foreach>
+	<task g="200,1200,200,50" assignee="#{bpmNineEmpId}" form="FHD.view.icm.assess.bpm.AssessPlanBpmNine" name="缺陷反馈">
+      	<description>84,89</description>
+      	<transition to="缺陷反馈join"/>
+	</task>
+	<join g="276,1280,48,48" multiplicity="#{joinCount}" name="缺陷反馈join">
+		<transition to="缺陷修改"/>
+	</join>
+    <task g="200,1360,200,50" assignee="#{bpmThreeEmpId}" form="FHD.view.icm.assess.bpm.AssessPlanBpmTen" name="缺陷修改" >
+      	<description>89</description>
+      	<transition to="缺陷确认"/>
+   	</task>
+   	<task g="200,1440,200,50" assignee="#{bpmElevenEmpId}" form="FHD.view.icm.assess.bpm.AssessPlanBpmEleven" name="缺陷确认">
+      	<description>95</description>
+      	<transition to="缺陷确认decision"/>
+	</task>
+   	<decision name="缺陷确认decision" g="276,1520,48,48">
+   		<transition g="500,1544;500,1385:" to="缺陷修改">
+			<condition expr="#{path=='no'}"/>
+		</transition>
+		<transition to="end1">
+			<condition expr="#{path=='yes'}"/>
+		</transition>
+   	</decision>
+   	<end g="277,1600,48,48" name="end1"/>
+</process>

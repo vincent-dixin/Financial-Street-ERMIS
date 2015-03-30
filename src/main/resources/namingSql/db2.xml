@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<sql id="select_user">
+		<![CDATA[
+			select * form sys_user where username = $name
+		]]>
+	</sql>
+
+</sqls>

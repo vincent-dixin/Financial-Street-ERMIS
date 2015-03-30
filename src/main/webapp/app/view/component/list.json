@@ -1,0 +1,33 @@
+[
+
+
+{
+	"id" : "1",
+	"code":"1",
+	"name" : "提高铝型材库存周转率",
+	"functionary : 王某",
+	"contact : 小某"
+},{
+	"id" : "2",
+	"code":"2",
+	"name" : "提高开发代码效率",
+	"functionary : 李某",
+	"contact : 李明"
+},{
+	"id" : "3",
+	"code":"3",
+	"name" : "成型产品唯一性",
+	"functionary : 李某",
+	"contact : 王摸摸"
+},{
+	"id" : "4",
+	"code":"4",
+	"name" : "提高市场销售率",
+	"functionary : 李某",
+	"contact : 小吹"
+}
+
+
+
+
+]

@@ -1,0 +1,125 @@
+[
+
+
+{
+	"id" : "1",
+	"code":"1",
+	"name" : "提高铝型材库存周转率",
+	"kpiName" : "周转率",
+	"definition" : "",
+	"bizType" : "供应商",
+	"riskName" : "对供应商交付能力预测不足",
+	"happenDegree" : "高",
+	"influenceDegree" : "高",
+	"isRation" : "是",
+	"riskLevel" : "<img src=\'images/kpi/cockpit/high.gif\' />"
+},{
+	"id" : "2",
+	"code":"2",
+	"name" : "提高铝型材库存周转率",
+	"kpiName" : "周转率",
+	"definition" : "",
+	"bizType" : "供应商",
+	"riskName" : "订货间隔周期太长",
+	"happenDegree" : "高",
+	"influenceDegree" : "高",
+	"isRation" : "是",
+	"riskLevel" : "<img src=\'images/kpi/cockpit/high.gif\' />"
+},{
+	"id" : "3",
+	"code":"3",
+	"name" : "提高铝型材库存周转率",
+	"kpiName" : "周转率",
+	"definition" : "",
+	"bizType" : "管理",
+	"riskName" : "储备量计算方法不准",
+	"happenDegree" : "高",
+	"influenceDegree" : "高",
+	"isRation" : "是",
+	"riskLevel" : "<img src=\'images/kpi/cockpit/high.gif\' />"
+},{
+	"id" : "4",
+	"code":"4",
+	"name" : "提高铝型材库存周转率",
+	"kpiName" : "周转率",
+	"definition" : "",
+	"bizType" : "管理",
+	"riskName" : "定额抄错",
+	"happenDegree" : "高",
+	"influenceDegree" : "高",
+	"isRation" : "是",
+	"riskLevel" : "<img src=\'images/kpi/cockpit/high.gif\' />"
+},{
+	"id" : "5",
+	"code":"5",
+	"name" : "提高铝型材库存周转率",
+	"kpiName" : "周转率",
+	"definition" : "",
+	"bizType" : "管理",
+	"riskName" : "采购计划数据编制不准",
+	"happenDegree" : "高",
+	"influenceDegree" : "高",
+	"isRation" : "是",
+	"riskLevel" : "<img src=\'images/kpi/cockpit/high.gif\' />"
+}
+
+
+
+,{
+	"id" : "6",
+	"code":"6",
+	"name" : "提高铝型材库存周转率",
+	"kpiName" : "本期平均库存占用",
+	"definition" : "物资暂用金额10万元",
+	"bizType" : "",
+	"riskName" : "库存信息收集不准确",
+	"happenDegree" : "高",
+	"influenceDegree" : "高",
+	"isRation" : "是",
+	"riskLevel" : "<img src=\'images/kpi/cockpit/high.gif\' />"
+}
+
+,{
+	"id" : "7",
+	"code":"7",
+	"name" : "提高铝型材库存周转率",
+	"kpiName" : "本期平均库存占用",
+	"definition" : "物资暂用金额10万元",
+	"bizType" : "",
+	"riskName" : "不同物质关注程度不同一致",
+	"happenDegree" : "高",
+	"influenceDegree" : "高",
+	"isRation" : "是",
+	"riskLevel" : "<img src=\'images/kpi/cockpit/high.gif\' />"
+}
+
+,{
+	"id" : "8",
+	"code":"8",
+	"name" : "提高铝型材库存周转率",
+	"kpiName" : "本期平均库存占用",
+	"definition" : "物资暂用金额10万元",
+	"bizType" : "",
+	"riskName" : "库存策略不合理",
+	"happenDegree" : "高",
+	"influenceDegree" : "高",
+	"isRation" : "是",
+	"riskLevel" : "<img src=\'images/kpi/cockpit/high.gif\' />"
+}
+,{
+	"id" : "9",
+	"code":"9",
+	"name" : "提高铝型材库存周转率",
+	"kpiName" : "本期平均库存占用",
+	"definition" : "物资暂用金额10万元",
+	"bizType" : "",
+	"riskName" : "物资分类管理混乱",
+	"happenDegree" : "高",
+	"influenceDegree" : "高",
+	"isRation" : "是",
+	"riskLevel" : "<img src=\'images/kpi/cockpit/high.gif\' />"
+}
+
+
+
+]

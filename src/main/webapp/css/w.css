@@ -1,0 +1,9 @@
+.frame {width:205px; height:155px; padding:0px; border:1px solid #ccc; float:left; margin-right:25px; margin-top:20px;display:inline;}
+.wrap {width:205px; height:155px; position:relative; overflow:hidden; font-family:arial, sans-serif;}
+.wrap div {width:190px; height:165px; padding:60px 10px 10px 10px; position:absolute; left:0; top:0; background:url(trans.gif);}
+.wrap div b {display:block; width:205px; height:195px; position:absolute; left:0; top:160px; z-index:1; background:#d5e2f2;filter: alpha(opacity=80); }
+.wrap div span {position:relative; z-index:500;}
+.wrap div h1{font-size: 18px;color: #000;line-height: 26px;margin-bottom:0;position: relative; top:60px; text-align:right;}
+.wrap div p {font-size:14px; color:#000;margin-top:0; position: relative; bottom:-70px}
+.frame:hover{border:1px solid #d5e2f2;}
+.clear {clear:both;}

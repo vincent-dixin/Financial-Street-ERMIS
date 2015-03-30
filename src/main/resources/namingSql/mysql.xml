@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<sql id="select_authorityName">
+		<![CDATA[
+			select new SysAuthority(id,(lpad('┠',rank * 4 - 1, '　') || authority_Name) as authorityName) from SysAuthority order by seqNo
+		]]>
+	</sql>
+</sqls>

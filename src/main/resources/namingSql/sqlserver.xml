@@ -1,0 +1,1037 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<sql id="select_user">
+		<![CDATA[
+			select * form sys_user where [username] = $name
+		]]>
+	</sql>
+	<!--数据字典树形展示：┠名称  -->
+	<sql id="select_dictTypeName">
+		<![CDATA[
+			select new DictType(id,dictTypeTitle, replicate('　',rank*2-2)+'┠'+dictTypeName as dictTypeName, myLocale, parentId, rank, seqNo) from DictType where myLocale = '$locale' order by seqNo
+		]]>
+	</sql>
+	<sql id="select_dictEntryName">
+		<![CDATA[
+			select id,replicate('　',rank*2-2)+'┠'+dictEntryName as dictEntryName from DictEntry order by seqNo
+		]]>
+	</sql>
+	<sql id="select_authorityName">
+		<![CDATA[
+			select new SysAuthority(a.id,replicate('　',a.rank*2-2)+'┠'+a.authorityName as authorityName) from SysAuthority a order by a.seqNo
+		]]>
+	</sql>
+		<sql id="select_crm_projList_sqlserver">
+		<![CDATA[
+			select a.id,((select compname from t_crm_company where id=a.compid)+'----'+a.projname) projname,b.teamuserid
+				from t_crm_project a,t_crm_projteam b
+				where a.id=b.projid and a.projflag!='del' and b.teamflag!='del' and b.teamuserid='$userid'
+				order by projname
+		]]>
+	</sql>
+	<sql id="select_crm_saleListByProjId_sqlserver">
+		<![CDATA[
+			select * 
+				from (
+					select row_number() over(partition by projid order by last_modify_time,create_time desc) rn
+						,a.* from v_crm_CompProjSale a
+				)b
+				where rn=1
+				order by compname,projname
+		]]>
+	</sql>
+	<sql id="select_OrganizationBO_getOrgsByOrgName">
+		<![CDATA[
+			from SysOrganization a where not exists(select 1 from SysOrganization b where b.orgseq like '%.$companyId.%'  and b.orgType in ('402881b22afad3b1012afae5e33d0005','402881b22afad3b1012afae5a4200004') and a.orgseq like b.orgseq+'%' and b.id<>'$companyId') and orgseq like  '%.$companyId.%' and a.orgname='$orgName' order by orgseq
+		]]>
+	</sql>
+	
+ <!--用户同步相关SQL  -->
+	<!-- 1、验证  -->
+	<sql id="select_UserSyncCheckDtsData">
+		<![CDATA[
+		select '重复的机构编号：'+org_code+'，重复的数据不导入。' results from t_dts_org group by org_code having count(1)>1
+			union all
+			select '重复的登录名：'+user_id+'，重复的数据不导入。' from t_dts_emp group by user_id having count(1)>1
+			union all
+			select '重复的人名：'+user_name+'，重复的数据不导入。' from t_dts_emp group by user_name having count(1)>1
+			union all
+			select '无法识别的机构类型：id-'+id+'，名称：'+org_name+'数据不导入。' from t_dts_org where org_type not in('402881b22afad3b1012afae5a4200004','402881b22afad3b1012afae799c60008') or org_type is null
+			union all
+			select '无法识别的职务：'+duty  from t_dts_emp 
+			where duty not in(select  dutyname from t_sys_duty)
+		]]>
+	</sql>
+	<!-- 2、清理数据  -->
+	<sql id="delete_clearDtsOrg">
+		<![CDATA[
+			delete from t_dts_org 
+				where id in(select b.id from t_dts_org b,t_dts_org a where b.org_code=a.org_code and b.id>a.id) 
+				or  org_type not in('402881b22afad3b1012afae5a4200004','402881b22afad3b1012afae799c60008') or org_type is null
+		]]>
+	</sql>
+	<sql id="delete_clearDtsEmp">
+		<![CDATA[
+			delete from t_dts_emp 
+				where  id in (select b.id from t_dts_emp b,t_dts_emp a where b.user_id=a.user_id and b.id>a.id)
+				or id in(select b.id from t_dts_emp b,t_dts_emp a where b.user_name=a.user_name and b.id>a.id)
+		]]>
+	</sql>
+	<!-- 3、导入（加载） -->
+	<!-- 机构和机构相关 -->
+	<!-- 1全部设为注销 -->
+	<sql id="update_orgLogout">
+		<![CDATA[
+			update t_sys_organization set status='93F4A801CB69C12B793EEC4137E9C464'
+		]]>
+	</sql>
+	<!-- 2更新已有数据 -->
+	<sql id="update_existDatas">
+		<![CDATA[
+			with orgs(id, org_code, org_name, orglevel, PARENT_ID, orgseq, org_type, emp, esort)as(
+			select id, org_code, org_name, 1, CAST(null as varchar(32)), cast('.'+id+'.' as varchar(max)), org_type, emp, rank()over(partition by a.parent_id order by a.esort,a.org_code)
+			from t_dts_org a
+			where PARENT_ID is null
+		union all
+			select b.id, b.org_code, b.org_name, a.orglevel+1, b.PARENT_ID, a.orgseq+b.id+'.', b.org_type, b.emp,rank()over(partition by a.parent_id order by b.esort,b.org_code)
+			from t_dts_org  b inner  join orgs a on b.PARENT_ID=a.id
+			)
+			update b set
+			b.sn=a.esort
+			,b.is_leaf=(case when not exists(select 1 from orgs c where c.parent_id=a.id) then '1' else '0' end)
+			,b.org_level=a.orglevel
+			,b.parent_id=a.parent_id
+			,b.status='17FB7DB196BFF6A098A3989471434A82'
+			,b.org_type=(case when orglevel=1 then '402881b22afad3b1012afae5a4200004'--总公司
+			                    when orglevel>1 and a.ORG_TYPE='402881b22afad3b1012afae5a4200004' then '402881b22afad3b1012afae5e33d0005'--分公司
+			                    else '402881b22afad3b1012afae7520f0007'--暂时全部置为总公司部门
+			               end)
+			,b.orgcode=a.org_code
+			,b.orgname=a.org_name
+			,b.orgseq=a.orgseq
+			,b.empid=isnull(b.empid,isnull((select id from t_dts_emp emp where emp.user_name=a.emp)
+			                   ,(select id from t_sys_employee emp2 where emp2.username=a.emp)
+			              ))
+			from t_sys_organization b,orgs a
+			where b.id=a.id
+		]]>
+	</sql>
+	<!-- 3插入新增数据 -->
+	<sql id="insert_newDatas">
+		<![CDATA[
+			with orgs(id, org_code, org_name, orglevel, PARENT_ID, orgseq, org_type, emp, esort)as(
+			select id, org_code, org_name, 1, CAST(null as varchar(32)), cast('.'+id+'.' as varchar(max)), org_type, emp, rank()over(partition by a.parent_id order by a.esort,a.org_code)
+			from t_dts_org a
+			where PARENT_ID is null
+		union all
+			select b.id, b.org_code, b.org_name, a.orglevel+1, b.PARENT_ID, a.orgseq+b.id+'.', b.org_type, b.emp,rank()over(partition by a.parent_id order by b.esort,b.org_code)
+			from t_dts_org  b inner  join orgs a on b.PARENT_ID=a.id
+			)
+			insert into t_sys_organization
+			  (sn,id,is_leaf, org_level, status, org_type, orgcode, orgname, orgseq,parent_id,empid)
+			select esort,id,(case when not exists(select 1 from orgs c where c.parent_id=a.id) then '1' else '0' end)
+			,orglevel,'17FB7DB196BFF6A098A3989471434A82'
+			,(case when orglevel=1 then '402881b22afad3b1012afae5a4200004'--总公司
+			                    when orglevel>1 and a.ORG_TYPE='402881b22afad3b1012afae5a4200004' then '402881b22afad3b1012afae5e33d0005'--分公司
+			                    else '402881b22afad3b1012afae7520f0007'--暂时全部置为总公司部门
+			               end)
+			, org_code, org_name, orgseq,parent_id
+			,isnull((select id from t_dts_emp emp where emp.user_name=a.emp)
+			                   ,(select id from t_sys_employee emp2 where emp2.username=a.emp)
+			              )
+			from orgs a
+			where not exists(select 1 from t_sys_organization c where c.id=a.id)
+		]]>
+	</sql>
+	<!-- 4修正公司类型 -->
+	<sql id="update_companyType">
+		<![CDATA[
+		 update  b set b.org_type='402881b22afad3b1012afae799c60008'
+		from t_sys_organization b
+		where b.org_type='402881b22afad3b1012afae7520f0007' 
+		and exists(select 1 from t_sys_organization c where c.org_type='402881b22afad3b1012afae5e33d0005' and b.orgseq like c.orgseq+'%')
+		]]>
+	</sql>
+	<!-- 5为各公司初始化必须的数据 -->
+	<!-- a,风险 -->
+	<sql id="insert_risksCompany">
+		<![CDATA[
+		 insert into t_rm_risks
+			 (id,   archivestatus, dealstatus, elevel, isleaf, isriskclass
+			 , riskname, riskseq, status, companyid,templateid,sort)
+			select id,'1','1',1,'0','4'
+			,'整体风险','.'+id+'.','3',id,'1',1
+			from t_sys_organization b
+			where b.org_type in('402881b22afad3b1012afae5a4200004','402881b22afad3b1012afae5e33d0005')
+			and not exists(select 1 from t_rm_risks a where a.companyid=b.id)
+		]]>
+	</sql>
+	<!-- b,指标 -->
+	<sql id="insert_KPICompany">
+		<![CDATA[
+		 insert into t_kpi_kpi
+			  (id,   is_catalog, is_leaf, kpi_name, parent_id_seq, sort, status, target_level, company_id)
+			select id,'1','0','指标库','.'+id+'.',1,'1',1,id
+			from t_sys_organization b
+			where b.org_type in('402881b22afad3b1012afae5a4200004','402881b22afad3b1012afae5e33d0005')
+			and not exists(select 1 from t_kpi_kpi a where a.company_id=b.id)
+		]]>
+	</sql>
+	<!-- c,变量-->
+	<sql id="insert_variableCompany">
+		<![CDATA[
+		 insert into t_kpi_variable
+			  (id,   variable_level, is_catalog, is_disabled, is_leaf, parent_id_seq, variable_name,sort, status, company_id)
+			select id,1,'1','1','0','.'+id+'.','变量库',1,'1',id
+			from t_sys_organization b
+			where b.org_type in('402881b22afad3b1012afae5a4200004','402881b22afad3b1012afae5e33d0005')
+			and not exists(select 1 from t_kpi_variable a where a.company_id=b.id)
+		]]>
+	</sql>
+	<!-- d,资产-->
+	<sql id="insert_assetsCompany">
+		<![CDATA[
+		 insert into t_assets_assets
+			  (id,   assets_level, assets_name, dealstatus, is_leaf, parent_id_seq, sort, status, company_id)
+			select id,1,'资产库','1','0','.'+id+'.',1,'3',id
+			from t_sys_organization b
+			where b.org_type in('402881b22afad3b1012afae5a4200004','402881b22afad3b1012afae5e33d0005')
+			and not exists(select 1 from t_assets_assets a where a.company_id=b.id)
+		]]>
+	</sql>
+	<!-- e,流程-->
+	<sql id="insert_processureCompany">
+		<![CDATA[
+		 insert into t_processure_processure
+			  (id,   dealstatus, is_leaf, parent_id_seq, processure_level, processure_name, sort, status, company_id)
+			select id,'1','0','.'+id+'.',1,'流程库',1,'3',id
+			from t_sys_organization b
+			where b.org_type in('402881b22afad3b1012afae5a4200004','402881b22afad3b1012afae5e33d0005')
+			and not exists(select 1 from t_processure_processure a where a.company_id=b.id)
+		]]>
+	</sql>
+	<!-- 人员和人员相关-->
+	<!-- 增加部门下不存在的岗位名称-->
+	<sql id="insert_newPosition">
+		<![CDATA[
+		 insert into t_sys_position
+			(id,status,posiname,org_id)
+			select substring(cast(newid() as char(36)),1,32),'DEDEEBD63C64E0F557C0BEFEF87E3D3F',position,org.id
+			from t_dts_emp emp,t_dts_org org
+			where not exists(select 1 from t_sys_position b where emp.position=b.posiname and b.org_id=org.id) and emp.position is not null
+			and ','+emp.org+',' like '%,'+org.id+',%'
+			group by emp.position,org.id
+		]]>
+	</sql>
+	<!-- 操作员-->
+	<sql id="update_user">
+		<![CDATA[
+		 update  b
+			set 
+			b.enable='1'
+			,b.realname=username
+			,b.status='30270F7E87566A24C94B5FD0D90672C4'
+			,b.username=user_id
+			from t_sys_user b,t_dts_emp a
+			where exists(select 1 from t_dts_emp a where a.id=b.id)
+		]]>
+	</sql>
+	<sql id="insert_user">
+		<![CDATA[
+		 insert into t_sys_user
+			(id,enable,password,realname,status,username)
+			select id,'1'
+			,'21232f297a57a5a743894a0e4a801fc3',user_name,'30270F7E87566A24C94B5FD0D90672C4',user_id
+			from  t_dts_emp a
+			where not exists(select 1 from t_sys_user b where a.id=b.id)
+		]]>
+	</sql>	
+	<!-- 员工-->	
+	<sql id="update_emp">
+		<![CDATA[
+		 update  a
+			set a.status='FC2EB2C12EB0CB9D0137AAF4E5B370DE'
+			,a.org_id=(select e.id from t_sys_organization d,t_sys_organization e
+			   where ','+b.org+',' like '%,'+d.id+',%'
+			  and len(e.orgseq) in ( /*根据orgseq查找最近的上级部门的orgseq的长度*/
+			                        select max(len(orgseq))
+			                          from t_sys_organization a
+			                         where d.orgseq like a.orgseq + '%'
+			                          and org_type in('402881b22afad3b1012afae5a4200004','402881b22afad3b1012afae5e33d0005') )
+			  and d.orgseq like e.orgseq + '%' and e.org_type in('402881b22afad3b1012afae5a4200004','402881b22afad3b1012afae5e33d0005')
+			)/*员工所属公司*/
+			,a.empcode=b.user_id
+			,a.userid=b.id
+			,a.username=b.user_id
+			,a.realname=b.user_name
+			,a.empname=b.user_name
+			from t_sys_employee a,t_dts_emp b
+			where exists(select 1 from t_dts_emp b where a.id=b.id) and a.id=b.id
+		]]>
+	</sql>
+	<!-- 人员关联职务-->	
+	<!-- 如果来源数据没有职务，不更新；如果目标数据已经有职务，不更新-->	
+	<sql id="update_duty">
+		<![CDATA[
+		update  a 
+			set a.dutyid=(select c.id from t_dts_emp b,t_sys_duty c where b.duty=c.dutyname and b.id=a.id)
+			from t_sys_employee a
+			where a.dutyid is null and exists(select c.id from t_dts_emp b,t_sys_duty c where b.duty=c.dutyname and b.id=a.id)
+		]]>
+	</sql>
+	<sql id="insert_sysEmployee">
+		<![CDATA[
+		insert into t_sys_employee
+			(id,status,org_id,empcode,userid,dutyid,username,realname,empname)
+			select id,'FC2EB2C12EB0CB9D0137AAF4E5B370DE'
+			,(select e.id from t_sys_organization d,t_sys_organization e
+			   where ','+a.org+',' like '%,'+d.id+',%'
+			  and len(e.orgseq) in ( /*根据orgseq查找最近的上级部门的orgseq的长度*/
+			                        select max(len(orgseq))
+			                          from t_sys_organization a
+			                         where d.orgseq like a.orgseq + '%'
+			                          and org_type in('402881b22afad3b1012afae5a4200004','402881b22afad3b1012afae5e33d0005') )
+			  and d.orgseq like e.orgseq + '%' and e.org_type in('402881b22afad3b1012afae5a4200004','402881b22afad3b1012afae5e33d0005')
+			)/*员工所属公司*/
+			,user_id,id
+			,(select id from t_sys_duty c where c.dutyname=a.duty),user_id,user_name,user_name
+			from  t_dts_emp a
+			where not exists(select 1 from t_sys_employee b where a.id=b.id)
+		]]>
+	</sql>
+	<!-- 人员关联岗位-->	
+	<!-- 如果没有岗位，不更新；只插入，不删除-->
+	<sql id="insert_sysEmpPost">
+		<![CDATA[
+			insert into T_SYS_EMP_POSI
+				(id,ismain,emp_id,posi_id)
+				select substring(cast(newid() as char(36)),1,32),'0',a.id,b.id
+				from t_dts_emp a,t_sys_position b,t_sys_organization c
+				where a.position=b.posiname
+				and not exists(select 1 from T_SYS_EMP_POSI c where c.emp_id=a.id and c.posi_id=b.id)
+				and ','+a.org+',' like '%,'+c.id+',%' and b.org_id=c.id
+		]]>
+	</sql>
+	
+	<!--人员关联部门-->
+	<!--只插入，不删除-->
+	<sql id="insert_sysEmpOrg">
+		<![CDATA[
+		insert into t_sys_emp_org
+			(id,ismain,emp_id,org_id)
+			select substring(cast(newid() as char(36)),1,32),'0',a.id,c.id
+			from t_dts_emp a,t_sys_organization c
+			where ','+a.org+',' like '%,'+c.id+',%'
+			and not exists(select 1 from t_sys_emp_org d where d.org_id=c.id and d.emp_id=a.id)
+		]]>
+	</sql>
+	
+	<sql id="query_monthRiskAnalyse_risksort">
+		<![CDATA[
+			select
+			 count(distinct(case when status<:low then y2_ else null end)) lownum,
+			 count(distinct(case when status>=:low and   status<:high then y2_ else null end)) midnum,
+			 count(distinct(case when status>=:high  then y2_ else null end)) highnum,
+			 risksort
+			 from 
+			(select
+		        max(this_.impacts*this_.probability) as status,
+		        r1_.risk_name as y1_,
+		        r1_.id as y2_,
+		        pr2_.risk_name as y3_,
+		        max(this_.id) as y4_,
+		        max(this_.impacts) as y5_,
+		        max(this_.probability) as y6_ 
+		        ,( select t.risk_name from t_rm_risks t where t.elevel = 2 and r1_.id_seq like t.id_seq+'%') risksort/*风险大类*/
+		    from
+		        ermis4_liming.t_kpi_risk_declaration this_ 
+		    inner join
+		        ermis4_liming.t_rm_risks r1_ 
+		            on this_.risk_id=r1_.id 
+		    inner join
+		        ermis4_liming.t_rm_risks pr2_ 
+		            on r1_.parent_id=pr2_.id 
+		    where
+		        this_.emonth=:month
+		        and this_.eyear=:year
+		    group by
+		        r1_.risk_name,
+		        r1_.id,
+		        pr2_.risk_name,
+		        r1_.id_seq)
+		    group by risksort
+		]]>
+	</sql>
+	<sql id="query_monthRiskAnalyse_org">
+		<![CDATA[
+			select
+			 count(distinct(case when status<:low then y2_ else null end)) lownum,
+			 count(distinct(case when status>=:low and   status<:high then y2_ else null end)) midnum,
+			 count(distinct(case when status>=:high then y2_ else null end)) highnum,
+			 org_name
+			from 
+			(
+			   select
+			        max(this_.impacts*this_.probability) as status,
+			        r1_.risk_name as y1_,
+			        r1_.id as y2_,
+			        pr2_.risk_name as y3_,
+			        max(this_.id) as y4_,
+			        max(this_.impacts) as y5_,
+			        max(this_.probability) as y6_ 
+			        ,o.org_name /*主责部门*/
+			    from
+			        ermis4_liming.t_kpi_risk_declaration this_ 
+			    inner join
+			        ermis4_liming.t_rm_risks r1_ 
+			            on this_.risk_id=r1_.id 
+			    inner join
+			        ermis4_liming.t_rm_risks pr2_ 
+			            on r1_.parent_id=pr2_.id 
+			    left join ( t_rm_risk_org ro inner join t_sys_organization o on ro.treatment_org_id = o.id and ro.etype = 1)
+			                on r1_.id = ro.risk_id
+			    where
+			        this_.emonth=:month
+			        and this_.eyear=:year
+			    group by
+			        r1_.risk_name,
+			        r1_.id,
+			        pr2_.risk_name,
+			        r1_.id_seq
+			        ,o.org_name
+			 )
+			 group by org_name
+
+		]]>
+	</sql>
+	
+		<sql id="query_monthRiskAnalyse_plates">
+		<![CDATA[
+			select
+			 count(distinct(case when status<:low then y2_ else null end)) lownum,
+			 count(distinct(case when status>=:low and   status<:high then y2_ else null end)) midnum,
+			 count(distinct(case when status>=:high then y2_ else null end)) highnum,
+			 dict_entry_name
+			from 
+			(
+			   select
+			        max(this_.impacts*this_.probability) as status,
+			        r1_.risk_name as y1_,
+			        r1_.id as y2_,
+			        pr2_.risk_name as y3_,
+			        max(this_.id) as y4_,
+			        max(this_.impacts) as y5_,
+			        max(this_.probability) as y6_ 
+			        ,p.dict_entry_name /*主责部门*/
+			    from
+			        ermis4_liming.t_kpi_risk_declaration this_ 
+			    inner join
+			        ermis4_liming.t_rm_risks r1_ 
+			            on this_.risk_id=r1_.id 
+			    inner join
+			        ermis4_liming.t_rm_risks pr2_ 
+			            on r1_.parent_id=pr2_.id 
+			    inner join ( t_rm_risks_plates rp inner join t_sys_dict_entry p on rp.eplate = p.id)
+                	on r1_.id = rp.risk_id
+			    where
+			        this_.emonth=:month
+			        and this_.eyear=:year
+			    group by
+			        r1_.risk_name,
+			        r1_.id,
+			        pr2_.risk_name,
+			        r1_.id_seq
+			        ,p.dict_entry_name
+			 )
+			 group by dict_entry_name
+
+		]]>
+	</sql>
+	<sql id="query_processure_by_processureidstr">
+		<![CDATA[
+			select
+		        t.id,
+		        t.processure_name,
+		        t.parent_id 
+		    from
+		        t_processure_processure t 
+		    where
+		        exists(
+		            select
+		                1 
+		            from
+		                t_processure_processure t2 
+		            where
+		                t2.id_seq like t.id_seq+'%'
+		        ) 
+		        and parent_id is not null 
+		        and not exists(
+		        	select 
+		        		1 
+		        	from 
+		        		t_processure_processure t3 
+		        	where t3.id in(:filters) 
+		        		and t.id_seq like t3.id_seq+'%'
+		        )
+		    order by
+		        t.id_seq
+		]]>
+	</sql>
+	<sql id="query_risk_cause_level3">
+		<![CDATA[
+			select
+				risk.ID,risk.RISK_NAME,
+				cause_a.id a_id,cause_a.cause_risk_id a_risk_id,risk_a.RISK_NAME a_name,
+				cause_b.id b_id,cause_b.cause_risk_id b_risk_id,risk_b.RISK_NAME b_name,
+				cause_c.id c_id,cause_c.cause_risk_id c_risk_id,risk_c.RISK_NAME c_name
+			from 
+				t_rm_risks risk
+				left join t_rm_risk_cause_analyze cause_a on risk.id=cause_a.risk_id and cause_a.etype=:estatus
+				left join t_rm_risks risk_a on cause_a.cause_risk_id=risk_a.id
+				left join t_rm_risk_cause_analyze cause_b on cause_a.cause_risk_id=cause_b.risk_id and cause_b.etype=:estatus
+				left join t_rm_risks risk_b on cause_b.cause_risk_id=risk_b.id
+				left join t_rm_risk_cause_analyze cause_c on cause_b.cause_risk_id=cause_c.risk_id and cause_c.etype=:estatus
+				left join t_rm_risks risk_c on cause_c.cause_risk_id=risk_c.id
+			where 
+				risk.id=:riskId
+			order by a_id,b_id,c_id
+		]]>
+	</sql>
+	<sql id="insert_assessmentInfo_from_process">
+		<![CDATA[
+			/*
+			入参：T_CA_ASSESSOR的ID
+			岀参：
+			功能：将T_CA_ASSESSOR关联的T_CA_ASSESSMENT_INFO表的PROCESSURE_ID下的控制措施批量插入到T_CA_ASSESSMENT_INFO中
+			*/
+			insert into t_ca_assessment_info
+	        (id, assessor_id, project_id, measure_id, org_id, operator_id, processure_id)
+			select newid(),a.id,a.project_id,c.id,a.org_id,a.operator_id,c.processure_id
+	        from T_CA_ASSESSOR a,T_RM_TREATMENT_MEASURE c
+	        where a.id=$assessorId and c.processure_id in 
+	        (select i.processure_id from t_ca_assessment_info i where i.assessor_id=a.id) and c.MEASURE_TYPE='process'
+	        and not exists(select 1 from t_ca_assessment_info t where t.assessor_id=a.id and t.measure_id=c.id)  	
+		]]>
+	</sql>
+	<sql id="insert_assessmentInfo_from_risk">
+		<![CDATA[
+			/*
+			入参：T_CA_ASSESSOR的ID
+			岀参：
+			功能：将T_CA_ASSESSOR关联的T_CA_ASSESSMENT_INFO表的PROCESSURE_ID关联的风险所关联的控制措施批量插入到T_CA_ASSESSMENT_INFO中
+			*/
+			insert into t_ca_assessment_info
+	        (id, assessor_id, project_id, measure_id, org_id, operator_id, processure_id)
+			select newid(),mm.assessor_id,mm.project_id,mm.measure_id,mm.org_id,mm.operator_id,mm.processure_id
+			from (
+			select distinct a.id assessor_id,a.project_id project_id,cm.id measure_id,a.org_id org_id,a.operator_id operator_id,cm.processure_id processure_id
+			from T_CA_ASSESSOR a,T_RM_TREATMENT_MEASURE cm,T_PROCESSURE_RISK_PROCESSURE b,T_RM_RISK_MEASURE c 
+			where a.id=$assessorId and b.risk_id =c.risk_id and c.measure_id=cm.id and cm.processure_id in 
+			(select i.processure_id from t_ca_assessment_info i where i.assessor_id=a.id ) and cm.MEASURE_TYPE='risk'
+			and not exists(select 1 from t_ca_assessment_info t where t.assessor_id=a.id and t.measure_id=cm.id)) mm  
+		]]>
+	</sql>
+	<sql id="insert_assessmentPoint_from_point">
+		<![CDATA[
+			/*
+			入参：T_CA_ASSESSMENT_PROJECT的ID
+			功能：将流程关联的评价点和控制措施关联的评价点同步到t_ca_assessment_point表
+			*/
+			insert into t_ca_assessment_point
+			(id, assessment_info_id,point_id, edesc,sample_number)
+			/*控制措施评价点*/
+			select newid(), a.id,b.id,null,null
+			from T_CA_ASSESSMENT_INFO a,T_RM_MEASURE_ASSESSMENT_POINT b
+			where a.project_id=$projectId and b.treatment_measure_id=a.measure_id
+			and a.measure_id is not null
+			and not exists(select 1 from t_ca_assessment_point c where c.assessment_info_id=a.id and c.point_id=b.id)/*排除已增加的*/
+			union all
+			/*流程评价点*/
+			select newid(), a.id,b.id,null,1
+			from T_CA_ASSESSMENT_INFO a,T_RM_MEASURE_ASSESSMENT_POINT b
+			where a.project_id=$projectId and b.processure_id=a.processure_id
+			and a.measure_id is null and b.treatment_measure_id is null
+			and not exists(select 1 from t_ca_assessment_point c where c.assessment_info_id=a.id and c.point_id=b.id)/*排除已增加的*/
+		]]>
+	</sql>
+	<sql id="insert_assessmentPoint_from_syspoint">
+		<![CDATA[
+			/*
+			入参：T_CA_ASSESSMENT_PROJECT的ID
+			功能：将流程关联的评价点和控制措施关联的评价点同步到t_ca_assessment_point表
+			*/
+			insert into t_ca_assessment_point
+			(id, assessment_info_id,point_id, edesc,sample_number)
+		      select newid(), a.id,b.id,null,1
+		      from T_CA_ASSESSMENT_INFO a,T_IC_ASSESSMENT_POINT b
+		      where a.project_id=$projectId 
+		      and a.measure_id is not null 
+		      and not exists(select 1 from t_ca_assessment_point c where c.assessment_info_id=a.id and c.point_id=b.id)/*排除已增加的*/
+		      union all
+		      select newid(), a.id,b.id,null,1
+		      from T_CA_ASSESSMENT_INFO a,T_IC_ASSESSMENT_POINT b
+		      where a.project_id=$projectId 
+		      and a.measure_id is null 
+		      and not exists(select 1 from t_ca_assessment_point c where c.assessment_info_id=a.id and c.point_id=b.id)/*排除已增加的*/
+		]]>
+	</sql>
+	<sql id="query_tempRelaTarget">
+		<![CDATA[
+			/*
+			入参：t_ca_assessment_temp的ID
+			功能：t_ca_assessment_temp下的关联对象查询出来
+			*/
+			select t2.id,t2.target_id,t2.temp_rela_target_parent_id,
+			(select p1.processure_name from t_processure_processure p1 where t2.target_id=p1.id) target_name,
+			(select p1.processure_name from t_processure_processure p1 where t1.parent_target_id=p1.id) target_parent_name
+			from T_CA_TEMP_RELA_TARGET t2,
+			t_ca_assessment_temp t,
+			T_CA_TEMP_RELA_TARGET_PARENT t1
+			where t.id = t1.assessment_temp_id
+			and t1.id = t2.temp_rela_target_parent_id 
+			and t.id=:tempId
+         ]]>
+       </sql>
+	<sql id="query_riskLevelSUM">
+		<![CDATA[
+    select
+        sum(case 
+            when ecomment = '低' then ct 
+        end) l,
+        sum(case 
+            when ecomment = '中' then ct 
+        end) m,
+        sum(case 
+            when ecomment = '高' then ct 
+        end) h  
+    from
+        (SELECT
+            (CASE 
+                WHEN NOT EXISTS(SELECT
+                    1 
+                FROM
+                    t_rm_chartmatrix as CM,
+                    T_RM_CHART_COLOR as CC 
+                WHERE
+                    A.COMPANY_ID=CM.COMPANY_ID 
+                    AND CM.COMPANY_ID=CC.COMPANY_ID) THEN (SELECT
+                    MAX(ECOMMENT) 
+                FROM
+                    T_RM_CHART_COLOR CC 
+                WHERE
+                    CC.COLORSET_ID= (SELECT
+                        COLORSET_ID 
+                    FROM
+                        (SELECT
+                            COLORSET_ID,
+                            ROW_NUMBER()OVER(
+                        ORDER BY
+                            X_VALUE,
+                            Y_VALUE)RN 
+                        FROM
+                            t_rm_chartmatrix 
+                        where
+                            company_id is null 
+                            and x_value>=a.probability 
+                            and y_value>=a.impacts ) AA 
+                    WHERE
+                        RN=1)
+                        and company_id is null)
+                    ELSE (
+                        SELECT
+                            MAX(ECOMMENT) 
+                        FROM
+                            T_RM_CHART_COLOR CC 
+                        WHERE
+                            CC.COLORSET_ID= (
+                                SELECT
+                                    COLORSET_ID 
+                                FROM
+                                    (SELECT
+                                        COLORSET_ID,
+                                        ROW_NUMBER()OVER(
+                                    ORDER BY
+                                        X_VALUE,
+                                        Y_VALUE)RN 
+                                    FROM
+                                        t_rm_chartmatrix 
+                                    where
+                                        company_id=cc.company_id 
+                                        and x_value>=a.probability 
+                                        and y_value>=a.impacts ) AA 
+                                WHERE
+                                    RN=1
+                                ) 
+                                and company_id=a.company_id
+                        ) 
+                    END
+                ) ecomment,1 ct 
+            FROM
+                T_RM_RISKS A 
+            where
+                elevel = ? 
+                and company_id = ? 
+            union
+            all select
+                '低',
+                0 
+            union
+            all select
+                '中',
+                0 
+            union
+            all select
+                '高',
+                0
+        ) B 		
+         ]]>
+       </sql>
+       <!-- 内控评估模块 初始化计划样本 -->
+		<sql id="init_project_samples">
+			<![CDATA[
+				insert into t_ca_sample
+	                    (id, sample_code, assessment_point_id, sample_name, eresult)
+						select newid(),
+							c.processure_id
+								,a.id,'样本','Y'
+									from t_ca_assessment_point a,t_ca_assessment_info c,
+										(select row_number() over(order by a.id) rn from sysobjects a,sysobjects) b
+											where  a.assessment_info_id=c.id
+												and c.project_id=:projectId
+										and b.rn<=a.sample_number
+			]]>
+		</sql>
+       <sql id="update_info">
+		<![CDATA[
+			/*
+			入参：T_CA_ASSESSMENT_PROJECT的ID
+			功能：T_CA_TEMP_RELA_TARGET_PARENT的assessment_standard来更新T_CA_ASSESSMENT_INFO的ASSESSMENT_RULE
+			*/
+			update T_CA_ASSESSMENT_INFO set ASSESSMENT_RULE=(select distinct c.assessment_standard from T_CA_TEMP_RELA_TARGET b,T_CA_TEMP_RELA_TARGET_PARENT c,T_CA_ASSESSMENT_PROJECT d,T_CA_ASSESSMENT_INFO a
+			where b.target_id=a.processure_id and b.temp_rela_target_parent_id=c.id and c.assessment_temp_id=d.assessment_temp_id and d.id=a.project_id and d.ID=$projectId)
+			where project_id=$projectId
+		]]>
+	</sql>
+	  <!-- 内控评估模块  更新评价点有效数及缺陷数 -->
+      <sql id="update_point">
+		<![CDATA[
+			update t_ca_assessment_point
+			set effective_number=(select count(s.id) from t_ca_sample s,t_ca_assessment_point p where s.assessment_point_id=p.id and s.eresult='Y' and p.id=:id)
+			, defect_number=(select count(s.id) from t_ca_sample s,t_ca_assessment_point p where s.assessment_point_id=p.id and s.eresult='N' and p.id=:id)
+			where id=:id
+		]]>
+	</sql>
+	<sql id="update_tempRelaTargetParent">
+		<![CDATA[
+			/*
+			入参：T_CA_ASSESSMENT_PROJECT的ID和t_ca_assessment_temp的id
+			功能：T_CA_ASSESSMENT_INFO的ASSESSMENT_RULE来更新T_CA_TEMP_RELA_TARGET_PARENT的assessment_standard
+			*/
+			update t_ca_temp_rela_target_parent  set assessment_standard=(select distinct i.assessment_rule from t_ca_assessment_info i,t_ca_temp_rela_target t,t_ca_assessment_project pro,t_ca_temp_rela_target_parent p 
+			where i.processure_id=t.target_id and p.id=t.temp_rela_target_parent_id and pro.assessment_temp_id=p.assessment_temp_id
+			and pro.id=i.project_id and pro.id=$projectId) 
+			where assessment_temp_id=$tempId
+		]]>
+	</sql>
+	<sql id="update_point_init">
+		<![CDATA[
+			/*
+			入参：T_CA_ASSESSMENT_PROJECT的ID
+			功能：初始化评价结果的有效数和缺陷数
+			*/
+			update t_ca_assessment_point set effective_number=sample_number, defect_number=0   
+  			where id in (select p.id from t_ca_assessment_info i,t_ca_assessment_point p
+			where p.assessment_info_id=i.id and i.project_id=$projectId)
+		]]>
+	</sql>
+	<!-- 内控评估模块  控制措施部门分布情况统计 -->
+	<sql id="query_treatmentMeasure_org">
+		<![CDATA[
+			select (case when o.org_name is null then '无' else o.org_name end) org_name ,count(t.id) as orgCount 
+            from t_rm_treatment_measure t left join t_sys_organization o on  t.org_id=o.id
+            where t.company_id=:companyId 
+            group by o.org_name
+            order by o.org_name asc
+
+		]]>
+	</sql>
+   <!--内控评估模块  控制措施流程分布情况统计 -->
+	<sql id="query_treatmentMeasure_processure">
+		<![CDATA[
+		   select (case when pp.processure_name is null then '无' else pp.processure_name end) processure_name,count(m.measure_name) 
+		   from t_rm_treatment_measure m left join (select lp.id lpid,p.processure_name processure_name
+		   from t_processure_processure lp,t_processure_processure p 
+		   where  lp.id_seq like p.id_seq+'%' and lp.is_leaf=1 and p.elevel=:elevel) pp on m.processure_id=pp.lpid
+		   where m.company_id=:companyId
+		   group by pp.processure_name
+		   order by processure_name asc
+		]]>
+	</sql>
+	<!--控制措施流程列表分组查询-->
+	<sql id="query_treatmentMeasureGroup_processure">
+		<![CDATA[
+		 select m.id,m.measure_name,m.control_type,m.control_measure,m.control_frequency,m.trigger_type,
+		(case when pp.processure_name is null then '无' else pp.processure_name end) processure_name
+		from t_rm_treatment_measure m left join (select lp.id lpid,p.processure_name processure_name
+		from t_processure_processure lp,t_processure_processure p 
+		where  lp.id_seq like p.id_seq+'%' and lp.is_leaf=1 and p.elevel=:elevel) pp on m.processure_id=pp.lpid
+		where m.company_id=:companyId
+		order by pp.processure_name asc
+		]]>
+	</sql>
+	<!--内控评估模块  控制措施风险分布情况统计 -->
+	<sql id="query_treatmentMeasure_risk">
+		<![CDATA[
+	  select ppr.risk_name,count(ppr.measure_name)
+      from (select  (case when rr.risk_name is null then '无' else rr.risk_name end) risk_name ,m.measure_name
+	  from t_rm_treatment_measure m left join t_rm_risk_measure rm on rm.measure_id=m.id 
+      left join (select r.id rid,pr.risk_name risk_name from t_rm_risks r,t_rm_risks pr
+      where r.id_seq like pr.id_seq+'%' and r.is_leaf='1' and pr.elevel=:elevel and r.company_id=:companyId)rr on rr.rid=rm.risk_id  )ppr
+      group by ppr.risk_name 
+      order by ppr.risk_name asc
+		]]>
+	</sql>
+	
+	<!--内控评估模块  控制措施风险列表分组查询-->
+	<sql id="query_treatmentMeasureGroup_risk">
+		<![CDATA[
+		  select distinct m.id,m.measure_name,m.control_type,m.control_measure,m.control_frequency,m.target_type ,
+		  (case when rr.risk_name is null then '无' else rr.risk_name end) risk_name,rr.rid  riskid
+          from t_rm_treatment_measure m left join t_rm_risk_measure rm on rm.measure_id=m.id 
+          left join (select r.id rid,pr.risk_name risk_name from t_rm_risks r,t_rm_risks pr
+          where r.id_seq like pr.id_seq+'%' and r.is_leaf='1' and pr.elevel=:elevel and r.company_id=:companyId)rr on rr.rid=rm.risk_id 
+		]]>
+	</sql>
+	<sql id="insert_assessmentSumary">
+		<![CDATA[
+			/*
+			入参：T_CA_ASSESSMENT_PROJECT的ID
+			岀参：
+			功能：把T_CA_ASSESSMENT_POINT汇总后批量插入到T_CA_ASSESSMENT_SUMARY
+			*/
+			insert into t_ca_assessment_sumary(id,project_id,processure_id,measure_id,point_id,SAMPLE_NUMBER,EFFECTIVE_NUMBER,DEFECT_NUMBER)
+			 select  newid(),i.project_id,i.processure_id,i.measure_id,p.point_id
+			,sum(case when s.ID is not null then 1 else 0 end)
+			,sum(case when s.eresult='Y' then 1 else 0 end)
+			,sum(case when s.eresult='N' then 1 else 0 end)
+	      from t_ca_assessment_info i,t_ca_assessment_point p,T_CA_SAMPLE s 
+	      where i.id=p.assessment_info_id and s.ASSESSMENT_POINT_ID=p.id and i.project_id=$projectId 
+	      and not exists(select 1 from t_ca_assessment_sumary s where s.project_id=i.PROJECT_ID and s.point_id=p.POINT_ID)/*排除已增加的*/
+	      group by i.project_id,i.processure_id,i.measure_id,p.point_id
+	      order by i.processure_id
+
+		]]>
+	</sql>
+		<!--项目评价结果统计表-->
+	<sql id="query_caAssessmentPoint">
+		<![CDATA[
+		   select pp.id,pp.processure_name,
+  			  			sum(case when (
+	  				case when s.sample_number=0 then 0 else 
+						case when (s.EFFECTIVE_NUMBER+s.defect_number)=0  then 0  else s.EFFECTIVE_NUMBER/(s.EFFECTIVE_NUMBER+s.defect_number) 
+						end
+	  				end)=1 then 1 else 0 
+	  			end) effectCount,
+             round(CAST(sum(case when (
+	  				case when s.sample_number=0 then 0 else 
+						case when (s.EFFECTIVE_NUMBER+s.defect_number)=0  then 0  else s.EFFECTIVE_NUMBER/(s.EFFECTIVE_NUMBER+s.defect_number) 
+						end
+	  				end)=1 then 1 else 0 
+	  			end)AS FLOAT)/count(*)*100,2) effectPercent,
+			sum(case when (
+	  				case when s.sample_number=0 then 0 else 
+						case when (s.EFFECTIVE_NUMBER+s.defect_number)=0  then 0  else s.EFFECTIVE_NUMBER/(s.EFFECTIVE_NUMBER+s.defect_number) 
+						end
+	  				end)!=1 then 1 else 0 
+	  			end) defectCount,
+          
+ 			round(CAST(sum(case when (
+	  				case when s.sample_number=0 then 0 else 
+						case when (s.EFFECTIVE_NUMBER+s.defect_number)=0  then 0  else s.EFFECTIVE_NUMBER/(s.EFFECTIVE_NUMBER+s.defect_number) 
+						end
+	  				end)!=1 then 1 else 0 
+	  			end)AS FLOAT)/count(*)*100,2) DefectPercent
+ 		from t_ca_assessment_sumary s,t_processure_processure pp where s.processure_id=pp.id and s.project_id=:projectId
+  		group by pp.id,pp.processure_name
+		]]>
+	</sql>
+			<!--评价项目测试进度统计表（按测评人员）-->
+	<sql id="query_caAssessmentPointCountByEmploy">
+		<![CDATA[
+		  select mm.real_name realName,
+         CAST(case when sum(mm.ecount)<=0 then sum(mm.yesresult)
+            when sum(mm.yesresult)<=0 then 0
+            else sum(mm.yesresult)/cast(sum(mm.ecount) as NUMERIC(18,4))*100 
+            end AS NUMERIC(18,2)) as resultPercent,
+		  sum(mm.ecount) pointCount,sum(mm.yesresult) yesresult,sum(mm.noresult) noresult
+          from (select a.operator_id,e.real_name,p.eresult,count(*) as ecount,
+          sum(case when p.eresult='已评价' then 1 else 0 end) yesresult,
+          sum(case when p.eresult is null then 1 else 0 end) noresult
+          from T_CA_ASSESSMENT_INFO i,T_CA_ASSESSOR a,T_CA_ASSESSMENT_POINT p,t_sys_employee e 
+          where i.id=p.assessment_info_id  
+          and a.id=i.assessor_id
+          and a.operator_id=e.id
+          and i.project_id=:projectId
+          group by a.operator_id ,e.real_name,p.eresult) mm
+          group by mm.real_name
+		]]>
+	</sql>
+	<!-- 评价项目测试进度统计表（按测评流程）-->
+	<sql id="query_caAssessmentPointCountByProcess">
+		<![CDATA[
+		select mm.processure_name processureName,
+        CAST(case when sum(mm.ecount)<=0 then sum(mm.yesresult)
+            when sum(mm.yesresult)<=0 then 0
+            else sum(mm.yesresult)/cast(sum(mm.ecount) as NUMERIC(18,4))*100 
+            end AS NUMERIC(18,2)) as resultPercent,
+		sum(mm.ecount) pointCount,sum(mm.yesresult) yesresult,sum(mm.noresult) noresult
+        from (select i.processure_id,pp.processure_name,p.eresult,count(*) as ecount,
+        sum(case when p.eresult='已评价' then 1 else 0 end) yesresult,
+        sum(case when p.eresult is null then 1 else 0 end) noresult
+        from T_CA_ASSESSMENT_INFO i,T_CA_ASSESSMENT_POINT p,t_processure_processure pp 
+        where i.id=p.assessment_info_id  
+        and pp.id=i.processure_id
+        and i.project_id=:projectId
+        group by i.processure_id ,pp.processure_name,p.eresult) mm
+        group by mm.processure_name
+		]]>
+	</sql>
+		<!-- 评价项目测试进度统计表（按被评单位）-->
+	<sql id="query_caAssessmentPointCountByOrg">
+		<![CDATA[
+		select mm.org_name orgName,  
+		CAST(case when sum(mm.ecount)<=0 then sum(mm.yesresult)
+            when sum(mm.yesresult)<=0 then 0
+            else sum(mm.yesresult)/cast(sum(mm.ecount) as NUMERIC(18,4))*100 
+            end AS NUMERIC(18,2)) as resultPercent,
+		sum(mm.ecount) pointCount,sum(mm.yesresult) yesresult,sum(mm.noresult) noresult
+      
+        from (select ap.company_id ,o.org_name,p.eresult,count(*) as ecount,
+        sum(case when p.eresult='已评价' then 1 else 0 end) yesresult,
+        sum(case when p.eresult is null then 1 else 0 end) noresult
+        from T_CA_ASSESSMENT_INFO i,T_CA_ASSESSMENT_POINT p,t_sys_organization o ,T_CA_ASSESSMENT_PROJECT ap
+        where i.id=p.assessment_info_id  
+        and ap.id=i.project_id 
+        and ap.company_id=o.id
+        and ap.is_enabled='2'
+        group by ap.company_id ,o.org_name,p.eresult) mm
+        group by mm.org_name
+		]]>
+	</sql>
+	<!-- 控制缺陷统计图表（按流程、等级）-->
+	<sql id="query_DefectProcessCountByLevel">
+		<![CDATA[
+		select bb.processure_name,bb.totalCount,
+		cast(oneCount/cast(bb.totalCount as NUMERIC(18,4))*100 AS NUMERIC(18,2))onePercent,oneCount,
+		cast(secondCount/cast(bb.totalCount as NUMERIC(18,4))*100 AS NUMERIC(18,2))secondPercent,secondCount,
+		cast(thirdCount/cast(bb.totalCount as NUMERIC(18,4))*100 AS NUMERIC(18,2))thirdPercent,thirdCount
+		from(select mm.processure_name,sum(case when mm.defect_level='DEFECT_DEFECT_GRADE_One' then mm.ecount else 0 end) oneCount,
+		sum(case when mm.defect_level='DEFECT_DEFECT_GRADE_Second' then mm.ecount else 0 end) secondCount,
+		sum(case when mm.defect_level='DEFECT_DEFECT_GRADE_Third' then mm.ecount else 0 end)thirdCount,
+		sum(case when mm.defect_level is null then mm.ecount else 0 end)nullCount,
+		sum(mm.ecount)totalCount
+		from(select (case when a.processure_name is null then '无' else a.processure_name end) processure_name, 
+		d.defect_level, count(*) ecount
+		from T_CA_DEFECT d left join t_ca_defect_processure p  on p.defect_id=d.id
+	    left join t_processure_processure a on a.id=p.processure_id
+		where d.company_id=:companyId
+		group by p.processure_id,a.processure_name,d.defect_level
+		order by a.processure_name
+		)mm
+		group by mm.processure_name
+		order by mm.processure_name asc)bb 
+		]]>
+	</sql>
+		<!-- 控制缺陷统计图表（按流程、类型）-->
+	<sql id="query_DefectProcessCountByType">
+		<![CDATA[
+		select dd.processure_name,dd.totalCount,
+		cast(designCount/cast(dd.totalCount as NUMERIC(18,4))*100 AS NUMERIC(18,2))designPercent,designCount,
+		cast(bothCount/cast(dd.totalCount as NUMERIC(18,4))*100 AS NUMERIC(18,2))bothPercent,bothCount,
+		cast(executeCount/cast(dd.totalCount as NUMERIC(18,4))*100 AS NUMERIC(18,2))executePercent,executeCount
+		from(select mm.processure_name,sum(case when mm.defect_type='DEFECT_DEFECT_TYPE_Design' then mm.ecount else 0 end) designCount,
+		sum(case when mm.defect_type='DEFECT_DEFECT_TYPE_Both' then mm.ecount else 0 end) bothCount,
+		sum(case when mm.defect_type='DEFECT_DEFECT_TYPE_Execute' then mm.ecount else 0 end) executeCount,
+		sum(mm.ecount)totalCount
+		from(select (case when a.processure_name is null then '无' else a.processure_name end) processure_name , 
+	    d.defect_type, count(*) ecount
+	    from T_CA_DEFECT d left join t_ca_defect_processure p  on p.defect_id=d.id
+	    left join t_processure_processure a on a.id=p.processure_id
+	    where  d.company_id=:companyId
+	    group by p.processure_id,a.processure_name,d.defect_type
+	    order by a.processure_name
+		)mm
+		group by mm.processure_name
+		order by mm.processure_name asc)dd
+		]]>
+	</sql>
+	<!-- 控制缺陷统计图表（按部门、等级）-->
+	<sql id="query_DefectOrgCountByLevel">
+		<![CDATA[
+		select bb.org_name,bb.totalCount,
+		cast(oneCount/cast(bb.totalCount as NUMERIC(18,4))*100 AS NUMERIC(18,2))onePercent,oneCount,
+		cast(secondCount/cast(bb.totalCount as NUMERIC(18,4))*100 AS NUMERIC(18,2))secondPercent,secondCount,
+		cast(thirdCount/cast(bb.totalCount as NUMERIC(18,4))*100 AS NUMERIC(18,2))thirdPercent,thirdCount
+	    from(select mm.org_name,sum(case when mm.defect_level='DEFECT_DEFECT_GRADE_One' then mm.ecount else 0 end) oneCount,
+	    sum(case when mm.defect_level='DEFECT_DEFECT_GRADE_Second' then mm.ecount else 0 end) secondCount,
+	    sum(case when mm.defect_level='DEFECT_DEFECT_GRADE_Third' then mm.ecount else 0 end)thirdCount,
+	    sum(mm.ecount)totalCount
+	    from(select (case when o.org_name is null then '无' else o.org_name end) org_name,
+	    d.defect_level, count(*) ecount
+	    from T_CA_DEFECT d left join t_ca_defect_processure p  on p.defect_id=d.id
+	    left join t_processure_processure a on a.id=p.processure_id
+	    left join t_sys_organization o on o.id=a.manage_org_id
+	    where d.company_id=:companyId
+	    group by a.manage_org_id,o.org_name,d.defect_level
+	    order by o.org_name
+	    )mm
+	    group by mm.org_name
+	    order by mm.org_name asc)bb
+		]]>
+	</sql>
+		<!-- 控制缺陷统计图表（按部门、类型）-->
+	<sql id="query_DefectOrgCountByType">
+		<![CDATA[
+		select dd.org_name,dd.totalCount,dd.totalCount,
+		cast(designCount/cast(dd.totalCount as NUMERIC(18,4))*100 AS NUMERIC(18,2))designPercent,designCount,
+		cast(bothCount/cast(dd.totalCount as NUMERIC(18,4))*100 AS NUMERIC(18,2))bothPercent,bothCount,
+		cast(executeCount/cast(dd.totalCount as NUMERIC(18,4))*100 AS NUMERIC(18,2))executePercent,executeCount
+	    from(select mm.org_name,sum(case when mm.defect_type='DEFECT_DEFECT_TYPE_Design' then mm.ecount else 0 end) designCount,
+	    sum(case when mm.defect_type='DEFECT_DEFECT_TYPE_Both' then mm.ecount else 0 end) bothCount,
+	    sum(case when mm.defect_type='DEFECT_DEFECT_TYPE_Execute' then mm.ecount else 0 end) executeCount,
+	    sum(mm.ecount)totalCount
+	    from(select (case when o.org_name is null then '无' else o.org_name end) org_name,
+	    d.defect_type, count(*) ecount
+	    from T_CA_DEFECT d left join t_ca_defect_processure p  on p.defect_id=d.id
+	    left join t_processure_processure a on a.id=p.processure_id
+	    left join t_sys_organization o on o.id=a.manage_org_id
+	    where d.company_id=:companyId
+	    group by a.manage_org_id,o.org_name,d.defect_type
+	    order by o.org_name
+	    )mm
+	    group by mm.org_name
+	    order by mm.org_name asc)dd
+		]]>
+	</sql>
+	<!-- 控制进度统计图表（按计划）-->
+	<sql id="query_AssessmentPointCountByProject">
+		<![CDATA[
+		select mm.id, mm.project_name projectName,  
+        cast( case when sum(mm.ecount)<=0 then sum(mm.yesresult)
+           when sum(mm.yesresult)<=0 then 0
+           else sum(mm.yesresult)/cast(sum(mm.ecount)*100  NUMERIC(18,4)) end AS NUMERIC(18,2)) as resultPercent,
+        sum(mm.ecount) pointCount,sum(mm.yesresult) yesresult,sum(mm.noresult) noresult
+        from (select ap.id ,ap.project_name,p.eresult,count(*) as ecount,
+        sum(case when p.eresult='已评价' then 1 else 0 end) yesresult,
+        sum(case when p.eresult is null then 1 else 0 end) noresult
+        from T_CA_ASSESSMENT_INFO i,T_CA_ASSESSMENT_POINT p ,T_CA_ASSESSMENT_PROJECT ap
+        where i.id=p.assessment_info_id  
+        and ap.id=i.project_id 
+        and ap.is_enabled='2'
+        group by ap.id ,ap.project_name,p.eresult) mm
+        group by mm.project_name,mm.id
+        
+		]]>
+	</sql>
+</sqls>
+	

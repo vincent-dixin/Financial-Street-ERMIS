@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process name="reportExamineApprove" xmlns="http://jbpm.org/4.4/jpdl">
+   <start name="start1" g="137,127,48,48">
+      <transition to="报告编制"/>
+   </start>
+   <task assignee="#{compiler}" name="报告编制" g="266,124,92,52" form="FHD.view.comm.report.assess.CompanyYearReportCompileForm">
+      <transition to="报告审核"/>
+   </task>
+   <task assignee="#{approver}" name="报告审核" g="441,124,92,52" form="FHD.view.comm.report.assess.CompanyYearReportApproveForm">
+      <transition to="exclusive1"/>
+   </task>
+   <decision name="exclusive1" g="625,128,48,48">
+      <transition to="报告编制" g="650,78;311,78:">
+      	<condition expr="#{isReject=='no'}"/>  
+      </transition>
+      <transition to="end1">
+      	<condition expr="#{isReject=='yes'}"/>  
+      </transition>
+   </decision>
+   <end name="end1" g="762,130,48,48"/>
+</process>

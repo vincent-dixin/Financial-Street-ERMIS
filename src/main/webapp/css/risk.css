@@ -1,0 +1,143 @@
+.meshStructureChart{
+	border: 1px solid black;
+	overflow: auto;
+}
+.viewMessage{
+	border:1px solid black #8eaace;
+	background-color:#e9f2ff;
+	position:absolute;
+	display: none;
+	font-weight:bold;
+	padding: 5px;
+	font-size: 12;
+}
+.meshStructureChart DIV.node{	
+	position:absolute;
+}
+.meshStructureChart DIV.nodeOpen{
+	cursor:pointer;
+	position:absolute;
+	width:9px;
+	height:9px;
+	overflow:hidden;
+	background-image: url(../images/risk/add.png);
+	z-index: 30;
+}
+.meshStructureChart DIV.node TABLE{
+	width: 100%;
+	height: 100%;
+}
+.meshStructureChart DIV.node TABLE TR TD DIV.addDiv{
+	width: 9px;
+	height: 9px;
+	overflow:hidden;
+	cursor:pointer;
+	background-image: url(../images/risk/add.png);
+}
+.meshStructureChart DIV.node TABLE TR TD DIV.delDiv{
+	width: 9px;
+	height: 9px;
+	overflow:hidden;
+	cursor:pointer;
+	background-image: url(../images/risk/del.png);
+}
+.meshStructureChart DIV.node TABLE TR.topTr{
+	height: 9px;
+}
+.meshStructureChart DIV.node TABLE TR.topTr TD.leftTd{
+	width: 9px;
+	height: 9px;
+	background-image: url(../images/risk/topLeft.png);
+}
+.meshStructureChart DIV.node TABLE TR.topTr TD.midTd{
+	background-image: url(../images/risk/top.png);
+}
+.meshStructureChart DIV.node TABLE TR.topTr TD.rightTd{
+	width: 9px;
+	background-image: url(../images/risk/topRight.png);
+}
+.meshStructureChart DIV.node TABLE TR.midTr{
+}
+.meshStructureChart DIV.node TABLE TR.midTr TD.leftTd{
+	background-image: url(../images/risk/left.png);
+}
+.meshStructureChart DIV.node TABLE TR.midTr TD.midTd{
+	background-color: 99ccff;
+}
+.meshStructureChart DIV.node TABLE TR.midTr TD.rightTd{
+	background-image: url(../images/risk/right.png);
+}
+.meshStructureChart DIV.node TABLE TR.bottomTr{
+	height: 9px;
+}
+.meshStructureChart DIV.node TABLE TR.bottomTr TD.leftTd{
+	width: 9px;
+	height: 9px;
+	background-image: url(../images/risk/bottomLeft.png);
+}
+.meshStructureChart DIV.node TABLE TR.bottomTr TD.midTd{
+	background-image: url(../images/risk/bottom.png);
+}
+.meshStructureChart DIV.node TABLE TR.bottomTr TD.rightTd{
+	width: 9px;
+	background-image: url(../images/risk/bottomRight.png);
+}
+.meshStructureChart DIV.node DIV.icon{
+	float:left;
+	background-color: 99ccff;
+	height: 100%;
+}
+.meshStructureChart DIV.node img.icon{
+	float:left;
+}
+.meshStructureChart DIV.node DIV.text{
+	height: 100%;
+	text-align: center;
+	background-color: 99ccff;
+	font-weight:bold;
+	word-break:keep-all;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	font-size: 10;
+}
+.meshStructureChart DIV.line{
+	position:absolute;
+}
+.meshStructureChart DIV.line DIV.leftLine1{
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	float:left;
+	width: 50%;
+	height: 100%;
+}
+.meshStructureChart DIV.line DIV.rightLine1{
+	border-top: 1px solid black;
+	float:left;
+	width: 50%;
+	height: 100%;
+}
+.meshStructureChart DIV.line DIV.leftLine2{
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	float:left;
+	width: 50%;
+	height: 100%;
+}
+.meshStructureChart DIV.line DIV.rightLine2{
+	border-bottom: 1px solid black;
+	float:left;
+	width: 50%;
+	height: 100%;
+}
+.meshStructureChart DIV.line DIV.leftLine{
+	border-top: 1px solid black;
+	width: 100%;
+	float:left;
+	height: 100%;
+}
+.meshStructureChart DIV.line DIV.rightLine{
+	float:left;
+	width:0px;
+	height: 100%;
+}

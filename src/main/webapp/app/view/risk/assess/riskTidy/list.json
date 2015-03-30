@@ -1,0 +1,116 @@
+[
+
+
+{
+	"id" : "1",
+	"code":"1",
+	"name" : "提高铝型材库存周转率",
+	"kpiName" : "IT部",
+	"definition" : "企化部",
+	"bizType" : "供应商",
+	"riskName" : "对供应商交付能力预测不足1",
+	"riskLevel" : "<img src=\'images/kpi/cockpit/high.gif\' />",
+	"oper" : "提高铝型材库存周转率添加",
+	"assessPerson" : "李小2,王小2,李华"
+},{
+	"id" : "2",
+	"code":"2",
+	"name" : "提高铝型材库存周转率",
+	"kpiName" : "IT部",
+	"definition" : "企化部",
+	"bizType" : "供应商",
+	"riskName" : "对供应商交付能力预测不足2",
+	"riskLevel" : "<img src=\'images/kpi/cockpit/high.gif\' />",
+	"oper" : "提高铝型材库存周转率添加",
+	"assessPerson" : "王小2"
+},{
+	"id" : "3",
+	"code":"3",
+	"name" : "提高铝型材库存周转率",
+	"kpiName" : "IT部",
+	"definition" : "企化部",
+	"bizType" : "管理",
+	"riskName" : "对供应商交付能力预测不足3",
+	"riskLevel" : "<img src=\'images/kpi/cockpit/high.gif\' />",
+	"oper" : "提高铝型材库存周转率添加",
+	"assessPerson" : "李华"
+},{
+	"id" : "4",
+	"code":"4",
+	"name" : "提高铝型材库存周转率",
+	"kpiName" : "IT部",
+	"definition" : "企化部",
+	"bizType" : "管理",
+	"riskName" : "定额抄错",
+	"riskLevel" : "<img src=\'images/kpi/cockpit/high.gif\' />",
+	"oper" : "提高铝型材库存周转率添加",
+	"assessPerson" : "李华"
+},{
+	"id" : "5",
+	"code":"5",
+	"name" : "提高铝型材库存周转率",
+	"kpiName" : "IT部",
+	"definition" : "企化部",
+	"bizType" : "管理",
+	"riskName" : "采购计划数据编制不准",
+	"riskLevel" : "<img src=\'images/kpi/cockpit/high.gif\' />",
+	"oper" : "提高铝型材库存周转率添加",
+	"assessPerson" : "李华"
+}
+
+
+
+,{
+	"id" : "6",
+	"code":"6",
+	"name" : "风险5",
+	"kpiName" : "",
+	"definition" : "",
+	"bizType" : "",
+	"riskName" : "库存信息收集不准确",
+	"riskLevel" : "<img src=\'images/kpi/cockpit/high.gif\' />",
+	"oper" : "风险5添加",
+	"assessPerson" : "李华"
+}
+
+,{
+	"id" : "7",
+	"code":"7",
+	"name" : "风险5",
+	"kpiName" : "",
+	"definition" : "",
+	"bizType" : "",
+	"riskName" : "不同物质关注程度不同一致",
+	"riskLevel" : "<img src=\'images/kpi/cockpit/high.gif\' />",
+	"oper" : "风险5添加",
+	"assessPerson" : "李华"
+}
+
+,{
+	"id" : "8",
+	"code":"8",
+	"name" : "周转率",
+	"kpiName" : "",
+	"definition" : "",
+	"bizType" : "",
+	"riskName" : "库存策略不合理",
+	"riskLevel" : "<img src=\'images/kpi/cockpit/high.gif\' />",
+	"oper" : "周转率5添加",
+	"assessPerson" : "李华"
+}
+,{
+	"id" : "9",
+	"code":"9",
+	"name" : "周转率",
+	"kpiName" : "",
+	"definition" : "",
+	"bizType" : "",
+	"riskName" : "物资分类管理混乱",
+	"riskLevel" : "<img src=\'images/kpi/cockpit/high.gif\' />",
+	"oper" : "周转率5添加",
+	"assessPerson" : "李华"
+}
+
+
+
+]

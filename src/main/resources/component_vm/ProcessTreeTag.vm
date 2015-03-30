@@ -1,0 +1,110 @@
+<div id="${id}"></div>
+<script type="text/javascript">
+var tree${id};
+var mytreeload${id};
+var filter${id};
+mytreeload${id} = new Ext.tree.TreeLoader({
+	//preloadChildren: true,
+	baseParams:{
+		filters:'${filters}'
+	},
+	#if(${checkNode})
+	baseAttrs : {
+		uiProvider : Ext.ux.TreeCheckNodeUI
+	},
+	#end
+	dataUrl : '${url}'
+});
+Ext.onReady(function() {
+	tree${id} = new Ext.tree.TreePanel({
+		id:'tree-$id',
+		autoScroll : true,
+		animate : true,
+		height:${height},
+		width:${width},
+		//enableDD:true,
+		authoScroll : true,
+		containerScroll : true,
+		hlDrop : false,
+		checkNode:${checkNode},
+		checkModel : '${checkModel}',
+		onlyLeafCheckable:${onlyLeafCheckable},
+		containerScroll : true,
+		rootVisible : true,
+		//frame:true,
+		loader : mytreeload${id},
+		tbar:[ ' ',
+				new Ext.form.TextField({
+					width:${width}-70,
+					emptyText:'查找流程',
+	                enableKeyEvents: true,
+					listeners:{
+						render: function(f){
+							
+	                    	filter${id} = new Ext.tree.TreeFilter(tree${id}, {
+	                    		clearBlank: true,
+	                    		autoClear: true
+	                    	});
+						},
+	                    keydown: {
+	                        fn: filterTree${id},
+	                        buffer: 350,
+	                        scope: this
+	                    },
+	                    scope: this
+					}
+				}), ' ', ' ',
+				{
+	                iconCls: 'icon-expand-all',
+					tooltip: 'Expand All',
+	                handler: function(){ root${id}.expand(true); },
+	                scope: this
+	            }, '-', {
+	                iconCls: 'icon-collapse-all',
+	                tooltip: 'Collapse All',
+	                handler: function(){ root${id}.collapse(true); },
+	                scope: this
+	            }]
+	});
+	 
+	function filterTree${id}(t, e){
+ 		var text = t.getValue();
+ 		Ext.each(tree${id}.hiddenPkgs, function(n){
+ 			n.ui.show();
+ 		});
+ 		if(!text){
+ 			filter${id}.clear();
+ 			return;
+ 		}
+ 		tree${id}.expandAll();
+ 		var re = new RegExp(Ext.escapeRe(text)+'+', 'g');
+ 		filter${id}.filterBy(function(n){
+ 			return !n.attributes.leaf || re.test(n.text);
+ 		});
+ 		
+ 		// hide empty packages that weren't filtered
+ 		tree${id}.hiddenPkgs = [];
+        var me = tree${id};
+        root${id}.cascade(function(n){
+			if(!n.attributes.leaf && n.ui.ctNode.offsetHeight < 3){
+				n.ui.hide();
+				me.hiddenPkgs.push(n);
+			}
+		});
+       
+ 	}
+
+	
+	var root${id} = new Ext.tree.AsyncTreeNode( {
+		id : '${rootId}',
+		text : '${rootName}',
+		draggable : false,
+		expanded : true,
+		iconCls : 'processure-tree-icon',
+		cls : 'root'
+	});
+	tree${id}.setRootNode(root${id} );
+	tree${id}.render('${id}');
+	tree${id}.on('check', ${onCheck}, tree${id});
+});
+</script>

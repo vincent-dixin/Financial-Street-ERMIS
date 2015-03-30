@@ -1,0 +1,92 @@
+{
+	"success" : true,
+	"datas" : [{
+				orgId : "XD0203",
+				id : "3101579f-a3d1-4abf-8218-7b6218b77a5f",
+				defectType : "双重缺陷",
+				defectCount : 2,
+				defectLevel : "重大缺陷",
+				orgName : "企划处",
+				dealStatus : "处理中"
+			}, {
+				orgId : "XD0205",
+				id : "90cc6386-de63-4cf1-9293-26544e031de2",
+				defectType : "设计缺陷",
+				defectCount : 1,
+				defectLevel : "重要缺陷",
+				orgName : "审计处",
+				dealStatus : ""
+			}, {
+				orgId : "XD0202",
+				id : "d2871600-5150-4779-9627-770c0ece2cb7",
+				defectType : "设计缺陷",
+				defectCount : 1,
+				defectLevel : "重大缺陷",
+				orgName : "技术管理处",
+				dealStatus : ""
+			}, {
+				orgId : "XD0202",
+				id : "867826c6-b057-45be-8e4e-aa49cfa1b798",
+				defectType : "双重缺陷",
+				defectCount : 2,
+				defectLevel : "一般缺陷",
+				orgName : "技术管理处",
+				dealStatus : "已完成"
+			}, {
+				orgId : "XD0202",
+				id : "7c97d49b-66bb-465e-838b-660c5a5fc26b",
+				defectType : "双重缺陷",
+				defectCount : 1,
+				defectLevel : "重大缺陷",
+				orgName : "技术管理处",
+				dealStatus : "处理中"
+			}, {
+				orgId : "XD0202",
+				id : "cff0d77e-a441-4f6a-93e2-48fb7cf24093",
+				defectType : "设计缺陷",
+				defectCount : 1,
+				defectLevel : "重大缺陷",
+				orgName : "技术管理处",
+				dealStatus : "处理中"
+			}, {
+				orgId : "XD0202",
+				id : "441c9f04-c09f-4a53-9c0b-7f46fe34e9a1",
+				defectType : "执行缺陷",
+				defectCount : 1,
+				defectLevel : "重大缺陷",
+				orgName : "技术管理处",
+				dealStatus : "处理中"
+			}, {
+				orgId : "XD0202",
+				id : "332f6059-5f76-4e4a-8f91-eddc6a9deca6",
+				defectType : "双重缺陷",
+				defectCount : 2,
+				defectLevel : "重要缺陷",
+				orgName : "技术管理处",
+				dealStatus : "处理中"
+			}, {
+				orgId : "XD0202",
+				id : "591a5702-7fd8-4c4a-a498-76f8503df2b9",
+				defectType : "设计缺陷",
+				defectCount : 1,
+				defectLevel : "一般缺陷",
+				orgName : "技术管理处",
+				dealStatus : "处理中"
+			}, {
+				orgId : "XD0202",
+				id : "27ff2590-7e82-4687-9931-737e062a645a",
+				defectType : "双重缺陷",
+				defectCount : 1,
+				defectLevel : "一般缺陷",
+				orgName : "技术管理处",
+				dealStatus : "未开始"
+			}, {
+				orgId : "XD0204",
+				id : "8a5963cc-0fb4-4b3b-a4eb-950e3d00fffe",
+				defectType : "设计缺陷",
+				defectCount : 1,
+				defectLevel : "",
+				orgName : "财务处",
+				dealStatus : ""
+			}]
+}

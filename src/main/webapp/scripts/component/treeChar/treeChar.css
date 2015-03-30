@@ -1,0 +1,25 @@
+.treeCharDiv{
+	position:inherit;
+}
+.treeCharDiv Div.container{
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+	position:inherit;
+}
+.treeCharDiv Div.outline{
+	z-index:1;
+	position:absolute;
+	overflow:hidden;
+	top:0px;
+	right:20px;
+	width:160px;
+	height:120px;
+	background:transparent;
+	border-style:solid;
+	border-color:lightgray;
+}
+.treeCharDiv Div.toolBar{
+	width: 100%;
+	height: 100%;
+}

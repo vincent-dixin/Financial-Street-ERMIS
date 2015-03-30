@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process name="riskWorkFlow" xmlns="http://jbpm.org/4.4/jpdl">
+   <description>riskWorkFlow</description>
+   <start g="282,2,48,48" name="start1">
+      <transition to="计划制定"/>
+   </start>
+   <task assignee="#{AssessPlanApproverEmpId}" form="FHD.view.risk.assess.formulatePlan.FormulateApproverSubmitMain" g="200,76,208,52" name="计划制定">
+      <description>0</description>
+      <transition to="计划审批"/>
+   </task>
+   <task assignee="#{AssessPlanApproverEmpId}" form="FHD.view.risk.assess.kpiSet.SetMainPanel" g="202,155,208,52" name="计划审批">
+      <description>8</description>
+      <transition to="计划审批decision"/>
+   </task>
+   <decision g="282,235,48,48" name="计划审批decision">
+      <transition g="583,254;581,98:" to="计划制定">
+			<condition expr="#{path=='no'}"/>
+		</transition>
+      <transition g="-71,-17" name="to foreach1" to="任务分配">
+			<condition expr="#{path=='yes'}"/>
+		</transition>
+   </decision>
+   <foreach g="282,308,48,48" in="#{items}" name="任务分配" var="item">
+      <transition g="-71,-17" name="to 风险评估" to="风险评估"/>
+   </foreach>
+   <task g="206,388,208,52" name="风险评估">
+      <transition name="to join2" to="join2" g="-53,-17"/>
+   </task>
+   <task g="210,617,208,52" name="评估任务审批">
+      <transition name="to join1" to="join1" g="-53,-17"/>
+   </task>
+   <join g="293,725,48,48" name="join1">
+      <transition g="-95,-17" name="to 评估结果整理" to="评估结果整理"/>
+   </join>
+   <task g="215,810,208,52" name="评估结果整理">
+      <transition g="-95,-17" name="to 评估报告编制" to="评估报告编制"/>
+   </task>
+   <task g="215,900,208,52" name="评估报告编制">
+      <transition g="-95,-17" name="to 评估报告审批" to="评估报告审批"/>
+   </task>
+   <task g="215,980,208,52" name="评估报告审批">
+      <transition g="-71,-17" name="to 是否同意" to="是否同意"/>
+   </task>
+   <decision g="295,1063,48,48" name="是否同意">
+       <transition g="550,1087;550,925:-95,-17" name="to 评估报告编制" to="评估报告编制">
+			<condition expr="#{path=='no'}"/>
+		</transition>
+      <transition g="-47,-17" name="to end1" to="end1">
+			<condition expr="#{path=='yes'}"/>
+		</transition>
+   </decision>
+   <end g="296,1147,48,48" name="end1"/>
+   <join name="join2" g="289,462,48,48">
+      <transition name="to foreach1" to="foreach1" g="-70,-9"/>
+   </join>
+   <foreach name="foreach1" g="289,541,48,48">
+      <transition name="to 评估任务审批" to="评估任务审批" g="-95,-17"/>
+   </foreach>
+</process>

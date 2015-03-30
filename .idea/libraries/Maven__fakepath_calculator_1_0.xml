@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: fakepath:calculator:1.0">
+    <CLASSES>
+      <root url="jar://D:/Program Files/maven/repository/fakepath/calculator/1.0/calculator-1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/Program Files/maven/repository/fakepath/calculator/1.0/calculator-1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/Program Files/maven/repository/fakepath/calculator/1.0/calculator-1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process name="icmICSystemPlan" xmlns="http://jbpm.org/4.4/jpdl">
+	<description>icmICSystemPlan</description>
+	<start g="427,0,200,50" name="start1">
+		<transition to="内控体系建设计划制定"/>
+	</start>
+	<task assignee="#{ICDepartmentStaffEmpId}" form="FHD.view.icm.icsystem.bpm.ConstructPlanDraft" g="350,80,200,50" name="内控体系建设计划制定">
+		<description>0</description>
+		<transition to="内控体系建设计划审批"/>
+	</task>
+	<task assignee="#{ICDepartmentMinisterEmpId}" form="FHD.view.icm.icsystem.bpm.ConstructPlanApprove" g="350,160,200,50" name="内控体系建设计划审批">
+		<description>8</description>
+		<transition to="内控体系建设计划审批decision"/>
+	</task>
+	<decision g="426,240,48,48" name="内控体系建设计划审批decision">
+		<transition g="650,264;650,105:" to="内控体系建设计划制定">
+			<condition expr="#{path=='no'}"/>
+		</transition>
+		<transition to="内控体系建设计划发布">
+			<condition expr="#{path=='yes'}"/>
+		</transition>
+	</decision>
+	<task assignee="#{ICDepartmentMinisterEmpId}" form="FHD.view.icm.icsystem.bpm.ConstructPlanPublish" g="350,320,200,50" name="内控体系建设计划发布">
+		<description>16</description>
+		<transition to="内控体系建设计划发布foreach"/>
+	</task>
+	<foreach g="426,400,48,48" in="#{items}" name="内控体系建设计划发布foreach" var="item">
+		<transition to="内控体系建设计划发布decision"/>
+	</foreach>
+	<decision g="426,480,48,48" name="内控体系建设计划发布decision">
+		<transition g="300,504:" to="流程和矩阵编写">
+			<condition expr="#{item.path=='path1'}"/>
+		</transition>
+		<transition g="600,504:" to="合规诊断">
+			<condition expr="#{item.path=='path2'}"/>
+		</transition>
+	</decision>
+	<task assignee="#{item.processEditEmpId}" form="FHD.view.icm.icsystem.bpm.PlanProcessTabPanel" g="200,560,200,50" name="流程和矩阵编写">
+		<description>20</description>
+		<transition to="foreach1"/>
+	</task>
+	<foreach g="275,639,48,48" in="#{approveitems}" name="foreach1" var="approveitem">
+      	<transition g="-71,-17" to="成果审批"/>
+    </foreach>
+	<task assignee="#{approveitem.processApprovalEmpId}" form="FHD.view.icm.icsystem.bpm.ConstructPlanResultsApprove" g="203,732,193,50" name="成果审批">
+		<description>85</description>
+		<transition to="成果审批decision"/>
+	</task>
+	<decision g="277,813,48,48" name="成果审批decision">
+      <transition g="299,1022:-65,-17" name="to endjoin" to="endjoin">
+      	   <condition expr="#{path=='yes'}"/>
+      </transition>
+      <transition g="-71,-17" name="to 流程和矩阵调整" to="流程和矩阵调整">
+      	   <condition expr="#{path=='no'}"/>
+      </transition>
+	</decision>
+    <task assignee="#{approveitem.processRepairEmpId}" form="FHD.view.icm.icsystem.bpm.ConstructPlanResultsRepair" g="45,812,187,52" name="流程和矩阵调整">
+      	<description>20</description>
+      	<transition g="138,757:-71,-17" to="成果审批"/>
+    </task>
+	<task assignee="#{item.executeEmpId}" form="FHD.view.icm.icsystem.bpm.DiagnosesDraft" g="500,560,200,50" name="合规诊断">
+		<description>20</description>
+		<transition to="合规诊断decision"/>
+	</task>
+	<decision g="576,647,48,48" name="合规诊断decision">
+		<transition g="831,669;829,1025:" to="endjoin">
+			<condition expr="#{path=='no'}"/>
+		</transition>
+		<transition to="合规诊断foreach">
+			<condition expr="#{path=='yes'}"/>
+		</transition>
+	</decision>
+	<foreach g="576,740,48,48" in="#{feedbackitems}" name="合规诊断foreach" var="backItem">
+		<transition to="缺陷反馈"/>
+	</foreach>
+	<task assignee="#{backItem.defectFeedbackEmpId}" form="FHD.view.icm.icsystem.bpm.DefectFackDraft" g="500,820,200,50" name="缺陷反馈">
+		<description>80</description>
+		<transition to="缺陷整理"/>
+	</task>
+	<task assignee="#{backItem.defectCleanUpEmpId}" form="FHD.view.icm.icsystem.bpm.DefectCleanUpDraft" g="500,900,200,50" name="缺陷整理">
+		<description>90</description>
+		<transition g="599,1023:" to="endjoin"/>
+	</task>
+	<join g="420,1000,48,48" multiplicity="#{joinCount}" name="endjoin">
+		<transition to="汇总"/>
+	</join>
+	<java class="com.fhd.icm.web.controller.icsystem.ConstructPlanControl" g="343,1100,200,50" method="mergeConstructPlanStatus" name="汇总">
+		<arg>
+			<object expr="#{id}"/>
+		</arg>
+		<transition to="end1"/>
+	</java>
+	<end g="419,1202,48,48" name="end1"/>
+</process>

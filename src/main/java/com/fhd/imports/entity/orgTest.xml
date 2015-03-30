@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<excel>
+   <table label="员工表" name="T_SYS_ORGANIZATION" sheet="0" columnStart="A" columnEnd="E" rowStart="2"  >
+		<column label="机构名称" name="ORG_NAME" type="String" columnIndex="A"></column>
+		<column label="机构编号" name="ORG_CODE" type="String" columnIndex="B">
+			<integrityRules nullable="" > 
+			</integrityRules>
+			<effectiveRules>
+				<rule></rule>
+			</effectiveRules>				
+		</column>
+   </table>
+</excel>

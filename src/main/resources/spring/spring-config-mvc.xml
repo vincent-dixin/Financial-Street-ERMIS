@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" p:prefix="/WEB-INF/jsp/"
+		p:suffix=".jsp" p:redirectHttp10Compatible="false" />
+
+	<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping" p:order="0">
+		<property name="interceptors" >
+			<list>
+				<bean id="contentInterceptor" class="org.springframework.web.servlet.mvc.WebContentInterceptor" p:cacheSeconds="0" />
+				<bean id="localChangeInterceptor" class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor" />
+				<bean class="com.fhd.core.web.interceptor.SecuredInterceptor" p:denyUrl="/warn.do" />
+				<!-- 
+				<bean id="commonInterceptor" class="com.fhd.fdc.web.interceptor.CommonInterceptor" p:denyUrl="http://192.168.1.138:8080/fhd-dc/sso/error.do" p:mappingURL="/*"/>
+				-->
+			</list>
+		</property>
+	</bean>
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+		<property name="webBindingInitializer">
+			<bean class="com.fhd.fdc.commons.binding.SysManageBindingInitializer" />
+		</property>
+		<property name="messageConverters"> 
+			<list> 
+		    	<bean id="jacksonMessageConverter" class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter" />
+		  	</list> 
+		</property>
+	</bean>
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!-- one of the properties available; the maximum file size in bytes -->
+		<property name="maxUploadSize" value="1125899906842624" />
+	</bean>
+	<mvc:default-servlet-handler/>
+	<mvc:resources location="/css/" mapping="/css/**" cache-period="31536000"/>
+	<mvc:resources location="/images/" mapping="/images/**" cache-period="31536000"/>
+	<mvc:resources location="/scripts/" mapping="/scripts/**" cache-period="31536000"/>
+	<mvc:resources location="/chart/" mapping="/chart/**" cache-period="31536000"/>
+	
+	
+	<context:component-scan base-package="com.fhd.fdc.web.controller" />
+	<!-- 工作流 -->
+	<context:component-scan base-package="com.fhd.bpm.web.controller" />
+	<!-- 系统管理 -->
+	<context:component-scan base-package="com.fhd.sys.web.controller" />
+	<!-- 指标 -->
+	<context:component-scan base-package="com.fhd.kpi.web.controller" />
+	<!-- 公用 -->
+	<context:component-scan base-package="com.fhd.comm.web.controller" />
+	<!-- 内控 -->
+	<context:component-scan base-package="com.fhd.icm.web.controller" />
+	<!-- 工作计划 -->
+	<context:component-scan base-package="com.fhd.wp.web.controller" />
+	<!-- 风险 -->
+	<context:component-scan base-package="com.fhd.risk.web.controller" />
+	<!-- 测试MVC -->
+	<context:component-scan base-package="com.fhd.test.web.controller" />
+	
+	<context:component-scan base-package="com.fhd.process.web.controller" />
+	<!-- 金融街 -->
+	<context:component-scan base-package="com.fhd.jrj.web.controller" />
+	<!-- 评估计划 -->
+	<context:component-scan base-package="com.fhd.assess.web.controller" />
+</beans>

@@ -1,0 +1,37 @@
+[{
+	 id:'1',
+	 name:'提高铝型材库存周转率',
+	 kpiName : '库存水平',
+	 riskName:'库存信息掌握不准确',
+	 lastRiskName:'库存风险',
+	 relOrg:'',
+	 kpiDesc:'周转率',
+	 lastAssesser:'库存风险',
+	 OR:'物资配送中心',
+	 lastAssesser:'邓广义',
+	 assesser:'张华，李丽'
+ },{
+	 id:'2',
+	 name:'提高铝型材库存周转率',
+	 kpiName : '库存水平',
+	 riskName:'物资配送不及时',
+	 lastRiskName:'库存风险',
+	 relOrg:'',
+	 kpiDesc:'周转率',
+	 lastAssesser:'库存风险',
+	 OR:'物资配送中心',
+	 lastAssesser:'邓广义',
+	  assesser:'李丽'
+ },{
+	 id:'3',
+	 name:'提高铝型材库存周转率',
+	 kpiName : '采购计划准确率',
+	 riskName:'采购计划准确性差',
+	 lastRiskName:'采购计划风险',
+	 relOrg:'',
+	 kpiDesc:'周转率',
+	 lastAssesser:'销售风险',
+	 OR:'采购部',
+	 lastAssesser:'邓广义',
+	  assesser:''
+ }]

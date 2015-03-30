@@ -1,0 +1,9 @@
+#set($size = $dictEntries.size())
+#foreach($d in $dictEntries)
+	<label><input onblur="$!onblur" onchange="$!onchange" onclick="$!onclick" ondblclick="$!ondblclick" onfocus="$!onfocus" onkeydown="$!onkeydown" onkeypress="$!onkeypress" onkeyup="$!onkeyup" onmousedown="$!onmousedown" onmousemove="$!onmousemove" onmouseout="$!onmouseout" onmouseover="$!onmouseover" onmouseup="$!onmouseup" onselect="$!onselect" style="$!style" class="$!styleCss" type="radio" id="r_$!id_$velocityCount"  name="$!name" #if($!d.id == $checked) checked #end #if($disabled) disabled #end value="$!d.id" />&nbsp;$!d.name</label> 
+	#if($velocityCount % $perrow == 0)
+		#if($velocityHasNext)
+		<br />
+		#end
+	#end
+#end

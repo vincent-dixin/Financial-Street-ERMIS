@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: activiti-engine:activiti-engine-china:5.9">
+    <CLASSES>
+      <root url="jar://D:/Program Files/maven/repository/activiti-engine/activiti-engine-china/5.9/activiti-engine-china-5.9.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/Program Files/maven/repository/activiti-engine/activiti-engine-china/5.9/activiti-engine-china-5.9-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/Program Files/maven/repository/activiti-engine/activiti-engine-china/5.9/activiti-engine-china-5.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

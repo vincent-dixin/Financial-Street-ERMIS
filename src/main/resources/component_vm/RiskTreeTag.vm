@@ -1,0 +1,228 @@
+<div id="${id}" style="float:left"></div>
+<script type="text/javascript">
+var arrayObj${id} = new Array();
+var lastNodeId${id};
+var ${id};
+var root${id};
+var lastSearchText${id};
+var search${id};
+
+var treeloader${id} = new Ext.tree.TreeLoader({
+	${checkNode}
+	baseParams:{isMyRisk:false,nodeLink:${nodeLink},linkable:${linkable},riskClass:'${riskClass}'},
+	dataUrl:'${dataUrl}'
+});
+Ext.onReady(function(){
+	Ext.QuickTips.init();
+	${id} = new Ext.tree.TreePanel({
+	    el:'${id}',
+		rootVisible:${rootVisible},
+        useArrows: true,
+        autoScroll: true,
+        animate: true,
+        enableDD: true,
+        containerScroll: true,
+        border: false,
+        height:${height},//document.body.offsetHeight-55,
+        width:${width},//200,
+    	hlDrop:false,		
+		checkModel : '${checkModel}',
+		onlyLeafCheckable:${onlyLeafCheckable},
+		loader:treeloader${id},
+		tbar:new Ext.Toolbar({
+			height:25,
+			items : [' ',
+        			new Ext.form.TextField({
+        				id:'searchbox_${id}',
+        				width:${sbWidth},
+        				emptyText:'${sbEmptyText}',
+        				selectOnFocus: true,
+        				enableKeyEvent: true,
+        				listeners:{
+        				   'specialkey': function(f,e){
+        				       if (e.keyCode == 13) {
+        				    	   searchText${id}();
+        				       }
+        				   }
+        				}
+        			}),' ',' ',
+        			{
+                        iconCls: 'risk-icon',
+                        id:'queryAllRisk_${id}',
+						tooltip:'${allRiskText} ',
+                        hidden:true,
+                        handler: function(){
+                        	${id}.getLoader().baseParams.isMyRisk=false;
+                        	root${id}.reload();
+                        	${id}.getRootNode().setText('${allRiskText}');
+                        	Ext.getCmp("queryMyRisk_${id}").show();
+                        	Ext.getCmp("queryAllRisk_${id}").hide();
+                        },
+                        scope: this
+                    },{
+                        iconCls: 'user-m-tree-icon',
+                        id:'queryMyRisk_${id}',
+						tooltip:'${myRiskText}',
+                        handler: function(){
+                        	${id}.getLoader().baseParams.isMyRisk=true;
+                        	root${id}.reload();
+                        	${id}.getRootNode().setText('${myRiskText}');
+                        	Ext.getCmp("queryMyRisk_${id}").hide();
+                        	Ext.getCmp("queryAllRisk_${id}").show();
+                        },
+                        scope: this
+                    }, '-', {
+                        iconCls: 'icon-expand-all',
+                        id:'expandAll_${id}',
+						tooltip:'${expandAllText}',
+                        handler: function(){
+                        	root${id}.expand(true);
+                        	Ext.getCmp("expandAll_${id}").hide();
+                        	Ext.getCmp("collapseAll_${id}").show(); 
+                        },
+                        scope: this
+                    },{
+                        iconCls: 'icon-collapse-all',
+                        id:'collapseAll_${id}',
+						tooltip:'${collapseAllText}',
+                        hidden:true,
+                        handler: function(){
+                        	root${id}.collapse(true);
+                        	Ext.getCmp("expandAll_${id}").show();
+                        	Ext.getCmp("collapseAll_${id}").hide(); 
+                        },
+                        scope: this
+                    }
+					${freshBtn}
+                ]})
+    });
+
+	root${id} = new Ext.tree.AsyncTreeNode({
+		text:'${rootName}',
+		draggable:false,
+		${rootCheck}
+		${rootLink}
+		hrefTarget:'mainframe',
+		iconCls:'risk-tree-icon',
+		cls:'root',
+		id:'${rootId}'
+	 });
+	
+	 ${id}.setRootNode(root${id});
+	 ${id}.render();
+	 ${id}.getRootNode().expand();
+	 ${id}.on('check', ${onCheck}, ${id});
+	 ${expandAll}
+	 
+	 treeloader${id}.on("beforeload", function(treeLoader, node) {
+		${beforeload}
+	 });
+	 
+ 	function searchText${id}(){
+		var param = Ext.getCmp('searchbox_${id}').getValue();
+	    if(param.trim()!=lastSearchText${id}){
+			Ext.Ajax.request({
+				url:'${searchPath}',
+			    method:'post',
+			    params:{
+			    	searchName: param
+			    },
+			    success:function(response){
+					root${id}.reload();
+			    	if(response.responseText!='"1"'){
+			    		lastNodeId${id}="";
+			    		var paths = response.responseText.split("\"");
+			    		paths=paths[1].split(",");
+				        if(paths!="1"){
+					 	    for(var i = 0; i < paths.length; i++) {
+					 	    	 if(i==paths.length-1){
+					 	    		 var nodeIds=paths[i].split("/");
+					 	    		 lastNodeId${id}=nodeIds[nodeIds.length-1];
+					 	    	 }
+				 	    	 	${id}.expandPath(paths[i], 'id', search${id}.onExpandPathComplete);
+		   				  	}
+				    	}else{
+				    		search${id}.allNodeShow(${id}.getNodeById("${rootId}"));
+				    		${id}.selectPath('/${rootId}', 'id', search${id}.onExpandPathComplete);
+				    	 	arrayObj${id}=[];
+				    	}
+			    	}else if(param==''){
+			    		root${id}.reload();
+			    	}else{
+			    		Ext.Msg.alert('${emptyAlertTitle}','${emptyAlertValue}');
+			    	}
+			    }
+			});
+			lastSearchText${id}=param.trim();
+		}
+	}
+
+   search${id} = {
+   		 onExpandPathComplete : function(bSuccess, oLastNode) { 
+   			  arrayObj${id}.push(oLastNode);
+   			  search${id}.addArrayObj(oLastNode);
+    		  if(!bSuccess) 
+    		   	return;
+    		  if(oLastNode==${id}.getNodeById(lastNodeId${id})){
+    				  for(var m = 0; m < arrayObj${id}.length; m++) {
+   			  		  if(arrayObj${id}[m].getDepth() == 0) continue;
+   			  		  var nodes = arrayObj${id}[m].parentNode.childNodes;
+					  
+					  var tempNode = arrayObj${id}[m].childNodes;
+   			  		  if(tempNode!=null){
+   			  			for(var i = 0; i < tempNode.length; i++) {
+     				  	      var flag=false;
+     				  	      for(var j = 0; j < arrayObj${id}.length; j++) {
+     				  	    	if(tempNode[i] == arrayObj${id}[j]) {
+     				  	    		flag=true;
+     					  	    }
+     					  	  }
+     					  	  
+	   				  	        if(!flag) {
+	   				  	           tempNode[i].getUI().hide();
+	   				  	        }else{
+	   				  	           tempNode[i].getUI().show();
+	   				  	        }
+     				  	    }
+   	   			  	   }
+					  
+   				  	   for(var i = 0; i < nodes.length; i++) {
+   				  	      var flag=false;
+   				  	      for(var j = 0; j < arrayObj${id}.length; j++) {
+   				  	    	if(nodes[i] == arrayObj${id}[j]) {
+   				  	    		flag=true;
+   					  	        }
+   					  	    }
+   				  	        if(!flag) {
+   				  	           nodes[i].getUI().hide();
+   				  	        }else{
+   				  	           nodes[i].getUI().show();
+   				  	        }
+   				  	    }	  
+   		    	  }
+   			      arrayObj${id}=[];
+   		       }
+   		 },	   		 
+   		 addArrayObj : function(node){
+   			 if(node.getDepth() == 0){
+	    		  return;
+	    	  }else{
+		  		  var parentNode = node.parentNode;
+		  		  arrayObj${id}.push(parentNode);
+		  		  this.addArrayObj(parentNode); 
+	    	  }
+   		 },	   		 
+   		 allNodeShow : function(node){
+   			   if(node.hasChildNodes()){
+   				   var childrenNodes=node.childNodes;
+  		    		for(var i=0;i<childrenNodes.length;i++){
+  		    			childrenNodes[i].getUI().show();
+  		    			this.allNodeShow(childrenNodes[i]);
+  		    		}
+   			   }else{
+   				   return;
+   			   }
+   		 }
+    };
+});
+</script>

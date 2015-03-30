@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process name="test" xmlns="http://jbpm.org/4.4/jpdl">
+	<description>test</description>
+	<start g="277,0,200,50" name="start1">
+		<transition to="a"/>
+	</start>
+	<task assignee="#{aEmpId}" form="pages/demo/FileUpload/FileUpload.jsp" g="200,100,200,50" name="a">
+		<transition to="b"/>
+	</task>
+	<task assignee="#{bEmpId}" form="pages/demo/FileUpload/FileUpload.jsp" g="200,206,200,50" name="b">
+		<transition to="end1"/>
+	</task> 
+	<end g="277,300,200,50" name="end1"/>
+</process>

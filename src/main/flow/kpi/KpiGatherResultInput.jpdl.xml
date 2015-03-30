@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process name="KpiGatherResultInput" xmlns="http://jbpm.org/4.4/jpdl">
+	<description>指标数据收集流程</description>
+	
+   	<start g="301,36,48,48" name="start1">
+      <transition to="指标数据收集"/>
+   	</start>
+   	<task assignee="#{empId}" form="pages/kpi/kpi/kpiGatherResultIndex.jsp" g="284,287,92,52" name="指标数据收集">
+      <transition to="end1"/>
+   	</task>
+   
+   	<end g="301,450,48,48" name="end1"/>
+</process>

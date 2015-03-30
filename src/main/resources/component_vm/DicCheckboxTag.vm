@@ -1,0 +1,10 @@
+#set($size = $dictEntries.size())
+#foreach($d in $dictEntries)
+	<label><input onblur="$!onblur" onchange="$!onchange" onclick="$!onclick" ondblclick="$!ondblclick" onfocus="$!onfocus" onkeydown="$!onkeydown" onkeypress="$!onkeypress" onkeyup="$!onkeyup" onmousedown="$!onmousedown" onmousemove="$!onmousemove" onmouseout="$!onmouseout" onmouseover="$!onmouseover" onmouseup="$!onmouseup" onselect="$!onselect" style="$!style" class="$!styleCss" type="checkbox" id="c_$!id_$velocityCount"  name="$!name" #foreach($c in $checkeds) #if($!d.id == $c) checked #end #end  #if($disabled) disabled #end value="$!d.id" />&nbsp;$!d.name</label>
+	
+	#if($velocityCount % $perrow == 0)
+		#if($velocityHasNext)
+		<br />
+		#end
+	#end
+#end
